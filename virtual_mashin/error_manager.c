@@ -22,7 +22,7 @@ void    print_error(char *file, int  index)
         write(1, "\nERROR! File ", 13);
         while (file[++i])
             ft_putchar(file[i]);
-        write(1, " can't be opened.\n", 19);
+        write(1, " can't be opened.\n", 18);
     }
     else if (index == 7)
     {

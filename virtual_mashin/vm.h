@@ -68,5 +68,6 @@ unsigned int   bit_rev(unsigned int octet);
 
 int     is_nbr(char *s);
 int     check_arg(char **av, int i, int dump, int players);
+int     check_cycle_to_die(t_player **player, t_process **process, int index[]);
 
 #endif

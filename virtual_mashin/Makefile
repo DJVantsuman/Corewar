@@ -13,7 +13,7 @@
 NAME =	corevar
 FLAGS = -Wall -Werror -Wextra
 SRC = main.c error_manager.c controller.c model.c free_memory.c start_process.c \
-operations/live.c
+check_cycle_to_die.c operations/live.c
 OSRC =	$(SRC:.c=.o)
 
 all: $(NAME)

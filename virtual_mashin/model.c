@@ -40,7 +40,8 @@ void    create_process(t_process **process, int index)
 }
 
 /*
- ** Function "create_map" writes players cod into map(virtual memory) and create process for each player.
+ ** Function "create_map" writes players cod into map(virtual memory) and create
+ ** process for each player.
  */
 
 void    create_map(t_player **player, t_program *program, int amount_player, t_process **process)
