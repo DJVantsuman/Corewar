@@ -13,7 +13,24 @@
 NAME =	corevar
 FLAGS = -Wall -Werror -Wextra
 SRC = main.c error_manager.c controller.c model.c free_memory.c start_process.c \
-check_cycle_to_die.c operations/live.c
+check_live.c run_process.c \
+operations/live.c \
+operations/ld.c \
+operations/st.c \
+operations/add.c \
+operations/sub.c \
+operations/and.c \
+operations/or.c \
+operations/xor.c \
+operations/zjmp.c \
+operations/ldi.c \
+operations/sti.c \
+operations/ft_fork.c \
+operations/lld.c \
+operations/lldi.c \
+operations/lfork.c \
+operations/aff.c \
+
 OSRC =	$(SRC:.c=.o)
 
 all: $(NAME)

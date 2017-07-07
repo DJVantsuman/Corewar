@@ -47,6 +47,10 @@ int get_player_number(t_player **player)
     }
 }
 
+/*
+** Function "reed_player" reed one player from the file and store
+** it to the struct 'player'.
+*/
 void    reed_player(char *file, t_player **player, int player_number)
 {
     int         fd;
@@ -65,6 +69,8 @@ void    reed_player(char *file, t_player **player, int player_number)
         tmp->header->prog_size = bit_rev(tmp->header->prog_size);
         tmp->prog_cod = malloc(sizeof(char) * tmp->header->prog_size);
         read(fd, tmp->prog_cod, tmp->header->prog_size);
+        tmp->live = 0;
+        tmp->last_live = 0;
         close(fd);
         tmp->next = *player;
         *player = tmp;
@@ -73,6 +79,12 @@ void    reed_player(char *file, t_player **player, int player_number)
         error_manager(file, 1);
 }
 
+/*
+** Function "reed_arg" read all argument from command line and store it
+** in the structure 'arg'.
+** After that this function start reading player and give all players to
+** function "controller".
+*/
 void    reed_arg(t_player **player, t_arg *arg, char **av)
 {
     int i;
@@ -100,6 +112,10 @@ void    reed_arg(t_player **player, t_arg *arg, char **av)
         controller(player);
 }
 
+/*
+** Function "main" start program.
+** The function "check_arg" is in the file controller.c.
+*/
 int main(int ac, char **av)
 {
     t_player    *player;

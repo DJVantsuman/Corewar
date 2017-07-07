@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   live.c                                             :+:      :+:    :+:   */
+/*   sti.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: itsuman <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/08 22:04:07 by itsuman           #+#    #+#             */
-/*   Updated: 2017/06/08 22:04:09 by itsuman          ###   ########.fr       */
+/*   Created: 2017/07/07 20:52:14 by itsuman           #+#    #+#             */
+/*   Updated: 2017/07/07 20:52:17 by itsuman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../vm.h"
 
-void    live(t_player **player, t_program *program, t_process *process)
+void    sti(t_player **player, t_program *program, t_process *process)
 {
+//    printf("\nTEST\n");
 }

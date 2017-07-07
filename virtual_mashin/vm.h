@@ -58,16 +58,33 @@ void    error_manager(char *file, int  index);
 void    controller(t_player **player);
 void    model(t_player **player, int amount_player, t_arg *arg);
 void    start_process(t_player **player, t_program *program, t_process **process, t_arg *arg);
+void    run_process(t_player **player, t_program *program, t_process **process, t_arg *arg);
+void    reset_live(t_player **player, t_process **process);
 void    free_player(t_player **player);
 void    free_program(t_program *program);
 void    free_process(t_process **process);
 
-void    live(t_player *player, t_program *program, t_process *process);
+void    live(t_player **player, t_program *program, t_process *process);
+void    ld(t_player **player, t_program *program, t_process *process);
+void    st(t_player **player, t_program *program, t_process *process);
+void    add(t_player **player, t_program *program, t_process *process);
+void    sub(t_player **player, t_program *program, t_process *process);
+void    and(t_player **player, t_program *program, t_process *process);
+void    or(t_player **player, t_program *program, t_process *process);
+void    xor(t_player **player, t_program *program, t_process *process);
+void    zjmp(t_player **player, t_program *program, t_process *process);
+void    ldi(t_player **player, t_program *program, t_process *process);
+void    sti(t_player **player, t_program *program, t_process *process);
+void    ft_fork(t_player **player, t_program *program, t_process *process);
+void    lld(t_player **player, t_program *program, t_process *process);
+void    lldi(t_player **player, t_program *program, t_process *process);
+void    lfork(t_player **player, t_program *program, t_process *process);
+void    aff(t_player **player, t_program *program, t_process *process);
 
 unsigned int   bit_rev(unsigned int octet);
 
 int     is_nbr(char *s);
 int     check_arg(char **av, int i, int dump, int players);
-int     check_cycle_to_die(t_player **player, t_process **process, int index[]);
+int     check_live(t_process **process, t_player **player, int index);
 
 #endif

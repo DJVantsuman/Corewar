@@ -13,10 +13,10 @@
 #include "vm.h"
 
 /*
- ** Function "create_process" create one process and add it to the end of list.
- */
-
-void    create_process(t_process **process, int index)
+** Function "create_process" create one process and add it to the end of
+** list 'process'.
+*/
+void    create_process(t_process **process, int index, int nbr)
 {
     t_process *var;
     t_process *last;
@@ -25,6 +25,9 @@ void    create_process(t_process **process, int index)
     last = *process;
     var->position = index;
     var->live = 0;
+    var->delay = 0;
+    var->nbr = nbr;
+
     while(last && last->next)
         last = last->next;
     if (last == NULL)
@@ -40,10 +43,9 @@ void    create_process(t_process **process, int index)
 }
 
 /*
- ** Function "create_map" writes players cod into map(virtual memory) and create
- ** process for each player.
- */
-
+** Function "create_map" writes players cod into map(virtual memory) and create
+** process for each player.
+*/
 void    create_map(t_player **player, t_program *program, int amount_player, t_process **process)
 {
     int i;
@@ -60,7 +62,7 @@ void    create_map(t_player **player, t_program *program, int amount_player, t_p
         else
             n = (MEM_SIZE / amount_player) * i;
         j = 0;
-        create_process(process, n);
+        create_process(process, n, i);
         while (j < var->header->prog_size)
         {
             program->map[n] = var->prog_cod[j];
@@ -71,6 +73,9 @@ void    create_map(t_player **player, t_program *program, int amount_player, t_p
     }
 }
 
+/*
+** Function "model" create map and give it to the function "start_process".
+*/
 void    model(t_player **player, int amount_player, t_arg *arg)
 {
     t_program   *program;

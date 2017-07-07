@@ -12,6 +12,9 @@
 
 #include "vm.h"
 
+/*
+** Function "controller" checks magic and length of cod each players.
+*/
 void    controller(t_player **player)
 {
     t_player    *tmp;
@@ -42,6 +45,9 @@ int     is_nbr(char *s)
     return (1);
 }
 
+/*
+** Function "check_amount_arg" checks amount each arguments.
+*/
 void    check_amount_arg(int dump, int players, char **av)
 {
     int i;
@@ -64,9 +70,8 @@ void    check_amount_arg(int dump, int players, char **av)
 }
 
 /*
- ** Function "check_arg" checks amount and correctness of arguments.
- */
-
+** Function "check_arg" checks amount and correctness of arguments.
+*/
 int    check_arg(char **av, int i, int dump, int players)
 {
     while (av[++i])
