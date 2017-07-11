@@ -16,25 +16,26 @@
 ** Function "perform_function_continue" is only continue of function
 ** "perform_function".
 */
-void    perform_function_continue(t_player **player, t_program *program,
+void    perform_function_continue(t_program *program,
                                  t_process *process, char byte)
 {
-    if ((unsigned char)byte == 0x09)
-        zjmp(player, program, process);
-    else if ((unsigned char)byte == 0x0a)
-        ldi(player, program, process);
-    else if ((unsigned char)byte == 0x0b)
-        sti(player, program, process);
-    else if ((unsigned char)byte == 0x0c)
-        ft_fork(player, program, process);
-    else if ((unsigned char)byte == 0x0d)
-        lld(player, program, process);
-    else if ((unsigned char)byte == 0x0e)
-        lldi(player, program, process);
-    else if ((unsigned char)byte == 0x0f)
-        lfork(player, program, process);
+//    if ((unsigned char)byte == 0x09)
+//        zjmp(player, program, process);
+//    else if ((unsigned char)byte == 0x0a)
+//        ldi(player, program, process);
+//    else if ((unsigned char)byte == 0x0b)
+//        sti(player, program, process);
+//    else
+	if ((unsigned char)byte == 0x0c)
+        ft_fork(program, process);
+//    else if ((unsigned char)byte == 0x0d)
+//        lld(player, program, process);
+//    else if ((unsigned char)byte == 0x0e)
+//        lldi(player, program, process);
+//    else if ((unsigned char)byte == 0x0f)
+//        lfork(player, program, process);
     else if ((unsigned char)byte == 0x10)
-        aff(player, program, process);
+		aff(program, process);
     else
         process->position++;
 }
@@ -47,22 +48,22 @@ void    perform_function(t_player **player, t_program *program,
 {
     if ((unsigned char)byte == 0x01)
         live(player, program, process);
-    else if ((unsigned char)byte == 0x02)
-        ld(player, program, process);
-    else if ((unsigned char)byte == 0x03)
-        st(player, program, process);
-    else if ((unsigned char)byte == 0x04)
-        add(player, program, process);
-    else if ((unsigned char)byte == 0x05)
-        sub(player, program, process);
-    else if ((unsigned char)byte == 0x06)
-        and(player, program, process);
-    else if ((unsigned char)byte == 0x07)
-        or(player, program, process);
-    else if ((unsigned char)byte == 0x08)
-        xor(player, program, process);
+//    else if ((unsigned char)byte == 0x02)
+//        ld(player, program, process);
+//    else if ((unsigned char)byte == 0x03)
+//        st(player, program, process);
+//    else if ((unsigned char)byte == 0x04)
+//        add(player, program, process);
+//    else if ((unsigned char)byte == 0x05)
+//        sub(player, program, process);
+//    else if ((unsigned char)byte == 0x06)
+//        and(player, program, process);
+//    else if ((unsigned char)byte == 0x07)
+//        or(player, program, process);
+//    else if ((unsigned char)byte == 0x08)
+//        xor(player, program, process);
     else
-        perform_function_continue(player, program, process, byte);
+        perform_function_continue(program, process, byte);
 }
 
 /*
@@ -70,8 +71,7 @@ void    perform_function(t_player **player, t_program *program,
 ** index that is equal to the position of the process and pass this byte
 ** to the function "perform_function".
 */
-void    run_process(t_player **player, t_program *program, t_process **process,
-                    t_arg *arg)
+void    run_process(t_player **player, t_program *program, t_process **process)
 {
     t_process   *proc;
     char        byte;

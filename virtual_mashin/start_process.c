@@ -67,7 +67,7 @@ void    start_process(t_player **player, t_program *program, t_process **process
         while (index[0] <= index[2])
         {
       //      decrease_delay(process);
-            run_process(player, program, process, arg);
+            run_process(player, program, process);
             if (arg->dump > 0 && arg->dump == index[0])
                 print_map(program);
             index[0]++;

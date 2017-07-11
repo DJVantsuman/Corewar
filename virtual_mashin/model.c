@@ -26,6 +26,7 @@ void    create_process(t_process **process, int index, int nbr)
     var->position = index;
     var->live = 0;
     var->delay = 0;
+    var->flag = 0;
     var->nbr = nbr;
 
     while(last && last->next)

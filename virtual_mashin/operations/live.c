@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-long int 	get_numb(t_program program, t_process process)
+long int 	get_numb(t_program *program, t_process *process)
 {
 	int 		k;
 	long int 	p;
@@ -39,9 +39,9 @@ long int 	get_numb(t_program program, t_process process)
 	return (2147483647 - num - 1);
 }
 
-int 		check_player(t_player pl, long int num)
+int 		check_player(t_player *pl, long int num)
 {
-	t_player 	player;
+	t_player 	*player;
 
 	player = pl;
 	while (player)
@@ -54,17 +54,17 @@ int 		check_player(t_player pl, long int num)
 
 void		live(t_player **player, t_program *program, t_process *process)
 {
-	t_player	**pl;
+	t_player	*pl;
 	long int	numb;
 
 	numb = 0;
-	if (proc->flag == 1)
+	if (process->flag == 1)
 	{
 		process->live++;
 		process->position += 2;
 		numb = get_numb(program, process);
-		pl = player;
-		if (check_player(pl, numb) = 1)
+		pl = *player;
+		if (check_player(pl, numb) == 1)
 		{
 			if (pl->number == numb)
 			{
@@ -75,8 +75,8 @@ void		live(t_player **player, t_program *program, t_process *process)
 			else
 				pl->last_live = 0;
 		}
-	proc->flag = 0;
+		process->flag = 0;
 	}
 	else
-		proc->delay = 10;
+		process->delay = 10;
 }
