@@ -79,10 +79,16 @@ void    run_process(t_player **player, t_program *program, t_process **process,
     proc = *process;
     while (proc)
     {
-        if (proc->live >= 0)
+        if (proc->live >= 0 && proc->delay == 0)
         {
             byte = program->map[proc->position];
             perform_function(player, program, proc, byte);
+        }
+        else if (proc->delay > 0)
+        {
+            proc->delay--;
+            if (proc->delay == 0)
+                proc->flag = 1;
         }
         proc = proc->next;
     }

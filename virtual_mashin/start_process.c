@@ -33,7 +33,7 @@ void    print_map(t_program *program)
 /*
 ** Function "decrease_delay" decrease process delay by one.
 */
-void    decrease_delay(t_process **process)
+/*void    decrease_delay(t_process **process)
 {
     t_process *var;
 
@@ -42,9 +42,11 @@ void    decrease_delay(t_process **process)
     {
         if (var->delay > 0)
             var->delay--;
+        else 
+            var->flag = 1;
         var = var->next;
     }
-}
+}*/
 
 /*
 ** Function 'start_process' start CYCLE_TO_DIE and after each CYCLE_TO_DIE
@@ -64,7 +66,7 @@ void    start_process(t_player **player, t_program *program, t_process **process
         index[0] = 1;
         while (index[0] <= index[2])
         {
-            decrease_delay(process);
+      //      decrease_delay(process);
             run_process(player, program, process, arg);
             if (arg->dump > 0 && arg->dump == index[0])
                 print_map(program);

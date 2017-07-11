@@ -14,4 +14,15 @@
 
 void    ld(t_player **player, t_program *program, t_process *process)
 {
+	t_player	**pl;
+	long int	numb;
+
+	if (process->delay == 0)
+	{
+		process->position += 2;
+		if (program->carry == 1)
+		{
+			
+		}
+	}
 }
