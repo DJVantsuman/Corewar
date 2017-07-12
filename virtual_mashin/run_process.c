@@ -32,8 +32,8 @@ void    perform_function_continue(t_program *program,
 //        lld(player, program, process);
 //    else if ((unsigned char)byte == 0x0e)
 //        lldi(player, program, process);
-//    else if ((unsigned char)byte == 0x0f)
-//        lfork(player, program, process);
+    else if ((unsigned char)byte == 0x0f)
+        lfork(program, process);
     else if ((unsigned char)byte == 0x10)
 		aff(program, process);
     else
@@ -56,12 +56,12 @@ void    perform_function(t_player **player, t_program *program,
 //        add(player, program, process);
 //    else if ((unsigned char)byte == 0x05)
 //        sub(player, program, process);
-//    else if ((unsigned char)byte == 0x06)
-//        and(player, program, process);
-//    else if ((unsigned char)byte == 0x07)
-//        or(player, program, process);
-//    else if ((unsigned char)byte == 0x08)
-//        xor(player, program, process);
+    else if ((unsigned char)byte == 0x06)
+        and(program, process);
+    else if ((unsigned char)byte == 0x07)
+        or(program, process);
+    else if ((unsigned char)byte == 0x08)
+        xor(program, process);
     else
         perform_function_continue(program, process, byte);
 }

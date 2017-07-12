@@ -19,7 +19,7 @@ int 	get_position(int s)
 	return (s);
 }
 
-int 	get_register(t_program program, int p)
+int 	get_register(t_program *program, int k)
 {
 	int 	z;
 
@@ -39,11 +39,11 @@ int 	get_register(t_program program, int p)
 	return (z);
 }
 
-int 	is_register(t_program program, int p)
+int 	is_register(t_program *program, int p)
 {
 	int 	z;
 
-	z = get_register(t_program program, int p);
+	z = get_register(program, p);
 	if (z > 0 && z <= REG_NUMBER)
 		return (1);
 	else

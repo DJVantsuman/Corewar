@@ -43,7 +43,7 @@ typedef struct       s_process
 typedef struct      s_program
 {
     char             map[MEM_SIZE];
-    int              registers[REG_NUMBER];
+    unsigned int     registers[REG_NUMBER];
     int              carry;
 }                   t_program;
 
@@ -70,16 +70,16 @@ void    ld(t_program *program, t_process *process);
 void    st(t_program *program, t_process *process);
 void    add(t_program *program, t_process *process);
 void    sub(t_player **player, t_program *program, t_process *process);
-void    and(t_player **player, t_program *program, t_process *process);
-void    or(t_player **player, t_program *program, t_process *process);
-void    xor(t_player **player, t_program *program, t_process *process);
+void    and(t_program *program, t_process *process);
+void    or(t_program *program, t_process *process);
+void    xor(t_program *program, t_process *process);
 void    zjmp(t_player **player, t_program *program, t_process *process);
 void    ldi(t_player **player, t_program *program, t_process *process);
 void    sti(t_player **player, t_program *program, t_process *process);
 void    ft_fork(t_program *program, t_process *process);
 void    lld(t_player **player, t_program *program, t_process *process);
 void    lldi(t_player **player, t_program *program, t_process *process);
-void    lfork(t_player **player, t_program *program, t_process *process);
+void    lfork(t_program *program, t_process *process);
 void    aff(t_program *program, t_process *process);
 
 unsigned int   bit_rev(unsigned int octet);
@@ -87,5 +87,9 @@ unsigned int   bit_rev(unsigned int octet);
 int     is_nbr(char *s);
 int     check_arg(char **av, int i, int dump, int players);
 int     check_live(t_process **process, t_player **player, int index);
+
+void    add_process(t_process **process, int index);
+unsigned int    get_dir_ind_reg(t_program *program, t_process *process, int param, int dir_size, int *shift);
+void    decode_byte(char byte, char **param);
 
 #endif

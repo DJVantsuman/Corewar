@@ -51,5 +51,5 @@ void    ft_fork(t_program *program, t_process *process)
 		process->flag = 0;
 	}
 	else
-		process->delay = 5;
+		process->delay = 800;
 }
