@@ -66,9 +66,9 @@ void    free_program(t_program *program);
 void    free_process(t_process **process);
 
 void    live(t_player **player, t_program *program, t_process *process);
-void    ld(t_player **player, t_program *program, t_process *process);
-void    st(t_player **player, t_program *program, t_process *process);
-void    add(t_player **player, t_program *program, t_process *process);
+void    ld(t_program *program, t_process *process);
+void    st(t_program *program, t_process *process);
+void    add(t_program *program, t_process *process);
 void    sub(t_player **player, t_program *program, t_process *process);
 void    and(t_player **player, t_program *program, t_process *process);
 void    or(t_player **player, t_program *program, t_process *process);
