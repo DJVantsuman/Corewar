@@ -73,7 +73,7 @@ void    sub(t_player **player, t_program *program, t_process *process);
 void    and(t_program *program, t_process *process);
 void    or(t_program *program, t_process *process);
 void    xor(t_program *program, t_process *process);
-void    zjmp(t_player **player, t_program *program, t_process *process);
+void    zjmp(t_program *program, t_process *process);
 void    ldi(t_player **player, t_program *program, t_process *process);
 void    sti(t_player **player, t_program *program, t_process *process);
 void    ft_fork(t_program *program, t_process *process);
@@ -89,7 +89,10 @@ int     check_arg(char **av, int i, int dump, int players);
 int     check_live(t_process **process, t_player **player, int index);
 
 void    add_process(t_process **process, int index);
-unsigned int    get_dir_ind_reg(t_program *program, t_process *process, int param, int dir_size, int *shift);
-void    decode_byte(char byte, char **param);
+unsigned int    get_dir_value(t_program *program, t_process *process, int *shift);
+unsigned int    get_ind_value(t_program *program, t_process *process, int *shift);
+unsigned int    get_reg_value(t_program *program, t_process *process, int *shift);
+unsigned int    get_reg_numb(t_program *program, t_process *process, int *shift);
+
 
 #endif

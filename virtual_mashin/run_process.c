@@ -19,14 +19,13 @@
 void    perform_function_continue(t_program *program,
                                  t_process *process, char byte)
 {
-//    if ((unsigned char)byte == 0x09)
-//        zjmp(player, program, process);
+    if ((unsigned char)byte == 0x09)
+        zjmp(program, process);
 //    else if ((unsigned char)byte == 0x0a)
 //        ldi(player, program, process);
 //    else if ((unsigned char)byte == 0x0b)
 //        sti(player, program, process);
-//    else
-	if ((unsigned char)byte == 0x0c)
+    else if ((unsigned char)byte == 0x0c)
         ft_fork(program, process);
 //    else if ((unsigned char)byte == 0x0d)
 //        lld(player, program, process);

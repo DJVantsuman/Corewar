@@ -12,6 +12,20 @@
 
 #include "../vm.h"
 
-void    zjmp(t_player **player, t_program *program, t_process *process)
+void    zjmp(t_program *program, t_process *process)
 {
+	char val[2];
+
+	if (process->flag == 1)
+	{
+		if (program->carry == 1)
+		{
+			val[0] = program->map[process->position + 1];
+			val[1] = program->map[process->position + 2];
+			process->position = (val[0] << 8) + val[1];
+		}
+		process->flag = 0;
+	}
+	else
+		process->delay = 20;
 }
