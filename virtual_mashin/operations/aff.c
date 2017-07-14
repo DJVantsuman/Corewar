@@ -12,21 +12,21 @@
 
 #include "../vm.h"
 
-void    aff(t_program *program, t_process *process)
+void    aff(t_program **program, t_process **process)
 {
 	char    byte[2];
 
-	byte[0] = program->map[process->position + 1];
-	byte[1] = program->map[process->position + 2];
-	if (process->flag == 1)
+	byte[0] = (*program)->map[(*process)->position + 1];
+	byte[1] = (*program)->map[(*process)->position + 2];
+	if ((*process)->flag == 1)
 	{
 		if (byte[0] == 64)
 		{
 			if (byte[1] <= REG_NUMBER && byte[1] > 0)
-				printf("%c", program->registers[byte[1] - 1] % 256);
+				printf("%c", (*program)->registers[byte[1] - 1] % 256);
 		}
-		process->flag = 0;
+		(*process)->flag = 0;
 	}
 	else
-		process->delay = 2;
+		(*process)->delay = 2;
 }

@@ -22,7 +22,7 @@ void    create_process(t_process **process, int index, int nbr)
     t_process *last;
 
     var = (t_process *)malloc(sizeof(t_process));
-    last = *process;
+    last = (*process);
     var->position = index;
     var->live = 0;
     var->delay = 0;
@@ -33,8 +33,8 @@ void    create_process(t_process **process, int index, int nbr)
         last = last->next;
     if (last == NULL)
     {
-        var->next = *process;
-        *process = var;
+        var->next = (*process);
+	    (*process) = var;
     }
     else
     {
@@ -47,14 +47,14 @@ void    create_process(t_process **process, int index, int nbr)
 ** Function "create_map" writes players cod into map(virtual memory) and create
 ** process for each player.
 */
-void    create_map(t_player **player, t_program *program, int amount_player, t_process **process)
+void    create_map(t_player **player, t_program **program, int amount_player, t_process **process)
 {
     int i;
     int n;
     unsigned int j;
     t_player *var;
 
-    var = *player;
+    var = (*player);
     i = -1;
     while (++i < amount_player)
     {
@@ -66,7 +66,7 @@ void    create_map(t_player **player, t_program *program, int amount_player, t_p
         create_process(process, n, i);
         while (j < var->header->prog_size)
         {
-            program->map[n] = var->prog_cod[j];
+	        (*program)->map[n] = var->prog_cod[j];
             n++;
             j++;
         }
@@ -80,14 +80,14 @@ void    create_map(t_player **player, t_program *program, int amount_player, t_p
 void    model(t_player **player, int amount_player, t_arg *arg)
 {
     t_program   *program;
-    t_process   **process;
+    t_process   *process;
 
     program = (t_program *)malloc(sizeof(t_program));
-    process = (t_process **)malloc(sizeof(t_process *));
-    *process = NULL;
-    create_map(player, program, amount_player, process);
-    start_process(player,program, process, arg);
-    free_player(player);
-    free_program(program);
-    free_process(process);
+    process = (t_process *)malloc(sizeof(t_process));
+    process = NULL;
+    create_map(&(*player), &program, amount_player, &process);
+    start_process(&(*player), &program, &process, &(*arg));
+    free_player(&(*player));
+    free_program(&program);
+    free_process(&process);
 }

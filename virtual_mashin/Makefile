@@ -19,13 +19,13 @@ operations/aff.c \
 operations/ft_fork.c \
 operations/lfork.c \
 operations/and.c \
+operations/or.c \
+operations/xor.c \
+operations/zjmp.c \
 #operations/ld.c \
 #operations/st.c \
 #operations/add.c \
 #operations/sub.c \
-#operations/or.c \
-#operations/xor.c \
-#operations/zjmp.c \
 #operations/ldi.c \
 #operations/sti.c \
 #operations/lld.c \
@@ -38,7 +38,7 @@ all: $(NAME)
 
 $(NAME): $(OSRC)
 	make -C libft
-	gcc -o $(NAME) $(FLAGS) $(OSRC) libft/libft.a
+	gcc -o $(NAME) $(FLAGS) $(OSRC) libft/libft.a -lncurses
 	make clean
 
 %.o: %.c

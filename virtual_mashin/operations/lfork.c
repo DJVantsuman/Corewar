@@ -37,19 +37,19 @@
 //		last->next = var;
 //	}
 //}
-void    lfork(t_program *program, t_process *process)
+void    lfork(t_program **program, t_process **process)
 {
 	char    byte[2];
 	int     res;
 
-	byte[0] = program->map[process->position + 1];
-	byte[1] = program->map[process->position + 2];
+	byte[0] = (*program)->map[(*process)->position + 1];
+	byte[1] = (*program)->map[(*process)->position + 2];
 	res = (byte[0] << 8) + byte[1];
-	if (process->flag == 1)
+	if ((*process)->flag == 1)
 	{
-		add_process(&process, process->position + res);
-		process->flag = 0;
+		add_process(&(*process), (*process)->position + res);
+		(*process)->flag = 0;
 	}
 	else
-		process->delay = 1000;
+		(*process)->delay = 1000;
 }

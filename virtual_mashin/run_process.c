@@ -16,37 +16,37 @@
 ** Function "perform_function_continue" is only continue of function
 ** "perform_function".
 */
-void    perform_function_continue(t_program *program,
-                                 t_process *process, char byte)
+void    perform_function_continue(t_program **program,
+                                 t_process **process, char byte)
 {
     if ((unsigned char)byte == 0x09)
-        zjmp(program, process);
+        zjmp(&(*program), &(*process));
 //    else if ((unsigned char)byte == 0x0a)
 //        ldi(player, program, process);
 //    else if ((unsigned char)byte == 0x0b)
 //        sti(player, program, process);
     else if ((unsigned char)byte == 0x0c)
-        ft_fork(program, process);
+        ft_fork(&(*program), &(*process));
 //    else if ((unsigned char)byte == 0x0d)
 //        lld(player, program, process);
 //    else if ((unsigned char)byte == 0x0e)
 //        lldi(player, program, process);
     else if ((unsigned char)byte == 0x0f)
-        lfork(program, process);
+        lfork(&(*program), &(*process));
     else if ((unsigned char)byte == 0x10)
-		aff(program, process);
-    else
-        process->position++;
+		aff(&(*program), &(*process));
+//    else
+//        process->position++;
 }
 
 /*
 ** Function "perform_function" read byte and choose assembler function for execution.
 */
-void    perform_function(t_player **player, t_program *program,
-                         t_process *process, char byte)
+void    perform_function(t_player **player, t_program **program,
+                         t_process **process, char byte)
 {
     if ((unsigned char)byte == 0x01)
-        live(player, program, process);
+        live(&(*player), &(*program), &(*process));
 //    else if ((unsigned char)byte == 0x02)
 //        ld(player, program, process);
 //    else if ((unsigned char)byte == 0x03)
@@ -56,13 +56,28 @@ void    perform_function(t_player **player, t_program *program,
 //    else if ((unsigned char)byte == 0x05)
 //        sub(player, program, process);
     else if ((unsigned char)byte == 0x06)
-        and(program, process);
+        and(&(*program), &(*process));
     else if ((unsigned char)byte == 0x07)
-        or(program, process);
+        or(&(*program), &(*process));
     else if ((unsigned char)byte == 0x08)
-        xor(program, process);
+        xor(&(*program), &(*process));
     else
         perform_function_continue(program, process, byte);
+}
+
+
+void    wprint_map(t_program *program, WINDOW **map)
+{
+	int i;
+
+	i = 0;
+	while (i < MEM_SIZE)
+	{
+		wprintw(*map, "%3.2x", (unsigned char)program->map[i]);
+		i++;
+		if ((i % 64) == 0)
+			printw("\n");
+	}
 }
 
 /*
@@ -70,18 +85,24 @@ void    perform_function(t_player **player, t_program *program,
 ** index that is equal to the position of the process and pass this byte
 ** to the function "perform_function".
 */
-void    run_process(t_player **player, t_program *program, t_process **process)
+void    run_process(t_player **player, t_program **program, t_process **process, WINDOW **map)
 {
     t_process   *proc;
     char        byte;
 
-    proc = *process;
+    proc = (*process);
     while (proc)
     {
         if (proc->live >= 0 && proc->delay == 0)
         {
-            byte = program->map[proc->position];
-            perform_function(player, program, proc, byte);
+            byte = (*program)->map[proc->position];
+	        werase(*map);
+	        wrefresh(*map);
+	        perform_function(&(*player), &(*program), &proc, byte);
+
+	        wprint_map((*program), &(*map));
+	        wrefresh(*map);
+	        usleep(40000);
         }
         else if (proc->delay > 0)
         {

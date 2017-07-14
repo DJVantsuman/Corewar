@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-long int 	get_numb(t_program *program, t_process *process)
+long int 	get_numb(t_program **program, t_process **process)
 {
 	int 		k;
 	long int 	p;
@@ -23,12 +23,12 @@ long int 	get_numb(t_program *program, t_process *process)
 	k = 7;
 	while (k >= 0)
 	{
-		if (program->map[process->position + k] > 47 &&
-			program->map[process->position + k] < 58)
-			num = num * p + program->map[process->position + k] - 48;
-		else if (program->map[process->position + k] > 64 &&
-			program->map[process->position + k] < 71)
-			num = num * p + program->map[process->position + k] - 55;
+		if ((*program)->map[(*process)->position + k] > 47 &&
+				(*program)->map[(*process)->position + k] < 58)
+			num = num * p + (*program)->map[(*process)->position + k] - 48;
+		else if ((*program)->map[(*process)->position + k] > 64 &&
+				(*program)->map[(*process)->position + k] < 71)
+			num = num * p + (*program)->map[(*process)->position + k] - 55;
 		else
 			return (0);
 		p *= 16;
@@ -52,31 +52,31 @@ int 		check_player(t_player *pl, long int num)
 	return (0);
 }
 
-void		live(t_player **player, t_program *program, t_process *process)
+void		live(t_player **player, t_program **program, t_process **process)
 {
 	t_player	*pl;
 	long int	numb;
 
 	numb = 0;
-	if (process->flag == 1)
+	if ((*process)->flag == 1)
 	{
-		process->live++;
-		process->position += 2;
-		numb = get_numb(program, process);
-		pl = *player;
+		(*process)->live++;
+		(*process)->position += 2;
+		numb = get_numb(&(*program), &(*process));
+		pl = (*player);
 		if (check_player(pl, numb) == 1)
 		{
 			if (pl->number == numb)
 			{
 				pl->live++;
 				pl->last_live = 1;
-				process->position += 8;
+				(*process)->position += 8;
 			}
 			else
 				pl->last_live = 0;
 		}
-		process->flag = 0;
+		(*process)->flag = 0;
 	}
 	else
-		process->delay = 10;
+		(*process)->delay = 10;
 }

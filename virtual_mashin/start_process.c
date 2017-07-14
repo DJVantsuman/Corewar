@@ -22,13 +22,14 @@ void    print_map(t_program *program)
 
     i = 0;
     printf("PRINT MAP\n");
-    while (i <= MEM_SIZE)
+    while (i < MEM_SIZE)
     {
         printf("%.2x", (unsigned char)program->map[i]);/////////////////////////////////////
         i++;
     }
     exit(1);
 }
+
 
 /*
 ** Function "decrease_delay" decrease process delay by one.
@@ -48,6 +49,8 @@ void    print_map(t_program *program)
     }
 }*/
 
+
+
 /*
 ** Function 'start_process' start CYCLE_TO_DIE and after each CYCLE_TO_DIE
 ** check how many times each process and players said 'live'.
@@ -55,21 +58,55 @@ void    print_map(t_program *program)
 ** index[1] - it is a variable for check MAX_CHECKS.
 ** index[2] - it is a variable which is equal to variable CYCLE_TO_DIE.
 */
-void    start_process(t_player **player, t_program *program, t_process **process, t_arg *arg)
+void    start_process(t_player **player, t_program **program, t_process **process, t_arg *arg)
 {
     int index[3];
 
     index[1] = 0;
     index[2] = CYCLE_TO_DIE;
+	initscr();
+	WINDOW *map;
+	WINDOW *top;
+	WINDOW *sidebar;
+
+
+	if (arg->v == 1)
+	{
+		nodelay(stdscr, 0);
+		raw();
+
+		top = newwin(6, 192,1, 1);
+		map = newwin(64, 192, 7,1);
+		sidebar = newwin(64, 48, 7, 194);
+
+		start_color();
+		init_pair( 1, COLOR_WHITE,   COLOR_BLACK);
+		init_pair( 2, COLOR_BLACK,    COLOR_WHITE);
+		wbkgd(sidebar, COLOR_PAIR(1));
+		wbkgd(map, COLOR_PAIR(1));
+		wbkgd(top, COLOR_PAIR(1));
+
+		wprintw(top, "corewar");
+		wprintw(sidebar, "start");
+
+
+		refresh();
+		wrefresh(sidebar);
+		wrefresh(map);
+		wrefresh(top);
+
+
+
+	}
     while (1)
     {
         index[0] = 1;
         while (index[0] <= index[2])
         {
       //      decrease_delay(process);
-            run_process(player, program, process);
+            run_process(&(*player), &(*program), &(*process), &map);
             if (arg->dump > 0 && arg->dump == index[0])
-                print_map(program);
+                print_map(*program);
             index[0]++;
         }
         check_live(process, player, index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;

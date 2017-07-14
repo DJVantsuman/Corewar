@@ -112,6 +112,8 @@ void    reed_arg(t_player **player, t_arg *arg, char **av)
         controller(player);
 }
 
+
+
 /*
 ** Function "main" start program.
 ** The function "check_arg" is in the file controller.c.
@@ -133,5 +135,7 @@ int main(int ac, char **av)
     else
         error_manager(NULL, 0);
 //    while (1);
+    	endwin();
+
     return (0);
 }

@@ -18,7 +18,7 @@ void    add_process(t_process **process, int index)
 	t_process *last;
 
 	var = (t_process *)malloc(sizeof(t_process));
-	last = *process;
+	last = (*process);
 	var->position = index;
 	var->live = 0;
 	var->delay = 0;
@@ -28,8 +28,8 @@ void    add_process(t_process **process, int index)
 		last = last->next;
 	if (last == NULL)
 	{
-		var->next = *process;
-		*process = var;
+		var->next = (*process);
+		(*process) = var;
 	}
 	else
 	{
@@ -37,19 +37,19 @@ void    add_process(t_process **process, int index)
 		last->next = var;
 	}
 }
-void    ft_fork(t_program *program, t_process *process)
+void    ft_fork(t_program **program, t_process **process)
 {
 	char    byte[2];
 	int     res;
 
-	byte[0] = program->map[process->position + 1];
-	byte[1] = program->map[process->position + 2];
+	byte[0] = (*program)->map[(*process)->position + 1];
+	byte[1] = (*program)->map[(*process)->position + 2];
 	res = (byte[0] << 8) + byte[1];
-	if (process->flag == 1)
+	if ((*process)->flag == 1)
 	{
-		add_process(&process, process->position + (res % IDX_MOD));
-		process->flag = 0;
+		add_process(&(*process), (*process)->position + (res % IDX_MOD));
+		(*process)->flag = 0;
 	}
 	else
-		process->delay = 800;
+		(*process)->delay = 800;
 }
