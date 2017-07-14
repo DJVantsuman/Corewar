@@ -47,12 +47,12 @@ void    perform_function(t_player **player, t_program **program,
 {
     if ((unsigned char)byte == 0x01)
         live(&(*player), &(*program), &(*process));
-//    else if ((unsigned char)byte == 0x02)
-//        ld(player, program, process);
+    else if ((unsigned char)byte == 0x02)
+        ld(&(*program), &(*process));
 //    else if ((unsigned char)byte == 0x03)
-//        st(player, program, process);
+//        st(&(*program), &(*process));
 //    else if ((unsigned char)byte == 0x04)
-//        add(player, program, process);
+//        add(&(*program), &(*process));
 //    else if ((unsigned char)byte == 0x05)
 //        sub(player, program, process);
     else if ((unsigned char)byte == 0x06)
@@ -102,7 +102,7 @@ void    run_process(t_player **player, t_program **program, t_process **process,
 
 	        wprint_map((*program), &(*map));
 	        wrefresh(*map);
-	        usleep(40000);
+	        usleep(10000);
         }
         else if (proc->delay > 0)
         {

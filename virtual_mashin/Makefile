@@ -22,7 +22,7 @@ operations/and.c \
 operations/or.c \
 operations/xor.c \
 operations/zjmp.c \
-#operations/ld.c \
+operations/ld.c \
 #operations/st.c \
 #operations/add.c \
 #operations/sub.c \
