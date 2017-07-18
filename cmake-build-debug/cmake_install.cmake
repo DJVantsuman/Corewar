@@ -1,4 +1,4 @@
-# Install script for directory: /nfs/2016/i/itsuman/cursus_42/corewar
+# Install script for directory: /nfs/2016/a/arodiono/corewar
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/nfs/2016/a/arodiono/corewar/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

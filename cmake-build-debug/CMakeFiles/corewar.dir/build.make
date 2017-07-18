@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/2016/i/itsuman/cursus_42/corewar
+CMAKE_SOURCE_DIR = /nfs/2016/a/arodiono/corewar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug
+CMAKE_BINARY_DIR = /nfs/2016/a/arodiono/corewar/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/corewar.dir/depend.make
@@ -57,162 +57,66 @@ include CMakeFiles/corewar.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/corewar.dir/flags.make
 
-CMakeFiles/corewar.dir/virtual_mashin/main.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/main.c.o: ../virtual_mashin/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/corewar.dir/virtual_mashin/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/main.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/main.c
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o: ../virtual_mashin/libft/ft_alldown.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_alldown.c
 
-CMakeFiles/corewar.dir/virtual_mashin/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/main.c > CMakeFiles/corewar.dir/virtual_mashin/main.c.i
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_alldown.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.i
 
-CMakeFiles/corewar.dir/virtual_mashin/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/main.c -o CMakeFiles/corewar.dir/virtual_mashin/main.c.s
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_alldown.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.s
 
-CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires:
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.requires:
 
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.requires
 
-CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.provides
 
-CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/main.c.o
-
-
-CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o: ../virtual_mashin/error_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/error_manager.c
-
-CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/error_manager.c > CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.i
-
-CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/error_manager.c -o CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.s
-
-CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires:
-
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires
-
-CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides
-
-CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o
 
 
-CMakeFiles/corewar.dir/virtual_mashin/controller.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/controller.c.o: ../virtual_mashin/controller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/corewar.dir/virtual_mashin/controller.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/controller.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/controller.c
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o: ../virtual_mashin/libft/ft_allup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_allup.c
 
-CMakeFiles/corewar.dir/virtual_mashin/controller.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/controller.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/controller.c > CMakeFiles/corewar.dir/virtual_mashin/controller.c.i
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_allup.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.i
 
-CMakeFiles/corewar.dir/virtual_mashin/controller.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/controller.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/controller.c -o CMakeFiles/corewar.dir/virtual_mashin/controller.c.s
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_allup.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.s
 
-CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires:
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.requires:
 
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.requires
 
-CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.provides
 
-CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o
-
-
-CMakeFiles/corewar.dir/virtual_mashin/model.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/model.c.o: ../virtual_mashin/model.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/corewar.dir/virtual_mashin/model.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/model.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/model.c
-
-CMakeFiles/corewar.dir/virtual_mashin/model.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/model.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/model.c > CMakeFiles/corewar.dir/virtual_mashin/model.c.i
-
-CMakeFiles/corewar.dir/virtual_mashin/model.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/model.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/model.c -o CMakeFiles/corewar.dir/virtual_mashin/model.c.s
-
-CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires:
-
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires
-
-CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides
-
-CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/model.c.o
-
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o: ../virtual_mashin/libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_memdel.c
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_memdel.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.i
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_memdel.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.s
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires:
-
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o
-
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o: ../virtual_mashin/libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_itoa.c
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_itoa.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.i
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_itoa.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.s
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires:
-
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o
 
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o: ../virtual_mashin/libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_atoi.c
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_atoi.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_atoi.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.i
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_atoi.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_atoi.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.s
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o.requires:
 
@@ -225,162 +129,546 @@ CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o.provides: CMakeFiles/cor
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o
 
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o: ../virtual_mashin/libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putnbr.c
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o: ../virtual_mashin/libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_bzero.c
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putnbr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.i
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_bzero.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.i
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putnbr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.s
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_bzero.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.s
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires:
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.requires:
 
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.requires
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.provides
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o
-
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o: ../virtual_mashin/libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_strcmp.c
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_strcmp.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.i
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_strcmp.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.s
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires:
-
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides
-
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o
 
 
-CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o: ../virtual_mashin/free_memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/free_memory.c
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o: ../virtual_mashin/libft/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalnum.c
 
-CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/free_memory.c > CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.i
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalnum.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.i
 
-CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/free_memory.c -o CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.s
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalnum.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.s
 
-CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires:
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.requires:
 
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.requires
 
-CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.provides
 
-CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o
-
-
-CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o: ../virtual_mashin/operations/live.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/operations/live.c
-
-CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/operations/live.c > CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.i
-
-CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/operations/live.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.s
-
-CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires:
-
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires
-
-CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides
-
-CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o
 
 
-CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o: ../virtual_mashin/start_process.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/start_process.c
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o: ../virtual_mashin/libft/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalpha.c
 
-CMakeFiles/corewar.dir/virtual_mashin/start_process.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/start_process.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/start_process.c > CMakeFiles/corewar.dir/virtual_mashin/start_process.c.i
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalpha.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.i
 
-CMakeFiles/corewar.dir/virtual_mashin/start_process.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/start_process.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/start_process.c -o CMakeFiles/corewar.dir/virtual_mashin/start_process.c.s
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalpha.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.s
 
-CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires:
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.requires:
 
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.requires
 
-CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.provides
 
-CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o
 
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o: ../virtual_mashin/libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putstr.c
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o: ../virtual_mashin/libft/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isascii.c
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putstr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.i
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isascii.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.i
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putstr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.s
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isascii.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.s
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires:
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.requires:
 
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.requires
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides.build
-.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.provides
 
-CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o: ../virtual_mashin/libft/ft_isblank.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isblank.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isblank.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isblank.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o: ../virtual_mashin/libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isdigit.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isdigit.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isdigit.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o: ../virtual_mashin/libft/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isprint.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isprint.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isprint.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o: ../virtual_mashin/libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_itoa.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_itoa.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_itoa.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o: ../virtual_mashin/libft/ft_lstadd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstadd.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstadd.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstadd.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o: ../virtual_mashin/libft/ft_lstdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdel.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdel.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdel.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o: ../virtual_mashin/libft/ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdelone.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdelone.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdelone.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o: ../virtual_mashin/libft/ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstiter.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstiter.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstiter.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o: ../virtual_mashin/libft/ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstmap.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstmap.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstmap.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o: ../virtual_mashin/libft/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstnew.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstnew.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstnew.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o: ../virtual_mashin/libft/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memalloc.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memalloc.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memalloc.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o: ../virtual_mashin/libft/ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memccpy.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memccpy.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memccpy.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o: ../virtual_mashin/libft/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memchr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memchr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memchr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o: ../virtual_mashin/libft/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcmp.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcmp.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcmp.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o: ../virtual_mashin/libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcpy.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcpy.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcpy.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o: ../virtual_mashin/libft/ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memdel.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memdel.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memdel.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o: ../virtual_mashin/libft/ft_memmove.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memmove.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memmove.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memmove.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o: ../virtual_mashin/libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memset.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memset.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memset.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o
 
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o: ../virtual_mashin/libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o   -c /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar.c
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putchar.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.i
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/itsuman/cursus_42/corewar/virtual_mashin/libft/ft_putchar.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.s
 
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o.requires:
 
@@ -393,43 +681,1629 @@ CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o.provides: CMakeFiles/
 CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o
 
 
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o: ../virtual_mashin/libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar_fd.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar_fd.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar_fd.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o: ../virtual_mashin/libft/ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o: ../virtual_mashin/libft/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl_fd.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl_fd.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl_fd.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o: ../virtual_mashin/libft/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o: ../virtual_mashin/libft/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr_fd.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr_fd.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr_fd.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o: ../virtual_mashin/libft/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o: ../virtual_mashin/libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr_fd.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr_fd.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr_fd.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o: ../virtual_mashin/libft/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcat.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcat.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcat.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o: ../virtual_mashin/libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strchr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strchr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strchr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o: ../virtual_mashin/libft/ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strclr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strclr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strclr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o: ../virtual_mashin/libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcmp.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcmp.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcmp.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o: ../virtual_mashin/libft/ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcpy.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcpy.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcpy.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o: ../virtual_mashin/libft/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdel.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdel.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdel.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o: ../virtual_mashin/libft/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdup.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdup.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdup.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o: ../virtual_mashin/libft/ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strequ.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strequ.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strequ.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o: ../virtual_mashin/libft/ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striter.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striter.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striter.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o: ../virtual_mashin/libft/ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striteri.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striteri.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striteri.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o: ../virtual_mashin/libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strjoin.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strjoin.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strjoin.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o: ../virtual_mashin/libft/ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlcat.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlcat.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlcat.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o: ../virtual_mashin/libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlen.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlen.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlen.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o: ../virtual_mashin/libft/ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmap.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmap.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmap.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o: ../virtual_mashin/libft/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmapi.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmapi.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmapi.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o: ../virtual_mashin/libft/ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncat.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncat.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncat.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o: ../virtual_mashin/libft/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncmp.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncmp.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncmp.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o: ../virtual_mashin/libft/ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncpy.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncpy.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncpy.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o: ../virtual_mashin/libft/ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnequ.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnequ.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnequ.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o: ../virtual_mashin/libft/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnew.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnew.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnew.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o: ../virtual_mashin/libft/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnstr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnstr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnstr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o: ../virtual_mashin/libft/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrchr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrchr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrchr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o: ../virtual_mashin/libft/ft_strrev.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrev.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrev.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrev.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o: ../virtual_mashin/libft/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsplit.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsplit.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsplit.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o: ../virtual_mashin/libft/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strstr.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strstr.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strstr.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o: ../virtual_mashin/libft/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsub.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsub.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsub.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o: ../virtual_mashin/libft/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strtrim.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strtrim.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strtrim.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o: ../virtual_mashin/libft/ft_strworldup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strworldup.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strworldup.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strworldup.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o: ../virtual_mashin/libft/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_tolower.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_tolower.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_tolower.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o: ../virtual_mashin/libft/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_toupper.c
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_toupper.c > CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_toupper.c -o CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o: ../virtual_mashin/operations/aff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/aff.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/aff.c > CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/aff.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o: ../virtual_mashin/operations/and.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/and.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/and.c > CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/and.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o: ../virtual_mashin/operations/ft_fork.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ft_fork.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ft_fork.c > CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ft_fork.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o: ../virtual_mashin/operations/ld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ld.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ld.c > CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ld.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o: ../virtual_mashin/operations/ldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ldi.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ldi.c > CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ldi.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o: ../virtual_mashin/operations/lfork.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lfork.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lfork.c > CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lfork.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o: ../virtual_mashin/operations/live.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/live.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/live.c > CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/live.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o: ../virtual_mashin/operations/lld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lld.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lld.c > CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lld.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o: ../virtual_mashin/operations/lldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lldi.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lldi.c > CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lldi.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o: ../virtual_mashin/operations/or.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/or.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/or.c > CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/or.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o: ../virtual_mashin/operations/sti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c > CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: ../virtual_mashin/operations/sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c > CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o: ../virtual_mashin/operations/xor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c > CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o: ../virtual_mashin/operations/zjmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/zjmp.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/zjmp.c > CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/zjmp.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o: ../virtual_mashin/check_live.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/check_live.c
+
+CMakeFiles/corewar.dir/virtual_mashin/check_live.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/check_live.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/check_live.c > CMakeFiles/corewar.dir/virtual_mashin/check_live.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/check_live.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/check_live.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/check_live.c -o CMakeFiles/corewar.dir/virtual_mashin/check_live.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/controller.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/controller.c.o: ../virtual_mashin/controller.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/corewar.dir/virtual_mashin/controller.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/controller.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/controller.c
+
+CMakeFiles/corewar.dir/virtual_mashin/controller.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/controller.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/controller.c > CMakeFiles/corewar.dir/virtual_mashin/controller.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/controller.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/controller.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/controller.c -o CMakeFiles/corewar.dir/virtual_mashin/controller.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o: ../virtual_mashin/error_manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/error_manager.c
+
+CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/error_manager.c > CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/error_manager.c -o CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o: ../virtual_mashin/free_memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/free_memory.c
+
+CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/free_memory.c > CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/free_memory.c -o CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/main.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/main.c.o: ../virtual_mashin/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/corewar.dir/virtual_mashin/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/main.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/main.c
+
+CMakeFiles/corewar.dir/virtual_mashin/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/main.c > CMakeFiles/corewar.dir/virtual_mashin/main.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/main.c -o CMakeFiles/corewar.dir/virtual_mashin/main.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/main.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/model.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/model.c.o: ../virtual_mashin/model.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/corewar.dir/virtual_mashin/model.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/model.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/model.c
+
+CMakeFiles/corewar.dir/virtual_mashin/model.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/model.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/model.c > CMakeFiles/corewar.dir/virtual_mashin/model.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/model.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/model.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/model.c -o CMakeFiles/corewar.dir/virtual_mashin/model.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/model.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o: ../virtual_mashin/run_process.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/run_process.c
+
+CMakeFiles/corewar.dir/virtual_mashin/run_process.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/run_process.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/run_process.c > CMakeFiles/corewar.dir/virtual_mashin/run_process.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/run_process.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/run_process.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/run_process.c -o CMakeFiles/corewar.dir/virtual_mashin/run_process.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o: ../virtual_mashin/start_process.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/start_process.c
+
+CMakeFiles/corewar.dir/virtual_mashin/start_process.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/start_process.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/start_process.c > CMakeFiles/corewar.dir/virtual_mashin/start_process.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/start_process.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/start_process.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/start_process.c -o CMakeFiles/corewar.dir/virtual_mashin/start_process.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o
+
+
+CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o: ../virtual_mashin/visualise.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/visualise.c
+
+CMakeFiles/corewar.dir/virtual_mashin/visualise.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/visualise.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/visualise.c > CMakeFiles/corewar.dir/virtual_mashin/visualise.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/visualise.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/visualise.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/visualise.c -o CMakeFiles/corewar.dir/virtual_mashin/visualise.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o
+
+
 # Object files for target corewar
 corewar_OBJECTS = \
-"CMakeFiles/corewar.dir/virtual_mashin/main.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/controller.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/model.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o" \
-"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o"
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/controller.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/main.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/model.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o"
 
 # External object files for target corewar
 corewar_EXTERNAL_OBJECTS =
 
-corewar: CMakeFiles/corewar.dir/virtual_mashin/main.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/model.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o
-corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/main.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/model.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o
 corewar: CMakeFiles/corewar.dir/build.make
+corewar: /usr/lib/libcurses.dylib
+corewar: /usr/lib/libform.dylib
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -437,20 +2311,92 @@ CMakeFiles/corewar.dir/build: corewar
 
 .PHONY : CMakeFiles/corewar.dir/build
 
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_alldown.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_allup.c.o.requires
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_atoi.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires
-CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_bzero.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalnum.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isalpha.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isascii.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isblank.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isdigit.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_isprint.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_itoa.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstadd.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdel.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstdelone.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstiter.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstmap.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_lstnew.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memalloc.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memccpy.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memchr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcmp.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memcpy.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memdel.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memmove.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_memset.c.o.requires
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putchar_fd.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putendl_fd.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putnbr_fd.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_putstr_fd.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcat.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strchr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strclr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcmp.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strcpy.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdel.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strdup.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strequ.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striter.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_striteri.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strjoin.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlcat.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strlen.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmap.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strmapi.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncat.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncmp.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strncpy.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnequ.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnew.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strnstr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrchr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strrev.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsplit.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strstr.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strsub.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strtrim.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_strworldup.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_tolower.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/libft/ft_toupper.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/main.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/model.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o.requires
 
 .PHONY : CMakeFiles/corewar.dir/requires
 
@@ -459,6 +2405,6 @@ CMakeFiles/corewar.dir/clean:
 .PHONY : CMakeFiles/corewar.dir/clean
 
 CMakeFiles/corewar.dir/depend:
-	cd /nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/2016/i/itsuman/cursus_42/corewar /nfs/2016/i/itsuman/cursus_42/corewar /nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug /nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug /nfs/2016/i/itsuman/cursus_42/corewar/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake --color=$(COLOR)
+	cd /nfs/2016/a/arodiono/corewar/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /nfs/2016/a/arodiono/corewar /nfs/2016/a/arodiono/corewar /nfs/2016/a/arodiono/corewar/cmake-build-debug /nfs/2016/a/arodiono/corewar/cmake-build-debug /nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/corewar.dir/depend
 
