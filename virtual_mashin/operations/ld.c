@@ -12,147 +12,34 @@
 
 #include "../vm.h"
 
-int 	get_position(int s)
-{
-	if (s >= MEM_SIZE)
-		s -= MEM_SIZE;
-	return (s);
-}
-
-int 	get_register(t_program **program, int k)
-{
-	int 	z;
-
-	z = 0;
-	if ((*program)->map[k + 1] > 47 && (*program)->map[k + 1] < 58)
-		z = z + (*program)->map[k + 1] - 48;
-	else if ((*program)->map[k + 1] > 64 && (*program)->map[k + 1] < 71)
-		z = z + (*program)->map[k + 1] - 55;
-	else
-		return (0);
-	if ((*program)->map[k] > 47 && (*program)->map[k] < 58)
-		z = z + 16 * ((*program)->map[k] - 48);
-	else if ((*program)->map[k] > 64 && (*program)->map[k] < 71)
-		z = z + 16 * ((*program)->map[k] - 55);
-	else
-		return (0);
-	return (z);
-}
-
-int 	is_register(t_program **program, int p)
-{
-	int 	z;
-
-	z = get_register(&(*program), p);
-	if (z > 0 && z <= REG_NUMBER)
-		return (1);
-	else
-		return (0);
-}
-
-long int 	get_dir4(t_program **program, t_process **process)
-{
-	long int 	val;
-	int 		z;
-	int 		k;
-
-	z = 1;
-	k = 10;
-	val = 0;
-	while (--k > 1)
-	{
-		if ((*program)->map[(*process)->position + k] > 47 &&
-			(*program)->map[(*process)->position + k] < 58)
-			val = val + z * ((*program)->map[k] - 48);
-		else
-			val = val + z * ((*program)->map[k] - 55);
-		z *= 16;
-	}
-//	4294967295
-//	2147483648
-	while (val > 2147483647)
-		val -= 2147483648;
-	return (2147483647 - val);
-}
-
-long int 	get_indir(t_program **program, t_process **process)
-{
-	long int 	val;
-	int 		z;
-	int 		k;
-
-	z = 1;
-	k = 6;
-	val = 0;
-	//change indirect
-	while (--k > 1)
-	{
-		if ((*program)->map[(*process)->position + k] > 47 &&
-				(*program)->map[(*process)->position + k] < 58)
-			val = val + z * ((*program)->map[k] - 48);
-		else
-			val = val + z * ((*program)->map[k] - 55);
-		z *= 16;
-	}
-	return (2147483647 - val);
-}
-
-void	make_ld(t_program **program, t_process **process)
-{
-	long int 	value;
-//	int 		reg;
-	int 		p;
-
-	value = 0;
-	p = 0;
-	if ((*program)->map[p + 1] == 57)
-	{
-		value = get_dir4(&(*program), &(*process));
-		p = get_register(&(*program), (*process)->position + 10);
-		(*program)->registers[p - 1] = value;
-	}
-	else
-	{
-		//indirect
-		value = get_indir(&(*program), &(*process));
-		p = get_register(&(*program), (*process)->position + 6);
-		(*program)->registers[p - 1] = value;
-	}
-	if ((*program)->carry == 0)
-		(*program)->carry = 1;
-	else
-		(*program)->carry = 0;
-}
-
-void 	operation_ld(t_program **program, t_process **process)
-{
-	int 	k;
-
-	k = (*process)->position;
-	if ((*program)->map[k] == 48)
-	{
-		if ((*program)->map[k + 1] == 57)
-		{
-			if (is_register(&(*program), get_position(k + 10)) == 1)
-				make_ld(&(*program), &(*process));
-		}
-		else if ((*program)->map[k + 1] == 68 || (*program)->map[k + 1] == 100)
-		{
-			if (is_register(&(*program), k + 6) == 1)
-				make_ld(&(*program), &(*process));
-		}
-	}
-}
-
 void    ld(t_program **program, t_process **process)
 {
+	char            param[2];
+	unsigned int    val[2];
+	int             shift;
+	int             i;
+
+	shift = 2;
+	i = 0;
+	param[0] = (char)((*program)->map[(*process)->position + 1] & 192) >> 6;
+	param[1] = (char)((*program)->map[(*process)->position + 1] & 48) >> 4;
 	if ((*process)->flag == 1)
 	{
-		(*process)->position += 2;
-		operation_ld(&(*program), &(*process));
+		if (param[0] == DIR_CODE)
+			val[0] = get_dir_value((*program), (*process), &shift);
+		else if (param[0] == IND_CODE)
+			val[0] = get_ind_value((*program), (*process), &shift);
+		else
+			break;
+		if (param[1] == REG_CODE)
+			val[1] = get_reg_value((*program), (*process), &shift);
+		else
+			break;
+		if (val[1] <= REG_NUMBER && val[1] > 0)
+			(*program)->registers[val[1] - 1] = val[0] % IDX_MOD;
+		(*program)->carry = (*program)->carry == 0 ? 1 : 0;
 		(*process)->flag = 0;
 	}
 	else
 		(*process)->delay = 5;
 }
-
