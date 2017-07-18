@@ -63,7 +63,7 @@ void    create_map(t_player **player, t_program **program, int amount_player, t_
         else
             n = (MEM_SIZE / amount_player) * i;
         j = 0;
-        create_process(process, n, i);
+        create_process(&(*process), n, i);
         while (j < var->header->prog_size)
         {
 	        (*program)->map[n] = var->prog_cod[j];

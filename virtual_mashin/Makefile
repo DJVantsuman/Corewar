@@ -13,7 +13,7 @@
 NAME =	corewar
 FLAGS = -Wall -Werror -Wextra
 SRC = main.c error_manager.c controller.c model.c free_memory.c start_process.c \
-check_live.c run_process.c \
+check_live.c run_process.c visualise.c \
 operations/live.c \
 operations/aff.c \
 operations/ft_fork.c \

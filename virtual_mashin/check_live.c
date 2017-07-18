@@ -108,7 +108,7 @@ int    check_live(t_process **process, t_player **player, int index)
     {
         if (play->live >= NBR_LIVE)
         {
-            reset_live(player, process);
+            reset_live(&(*player), &(*process));
             return (1);
         }
         play = play->next;

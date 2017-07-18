@@ -60,7 +60,7 @@ void    error_manager(char *file, int  index);
 void    controller(t_player **player);
 void    model(t_player **player, int amount_player, t_arg *arg);
 void    start_process(t_player **player, t_program **program, t_process **process, t_arg *arg);
-void    run_process(t_player **player, t_program **program, t_process **process, WINDOW **map);
+void    run_process(t_player **player, t_program **program, t_process **process);
 void    reset_live(t_player **player, t_process **process);
 void    free_player(t_player **player);
 void    free_program(t_program **program);
@@ -94,6 +94,12 @@ unsigned int    get_dir_value(t_program *program, t_process *process, int *shift
 unsigned int    get_ind_value(t_program *program, t_process *process, int *shift);
 unsigned int    get_reg_value(t_program *program, t_process *process, int *shift);
 unsigned int    get_reg_numb(t_program *program, t_process *process, int *shift);
+
+void	visualise(t_player **player, t_program **program, t_process **process,
+				  int cycles);
+void    wprint_map(t_program **program, t_process **process, WINDOW **map);
+void	wprint_status(t_player **player, t_program **program, WINDOW
+**status, int cycles);
 
 
 #endif

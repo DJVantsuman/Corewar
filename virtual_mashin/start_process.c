@@ -21,7 +21,7 @@ void    print_map(t_program *program)
     int i;
 
     i = 0;
-    printf("PRINT MAP\n");
+//    printf("PRINT MAP\n");
     while (i < MEM_SIZE)
     {
         printf("%.2x", (unsigned char)program->map[i]);/////////////////////////////////////
@@ -64,55 +64,24 @@ void    start_process(t_player **player, t_program **program, t_process **proces
 
     index[1] = 0;
     index[2] = CYCLE_TO_DIE;
-	initscr();
-	WINDOW *map;
-	WINDOW *top;
-	WINDOW *sidebar;
 
-
-	if (arg->v == 1)
-	{
-		nodelay(stdscr, 0);
-		raw();
-
-		top = newwin(6, 192,1, 1);
-		map = newwin(64, 192, 7,1);
-		sidebar = newwin(64, 48, 7, 194);
-
-		start_color();
-		init_pair( 1, COLOR_WHITE,   COLOR_BLACK);
-		init_pair( 2, COLOR_BLACK,    COLOR_WHITE);
-		wbkgd(sidebar, COLOR_PAIR(1));
-		wbkgd(map, COLOR_PAIR(1));
-		wbkgd(top, COLOR_PAIR(1));
-
-		wprintw(top, "corewar");
-		wprintw(sidebar, "start");
-
-
-		refresh();
-		wrefresh(sidebar);
-		wrefresh(map);
-		wrefresh(top);
-
-
-
-	}
     while (1)
     {
         index[0] = 1;
         while (index[0] <= index[2])
         {
       //      decrease_delay(process);
-            run_process(&(*player), &(*program), &(*process), &map);
+            if(arg->v == 1)
+			    visualise (&(*player), &(*program), &(*process), index[0]);
+            run_process(&(*player), &(*program), &(*process));
             if (arg->dump > 0 && arg->dump == index[0])
                 print_map(*program);
             index[0]++;
         }
-        check_live(process, player, index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;
+        check_live(&(*process), &(*player), index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;
         if (index[1] == MAX_CHECKS)
         {
-            reset_live(player, process);
+            reset_live(&(*player), &(*process));
             index[2] -= CYCLE_DELTA;
         }
     }
