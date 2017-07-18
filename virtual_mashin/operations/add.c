@@ -26,12 +26,15 @@ void 	operation_add(t_program *program, t_process *process)
 		if (is_register(program, get_position(k + 2)) == 1 &&
 			is_register(program, get_position(k + 4)) == 1 &&
 			is_register(program, get_position(k + 6)) == 1)
+		{
 			p = get_register(program, process->position + 2);
 			value = program->registers[p];
 			p = get_register(program, process->position + 4);
 			value += program->registers[p];
-			if (value > 2147483647)
-
+			p = get_register(program, process->position + 4) - 1;
+			program->registers[p] = (int)value;
+			program->carry = (*program)->carry == 0 ? 1 : 0;
+		}
 	}
 }
 
@@ -45,5 +48,4 @@ void    add(t_program *program, t_process *process)
 	}
 	else
 		process->delay = 10;
-
 }
