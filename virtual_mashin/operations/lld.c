@@ -27,18 +27,30 @@ void    lld(t_program **program, t_process **process)
 	{
 		(*process)->flag = 0;
 		if (param[0] == DIR_CODE)
+		{
 			val[0] = get_dir_value((*program), (*process), &shift);
+			i += 4;
+		}
 		else if (param[0] == IND_CODE)
+		{
 			val[0] = get_ind_value((*program), (*process), &shift);
+			i += 2;
+		}
 		else
 			return ;
 		if (param[1] == REG_CODE)
+		{
 			val[1] = get_reg_value((*program), (*process), &shift);
+			i += 1;
+		}
 		else
 			return ;
 		if (val[1] <= REG_NUMBER && val[1] > 0)
+		{
 			(*program)->registers[val[1] - 1] = val[0];
-		(*program)->carry = (*program)->carry == 0 ? 1 : 0;
+			(*program)->carry = (*program)->carry == 0 ? 1 : 0;
+			process->position += i;
+		}
 	}
 	else
 		(*process)->delay = 10;
