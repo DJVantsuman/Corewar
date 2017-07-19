@@ -14,34 +14,32 @@
 
 void    lld(t_program **program, t_process **process)
 {
-	char            param[2];
+	char            par[2];
 	unsigned int    val[2];
 	int             shift;
-	int             i;
 
 	shift = 2;
-	i = 0;
-	param[0] = (char)((*program)->map[(*process)->position + 1] & 192) >> 6;
-	param[1] = (char)((*program)->map[(*process)->position + 1] & 48) >> 4;
+    par[0] = (char)((*program)->map[(((*process)->position + 1)) % MEM_SIZE] & 192) >> 6;
+    par[1] = (char)((*program)->map[(((*process)->position + 1)) % MEM_SIZE] & 48) >> 4;
 	if ((*process)->flag == 1)
 	{
 		(*process)->flag = 0;
-		if (param[0] == DIR_CODE)
+		if (par[0] == DIR_CODE)
 		{
 			val[0] = get_dir_value((*program), (*process), &shift);
-			i += 4;
+			shift += 4;
 		}
-		else if (param[0] == IND_CODE)
+		else if (par[0] == IND_CODE)
 		{
 			val[0] = get_ind_value((*program), (*process), &shift);
-			i += 2;
+			shift += 2;
 		}
 		else
 			return ;
-		if (param[1] == REG_CODE)
+		if (par[1] == REG_CODE)
 		{
 			val[1] = get_reg_value((*program), (*process), &shift);
-			i += 1;
+			shift += 1;
 		}
 		else
 			return ;
@@ -49,11 +47,7 @@ void    lld(t_program **program, t_process **process)
 		{
 			(*program)->registers[val[1] - 1] = val[0];
 			(*program)->carry = (*program)->carry == 0 ? 1 : 0;
-<<<<<<< HEAD
-			(*process)->position += i;
-=======
-			process->position = (process->position + i) % MEM_SIZE;
->>>>>>> 1bb9d34d38212acc5474a7c5ff5a5a37869cf5bb
+			(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 		}
 	}
 	else

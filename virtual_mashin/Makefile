@@ -24,10 +24,10 @@ operations/xor.c \
 operations/zjmp.c \
 operations/ld.c \
 operations/lld.c \
+operations/ldi.c \
 #operations/st.c \
 #operations/add.c \
 #operations/sub.c \
-#operations/ldi.c \
 #operations/sti.c \
 #operations/lldi.c \
 

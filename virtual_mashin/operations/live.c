@@ -43,7 +43,7 @@ void		live(t_player **player, t_program **program, t_process **process)
 				pl = pl->next;
 		}
 		(*process)->flag = 0;
-		(*process)->position += 5;
+		(*process)->position = ((*process)->position + 5) % MEM_SIZE;
 	}
 	else
 		(*process)->delay = 10;	

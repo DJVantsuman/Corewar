@@ -22,8 +22,7 @@ void    perform_function_continue(t_program **program,
     if ((unsigned char)byte == 0x09)
         zjmp(&(*program), &(*process));
     else if ((unsigned char)byte == 0x0a)
-	{}
-//        ldi(player, program, process);
+        ldi(&(*program), &(*process));
     else if ((unsigned char)byte == 0x0b)
 	{}
 //        sti(player, program, process);
@@ -39,7 +38,7 @@ void    perform_function_continue(t_program **program,
     else if ((unsigned char)byte == 0x10)
 		aff(&(*program), &(*process));
     else
-        (*process)->position++;
+        (*process)->position = ((*process)->position + 1) % MEM_SIZE;
 }
 
 /*

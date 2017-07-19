@@ -21,9 +21,9 @@ void    or(t_program **program, t_process **process)
 
 	shift = 2;
 	i = 0;
-	param[0] = (char)((*program)->map[(*process)->position + 1] & 192) >> 6;
-	param[1] = (char)((*program)->map[(*process)->position + 1] & 48) >> 4;
-	param[2] = (char)((*program)->map[(*process)->position + 1] & 12) >> 2;
+	param[0] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
+	param[1] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
+	param[2] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
 	if ((*process)->flag == 1)
 	{
 		while (i < 2)

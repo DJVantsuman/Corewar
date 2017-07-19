@@ -20,8 +20,8 @@ void    zjmp(t_program **program, t_process **process)
 	{
 		if ((*program)->carry == 1)
 		{
-			val[0] = (*program)->map[(*process)->position + 1];
-			val[1] = (*program)->map[(*process)->position + 2];
+			val[0] = (*program)->map[((*process)->position + 1) % MEM_SIZE];
+			val[1] = (*program)->map[((*process)->position + 2) % MEM_SIZE];
 			(*process)->position = (val[0] << 8) + val[1] % MEM_SIZE;
 		}
 		else

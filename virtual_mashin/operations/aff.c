@@ -26,6 +26,7 @@ void    aff(t_program **program, t_process **process)
 				printf("%c", (*program)->registers[byte[1] - 1] % 256);
 		}
 		(*process)->flag = 0;
+		(*process)->position = ((*process)->position + 1) % MEM_SIZE;
 	}
 	else
 		(*process)->delay = 2;

@@ -92,8 +92,18 @@ void visualise(t_player **player, t_program **program, t_process **process, int 
 
 	start_color();
 
-	init_pair( 1, COLOR_WHITE,   COLOR_BLACK);
-	init_pair( 2, COLOR_BLACK,    COLOR_WHITE);
+	init_pair(1, COLOR_WHITE, COLOR_BLACK);
+	init_pair(2, COLOR_BLACK, COLOR_WHITE);
+
+	init_pair(3, COLOR_RED, COLOR_BLACK);
+	init_pair(4, COLOR_GREEN, COLOR_BLACK);
+	init_pair(5, COLOR_BLUE, COLOR_BLACK);
+	init_pair(6, COLOR_MAGENTA, COLOR_BLACK);
+
+	init_pair(7, COLOR_BLACK, COLOR_RED);
+	init_pair(8, COLOR_BLACK, COLOR_GREEN);
+	init_pair(9, COLOR_BLACK, COLOR_BLUE);
+	init_pair(10, COLOR_BLACK, COLOR_MAGENTA);
 
 
 	wbkgd(status, COLOR_PAIR(1));
@@ -108,5 +118,5 @@ void visualise(t_player **player, t_program **program, t_process **process, int 
 	wrefresh(status);
 	wrefresh(map);
 	wrefresh(top);
-	usleep (100000);
+	usleep (10000);
 }

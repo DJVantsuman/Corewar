@@ -44,7 +44,8 @@ typedef struct       s_process
 typedef struct      s_program
 {
     char             map[MEM_SIZE];
-    unsigned int     registers[REG_NUMBER];
+	char             map_v[MEM_SIZE];
+	unsigned int     registers[REG_NUMBER];
     int              carry;
 }                   t_program;
 
@@ -75,7 +76,7 @@ void    and(t_program **program, t_process **process);
 void    or(t_program **program, t_process **process);
 void    xor(t_program **program, t_process **process);
 void    zjmp(t_program **program, t_process **process);
-void    ldi(t_player **player, t_program *program, t_process *process);
+void    ldi(t_program **program, t_process **process);
 void    sti(t_player **player, t_program *program, t_process *process);
 void    ft_fork(t_program **program, t_process **process);
 void    lld(t_program **program, t_process **process);
