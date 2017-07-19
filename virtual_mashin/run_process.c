@@ -43,7 +43,8 @@ void    perform_function_continue(t_program **program,
 }
 
 /*
-** Function "perform_function" read byte and choose assembler function for execution.
+** Function "perform_function" read byte
+** and choose assembler function for execution.
 */
 void    perform_function(t_player **player, t_program **program,
                          t_process **process, int byte)

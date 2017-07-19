@@ -108,5 +108,5 @@ void visualise(t_player **player, t_program **program, t_process **process, int 
 	wrefresh(status);
 	wrefresh(map);
 	wrefresh(top);
-	usleep (10000);
+	usleep (100000);
 }

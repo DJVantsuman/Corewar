@@ -39,7 +39,8 @@ void		live(t_player **player, t_program **program, t_process **process)
 					pl = pl->next;
 				}
 			}
-			pl = pl->next;
+			if (pl != NULL)
+				pl = pl->next;
 		}
 		(*process)->flag = 0;
 		(*process)->position += 5;

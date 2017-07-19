@@ -49,7 +49,7 @@ void    ld(t_program **program, t_process **process)
 		{
 			(*program)->registers[val[1] - 1] = val[0] % IDX_MOD;
 			(*program)->carry = (*program)->carry == 0 ? 1 : 0;
-			process->position += i;
+			(*process)->position += i;
 		}
 	}
 	else

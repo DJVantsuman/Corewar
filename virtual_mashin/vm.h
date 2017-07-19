@@ -21,7 +21,7 @@
 
 typedef struct      s_player
 {
-    int             number;
+    unsigned int             number;
     char            *file;
     header_t        *header;
     char            *prog_cod;

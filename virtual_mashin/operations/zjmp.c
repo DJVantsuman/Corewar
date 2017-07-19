@@ -22,8 +22,11 @@ void    zjmp(t_program **program, t_process **process)
 		{
 			val[0] = (*program)->map[(*process)->position + 1];
 			val[1] = (*program)->map[(*process)->position + 2];
-			(*process)->position = (val[0] << 8) + val[1];
+			(*process)->position = (val[0] << 8) + val[1] % MEM_SIZE;
 		}
+		else
+			(*process)->position += 3 % MEM_SIZE;
+
 		(*process)->flag = 0;
 	}
 	else

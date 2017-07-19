@@ -75,7 +75,7 @@ void    reset_live(t_player **player, t_process **process)
     while (proc)
     {
         if (proc->live > 0)
-        proc->live = 0;
+            proc->live = 0;
         proc = proc->next;
     }
 }

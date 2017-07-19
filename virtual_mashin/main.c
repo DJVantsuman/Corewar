@@ -25,7 +25,7 @@ unsigned int   bit_rev(unsigned int octet)
 
 int get_player_number(t_player **player)
 {
-    int         i;
+    unsigned int         i;
     int         f;
     t_player    *var;
 
