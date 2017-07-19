@@ -25,10 +25,10 @@ operations/zjmp.c \
 operations/ld.c \
 operations/lld.c \
 operations/ldi.c \
+operations/sti.c \
 #operations/st.c \
 #operations/add.c \
 #operations/sub.c \
-#operations/sti.c \
 #operations/lldi.c \
 
 

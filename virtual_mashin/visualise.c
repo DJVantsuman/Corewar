@@ -20,6 +20,7 @@ void	wprint_status(t_player **player, t_program **program, WINDOW
 	t_player *tmp;
 
 	tmp = *player;
+	wattron(*status, A_BOLD);
 	while (tmp)
 	{
 		wprintw (*status, "\tname %s\n\tlive %d\n\tlast live %d\n\n",
@@ -30,15 +31,16 @@ void	wprint_status(t_player **player, t_program **program, WINDOW
 	}
 	while (i < REG_NUMBER)
 	{
-		wprintw (*status, "\tr%d\t%u\n", i + 1, (*program)->registers[i]);
+		wprintw (*status, "\tr%d\t%u\n", i, (*program)->registers[i]);
 		i++;
 	}
-	wprintw (*status, "\n\tcycle %d", cycles);
+	wprintw (*status, "\n\tcycle %d\n", cycles);
+	wprintw (*status, "\tcarry\t%d\n", (*program)->carry);
+	wattroff(*status, A_BOLD);
 	wrefresh (*status);
-
 }
 
-int 	is_process(t_process **process, int i)
+int 	is_process(t_process **process, unsigned int i)
 {
 	t_process *tmp;
 
@@ -54,7 +56,7 @@ int 	is_process(t_process **process, int i)
 
 void    wprint_map(t_program **program, t_process **process, WINDOW **map)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	while (i < MEM_SIZE)
@@ -62,9 +64,9 @@ void    wprint_map(t_program **program, t_process **process, WINDOW **map)
 
 		if (is_process(&(*process), i))
 		{
-			wattron((*map), COLOR_PAIR(2));
+			wattron((*map), COLOR_PAIR(10));
 			wprintw((*map), "%.2x", (unsigned char)(*program)->map[i]);
-			wattroff((*map), COLOR_PAIR(2));
+			wattroff((*map), COLOR_PAIR(10));
 			wprintw((*map), " ");
 		}
 		else
@@ -77,46 +79,39 @@ void    wprint_map(t_program **program, t_process **process, WINDOW **map)
 
 }
 
+void colors_init()
+{
+	init_pair(1, COLOR_RED, COLOR_BLACK);
+	init_pair(2, COLOR_GREEN, COLOR_BLACK);
+	init_pair(3, COLOR_BLUE, COLOR_BLACK);
+	init_pair(4, COLOR_MAGENTA, COLOR_BLACK);
+	init_pair(5, COLOR_BLACK, COLOR_RED);
+	init_pair(6, COLOR_BLACK, COLOR_GREEN);
+	init_pair(7, COLOR_BLACK, COLOR_BLUE);
+	init_pair(8, COLOR_BLACK, COLOR_MAGENTA);
+	init_pair(9, COLOR_WHITE, COLOR_BLACK);
+	init_pair(10, COLOR_BLACK, COLOR_WHITE);
+}
+
 void visualise(t_player **player, t_program **program, t_process **process, int cycles)
 {
 	initscr();
 	noecho();
 
 	WINDOW *map;
-	WINDOW *top;
 	WINDOW *status;
 
-	top = newwin(6, 192,1, 1);
-	map = newwin(64, 192, 7,1);
-	status = newwin(64, 48, 7, 194);
+	map = newwin(64, 192, 1, 2);
+	status = newwin(64, 48, 1, 195);
 
 	start_color();
-
-	init_pair(1, COLOR_WHITE, COLOR_BLACK);
-	init_pair(2, COLOR_BLACK, COLOR_WHITE);
-
-	init_pair(3, COLOR_RED, COLOR_BLACK);
-	init_pair(4, COLOR_GREEN, COLOR_BLACK);
-	init_pair(5, COLOR_BLUE, COLOR_BLACK);
-	init_pair(6, COLOR_MAGENTA, COLOR_BLACK);
-
-	init_pair(7, COLOR_BLACK, COLOR_RED);
-	init_pair(8, COLOR_BLACK, COLOR_GREEN);
-	init_pair(9, COLOR_BLACK, COLOR_BLUE);
-	init_pair(10, COLOR_BLACK, COLOR_MAGENTA);
-
-
-	wbkgd(status, COLOR_PAIR(1));
-	wbkgd(map, COLOR_PAIR(1));
-	wbkgd(top, COLOR_PAIR(1));
+	colors_init();
 
 	wprint_map(&(*program), &(*process), &map);
 	wprint_status (&(*player), &(*program), &status, cycles);
-	wprintw(top, "corewar");
 
 	refresh();
 	wrefresh(status);
 	wrefresh(map);
-	wrefresh(top);
-	usleep (10000);
+//	usleep (10000);
 }

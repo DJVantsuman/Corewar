@@ -24,8 +24,7 @@ void    perform_function_continue(t_program **program,
     else if ((unsigned char)byte == 0x0a)
         ldi(&(*program), &(*process));
     else if ((unsigned char)byte == 0x0b)
-	{}
-//        sti(player, program, process);
+        sti(&(*program), &(*process));
     else if ((unsigned char)byte == 0x0c)
         ft_fork(&(*program), &(*process));
     else if ((unsigned char)byte == 0x0d)
@@ -72,7 +71,27 @@ void    perform_function(t_player **player, t_program **program,
 }
 
 
-
+void	set_delay(t_process **process, int byte)
+{
+	if (byte == 0x01 || byte == 0x04 || byte == 0x05 || byte ==0x0d)
+		(*process)->delay = 9;
+	else if (byte == 0x02 || byte == 0x03)
+		(*process)->delay = 4;
+	else if (byte == 0x06 || byte == 0x07 || byte == 0x08)
+		(*process)->delay = 5;
+	else if (byte == 0x0a || byte == 0x0b)
+		(*process)->delay = 24;
+	else if (byte == 0x09)
+		(*process)->delay = 19;
+	else if (byte == 0x0c)
+		(*process)->delay = 799;
+	else if (byte == 0x0e)
+		(*process)->delay = 49;
+	else if (byte == 0x0f)
+		(*process)->delay = 999;
+	else if (byte == 0x10)
+		(*process)->delay = 1;
+}
 
 /*
 ** Function "run_process" take each process, read byte from 'map' with an
@@ -87,17 +106,12 @@ void    run_process(t_player **player, t_program **program, t_process **process)
     proc = (*process);
     while (proc)
     {
+		byte = (int)(*program)->map[proc->position];
+		if (proc->live >= 0 && proc->delay < 0)
+			set_delay(&proc, byte);
         if (proc->live >= 0 && proc->delay == 0)
-        {
-            byte = (int)(*program)->map[proc->position];
 	        perform_function(&(*player), &(*program), &proc, byte);
-        }
-        else if (proc->delay > 0)
-        {
-            proc->delay--;
-            if (proc->delay == 0)
-                proc->flag = 1;
-        }
+        proc->delay--;
         proc = proc->next;
     }
 }

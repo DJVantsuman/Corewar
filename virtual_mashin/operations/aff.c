@@ -18,16 +18,10 @@ void    aff(t_program **program, t_process **process)
 
 	byte[0] = (*program)->map[(*process)->position + 1];
 	byte[1] = (*program)->map[(*process)->position + 2];
-	if ((*process)->flag == 1)
+	if (byte[0] == 64)
 	{
-		if (byte[0] == 64)
-		{
-			if (byte[1] <= REG_NUMBER && byte[1] > 0)
-				printf("%c", (*program)->registers[byte[1] - 1] % 256);
-		}
-		(*process)->flag = 0;
-		(*process)->position = ((*process)->position + 1) % MEM_SIZE;
+		if (byte[1] <= REG_NUMBER && byte[1] > 0)
+			printf("%c", (*program)->registers[byte[1] - 1] % 256);
 	}
-	else
-		(*process)->delay = 2;
+	(*process)->position = ((*process)->position + 1) % MEM_SIZE;
 }

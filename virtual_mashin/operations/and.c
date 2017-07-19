@@ -12,19 +12,23 @@
 
 #include "../vm.h"
 
-unsigned int    get_dir_value(t_program *program, t_process *process, int *shift)
+unsigned int    get_dir_value(t_program *program, t_process *process, int
+*shift, int dsize)
 {
 	int             i;
 	unsigned int    val[4];
 
 	i = 0;
-	while (i < DIR_SIZE)
+	while (i < dsize)
 	{
 		val[i] = (unsigned int)program->map[(process->position + (*shift)) % MEM_SIZE];
 		(*shift)++;
 		i++;
 	}
-	return (val[0] << 24) + (val[1] << 16) + (val[2] << 8) + val[3];
+	if (dsize == 4)
+		return (val[0] << 24) + (val[1] << 16) + (val[2] << 8) + val[3];
+	else
+		return ((val[0] << 8) + val[1]);
 }
 
 unsigned int    get_ind_value(t_program *program, t_process *process, int *shift)
@@ -69,26 +73,21 @@ void    and(t_program **program, t_process **process)
 	param[0] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
 	param[1] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
 	param[2] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
-	if ((*process)->flag == 1)
+	while (i < 2)
 	{
-		while (i < 2)
-		{
-			if (param[i] == REG_CODE)
-				val[i] = get_reg_value((*program), (*process), &shift);
-			else if (param[i] == DIR_CODE)
-				val[i] = get_dir_value((*program), (*process), &shift);
-			else if (param[i] == IND_CODE)
-				val[i] = get_ind_value((*program), (*process), &shift);
-			else
-				break;
-			i++;
-		}
-		val[2] = get_reg_numb((*program), (*process), &shift);
-		if (val[2] <= REG_NUMBER && val[2] > 0 && i == 2)
-			(*program)->registers[val[2] - 1] = val[0] & val[1];
-		(*program)->carry = (*program)->carry == 0 ? 1 : 0;
-		(*process)->flag = 0;
+		if (param[i] == REG_CODE)
+			val[i] = get_reg_value((*program), (*process), &shift);
+		else if (param[i] == DIR_CODE)
+			val[i] = get_dir_value((*program), (*process), &shift, 4);
+		else if (param[i] == IND_CODE)
+			val[i] = get_ind_value((*program), (*process), &shift);
+		else
+			break;
+		i++;
 	}
-	else
-		(*process)->delay = 6;
+	val[2] = get_reg_numb((*program), (*process), &shift);
+	if (val[2] <= REG_NUMBER && val[2] > 0 && i == 2)
+		(*program)->registers[val[2] - 1] = val[0] & val[1];
+	(*program)->carry = (*program)->carry == 0 ? 1 : 0;
+	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }

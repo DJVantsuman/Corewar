@@ -33,10 +33,10 @@ typedef struct      s_player
 typedef struct       s_process
 {
     int              nbr;
-    int              position;
+    unsigned int              position;
     int              live;
     int              delay;
-	int              flag;
+//	int              flag;
     char             *comand;
     struct s_process *next;
 }                    t_process;
@@ -77,7 +77,7 @@ void    or(t_program **program, t_process **process);
 void    xor(t_program **program, t_process **process);
 void    zjmp(t_program **program, t_process **process);
 void    ldi(t_program **program, t_process **process);
-void    sti(t_player **player, t_program *program, t_process *process);
+void    sti(t_program **program, t_process **process);
 void    ft_fork(t_program **program, t_process **process);
 void    lld(t_program **program, t_process **process);
 void    lldi(t_player **player, t_program *program, t_process *process);
@@ -91,7 +91,8 @@ int     check_arg(char **av, int i, int dump, int players);
 int     check_live(t_process **process, t_player **player, int index);
 
 void    add_process(t_process **process, int index);
-unsigned int    get_dir_value(t_program *program, t_process *process, int *shift);
+unsigned int    get_dir_value(t_program *program, t_process *process, int
+*shift, int dsize);
 unsigned int    get_ind_value(t_program *program, t_process *process, int *shift);
 unsigned int    get_reg_value(t_program *program, t_process *process, int *shift);
 unsigned int    get_reg_numb(t_program *program, t_process *process, int *shift);
@@ -101,6 +102,9 @@ void	visualise(t_player **player, t_program **program, t_process **process,
 void    wprint_map(t_program **program, t_process **process, WINDOW **map);
 void	wprint_status(t_player **player, t_program **program, WINDOW
 **status, int cycles);
+unsigned int    get_dir_value2(t_program *program, t_process *process, int
+*shift);
+
 
 
 #endif

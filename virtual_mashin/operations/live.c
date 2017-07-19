@@ -20,31 +20,25 @@ void		live(t_player **player, t_program **program, t_process **process)
 
 	shift = 1;
 	val = 0;
-	if ((*process)->flag == 1)
+	(*process)->live++;
+	pl = (*player);
+	val = get_dir_value((*program), (*process), &shift, 4);
+	while (pl)
 	{
-		(*process)->live++;
-		pl = (*player);
-		val = get_dir_value((*program), (*process), &shift);
-		while (pl)
+		if (pl->number == val)
 		{
-			if (pl->number == val)
+			pl->live++;
+			pl->last_live = 1;
+			pl = (*player);
+			while (pl)
 			{
-				pl->live++;
-				pl->last_live = 1;
-				pl = (*player);
-				while (pl)
-				{
-					if (pl->number != val)
-						pl->last_live = 0;
-					pl = pl->next;
-				}
-			}
-			if (pl != NULL)
+				if (pl->number != val)
+					pl->last_live = 0;
 				pl = pl->next;
+			}
 		}
-		(*process)->flag = 0;
-		(*process)->position = ((*process)->position + 5) % MEM_SIZE;
+		if (pl != NULL)
+			pl = pl->next;
 	}
-	else
-		(*process)->delay = 10;	
+	(*process)->position = ((*process)->position + 5) % MEM_SIZE;
 }

@@ -23,7 +23,7 @@ unsigned int   bit_rev(unsigned int octet)
     return (x[0] + x[1] + x[2] + x[3]);
 }
 
-int get_player_number(t_player **player)
+unsigned int get_player_number(t_player **player)
 {
     unsigned int         i;
     int         f;
@@ -51,7 +51,7 @@ int get_player_number(t_player **player)
 ** Function "reed_player" reed one player from the file and store
 ** it to the struct 'player'.
 */
-void    reed_player(char *file, t_player **player, int player_number)
+void    reed_player(char *file, t_player **player, unsigned int player_number)
 {
     int         fd;
     char        *line;

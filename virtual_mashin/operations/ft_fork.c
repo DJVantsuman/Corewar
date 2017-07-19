@@ -21,8 +21,7 @@ void    add_process(t_process **process, int index)
 	last = (*process);
 	var->position = index;
 	var->live = 0;
-	var->delay = 0;
-	var->flag = 0;
+	var->delay = -1;
 
 	while(last && last->next)
 		last = last->next;
@@ -45,12 +44,6 @@ void    ft_fork(t_program **program, t_process **process)
 	byte[0] = (*program)->map[((*process)->position + 1) % MEM_SIZE];
 	byte[1] = (*program)->map[((*process)->position + 2) % MEM_SIZE];
 	res = (byte[0] << 8) + byte[1];
-	if ((*process)->flag == 1)
-	{
-		add_process(&(*process), (*process)->position + (res % IDX_MOD));
-		(*process)->flag = 0;
-		(*process)->position = ((*process)->position + 2) % MEM_SIZE;
-	}
-	else
-		(*process)->delay = 800;
+	add_process(&(*process), (*process)->position + (res % IDX_MOD));
+	(*process)->position = ((*process)->position + 2) % MEM_SIZE;
 }

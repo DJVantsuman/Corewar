@@ -45,12 +45,6 @@ void    lfork(t_program **program, t_process **process)
 	byte[0] = (*program)->map[((*process)->position + 1) % MEM_SIZE];
 	byte[1] = (*program)->map[((*process)->position + 2) % MEM_SIZE];
 	res = (byte[0] << 8) + byte[1];
-	if ((*process)->flag == 1)
-	{
-		add_process(&(*process), (*process)->position + res);
-		(*process)->flag = 0;
-		(*process)->position = ((*process)->position + 2) % MEM_SIZE;
-	}
-	else
-		(*process)->delay = 1000;
+	add_process(&(*process), (*process)->position + res);
+	(*process)->position = ((*process)->position + 2) % MEM_SIZE;
 }
