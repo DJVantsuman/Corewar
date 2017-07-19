@@ -28,7 +28,7 @@ operations/ld.c \
 #operations/sub.c \
 #operations/ldi.c \
 #operations/sti.c \
-#operations/lld.c \
+operations/lld.c \
 #operations/lldi.c \
 
 

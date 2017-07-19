@@ -104,9 +104,9 @@ void visualise(t_player **player, t_program **program, t_process **process, int 
 	wprint_status (&(*player), &(*program), &status, cycles);
 	wprintw(top, "corewar");
 
-//	refresh();
-//	wrefresh(status);
-//	wrefresh(map);
+	refresh();
+	wrefresh(status);
+	wrefresh(map);
 	wrefresh(top);
-	usleep (1000000);
+	usleep (10000);
 }

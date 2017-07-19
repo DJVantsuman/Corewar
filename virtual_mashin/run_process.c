@@ -30,8 +30,7 @@ void    perform_function_continue(t_program **program,
     else if ((unsigned char)byte == 0x0c)
         ft_fork(&(*program), &(*process));
     else if ((unsigned char)byte == 0x0d)
-	{}
-//        lld(player, program, process);
+        lld(&(*program), &(*process));
     else if ((unsigned char)byte == 0x0e)
 	{}
 //        lldi(player, program, process);

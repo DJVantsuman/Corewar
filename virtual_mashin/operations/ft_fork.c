@@ -49,6 +49,7 @@ void    ft_fork(t_program **program, t_process **process)
 	{
 		add_process(&(*process), (*process)->position + (res % IDX_MOD));
 		(*process)->flag = 0;
+		(*process)->position += 2;
 	}
 	else
 		(*process)->delay = 800;

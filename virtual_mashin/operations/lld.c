@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-void    lld(t_player **player, t_program *program, t_process *process)
+void    lld(t_program **program, t_process **process)
 {
 	char            param[2];
 	unsigned int    val[2];

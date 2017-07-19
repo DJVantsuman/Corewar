@@ -78,7 +78,7 @@ void    zjmp(t_program **program, t_process **process);
 void    ldi(t_player **player, t_program *program, t_process *process);
 void    sti(t_player **player, t_program *program, t_process *process);
 void    ft_fork(t_program **program, t_process **process);
-void    lld(t_player **player, t_program *program, t_process *process);
+void    lld(t_program **program, t_process **process);
 void    lldi(t_player **player, t_program *program, t_process *process);
 void    lfork(t_program **program, t_process **process);
 void    aff(t_program **program, t_process **process);
