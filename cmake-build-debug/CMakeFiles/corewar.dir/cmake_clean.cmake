@@ -73,7 +73,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o"
   "CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o"
   "CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o"
-  "CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o"
   "CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o"
   "CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o"
   "CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o"

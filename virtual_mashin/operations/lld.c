@@ -49,7 +49,11 @@ void    lld(t_program **program, t_process **process)
 		{
 			(*program)->registers[val[1] - 1] = val[0];
 			(*program)->carry = (*program)->carry == 0 ? 1 : 0;
+<<<<<<< HEAD
 			(*process)->position += i;
+=======
+			process->position = (process->position + i) % MEM_SIZE;
+>>>>>>> 1bb9d34d38212acc5474a7c5ff5a5a37869cf5bb
 		}
 	}
 	else

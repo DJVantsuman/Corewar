@@ -245,11 +245,6 @@ CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o: ../virtual_mashin/libf
 CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o: ../virtual_mashin/operations/sti.c
 CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o: ../virtual_mashin/vm.h
 
-CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: ../op.h
-CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: ../virtual_mashin/libft/libft.h
-CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: ../virtual_mashin/operations/sub.c
-CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: ../virtual_mashin/vm.h
-
 CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o: ../op.h
 CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o: ../virtual_mashin/libft/libft.h
 CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o: ../virtual_mashin/operations/xor.c

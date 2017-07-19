@@ -328,9 +328,6 @@
 		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c">
-			<Option target="corewar"/>
-		</Unit>
 		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c">
 			<Option target="corewar"/>
 		</Unit>

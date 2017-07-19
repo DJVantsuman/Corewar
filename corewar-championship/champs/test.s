@@ -1,7 +1,6 @@
 .name "zdhdodfhrk"
 .comment "I'M AdfdfhhLIIIIVE"
 
-live:	live %1
-		zjmp %:live
+    sti r1, %:live, %1
 
 
