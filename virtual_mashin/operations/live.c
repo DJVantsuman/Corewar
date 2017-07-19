@@ -12,71 +12,37 @@
 
 #include "../vm.h"
 
-long int 	get_numb(t_program **program, t_process **process)
-{
-	int 		k;
-	long int 	p;
-	long int 	num;
-
-	num = 0;
-	p = 1;
-	k = 7;
-	while (k >= 0)
-	{
-		if ((*program)->map[(*process)->position + k] > 47 &&
-				(*program)->map[(*process)->position + k] < 58)
-			num = num * p + (*program)->map[(*process)->position + k] - 48;
-		else if ((*program)->map[(*process)->position + k] > 64 &&
-				(*program)->map[(*process)->position + k] < 71)
-			num = num * p + (*program)->map[(*process)->position + k] - 55;
-		else
-			return (0);
-		p *= 16;
-		k--;
-	}
-	while (num > 2147483647)
-		num -= 2147483647;
-	return (2147483647 - num - 1);
-}
-
-int 		check_player(t_player *pl, long int num)
-{
-	t_player 	*player;
-
-	player = pl;
-	while (player)
-	{
-		if (player->number == (int)num)
-			return (1);
-	}
-	return (0);
-}
-
 void		live(t_player **player, t_program **program, t_process **process)
 {
-	t_player	*pl;
-	long int	numb;
+	t_player		*pl;
+	unsigned int    val;
+	int 			shift;
 
-	numb = 0;
+	shift = 1;
+	val = 0;
 	if ((*process)->flag == 1)
 	{
 		(*process)->live++;
-		(*process)->position += 2;
-		numb = get_numb(&(*program), &(*process));
 		pl = (*player);
-		if (check_player(pl, numb) == 1)
+		val = get_dir_value((*program), (*process), &shift);
+		while (pl)
 		{
-			if (pl->number == numb)
+			if (pl->number == val)
 			{
 				pl->live++;
 				pl->last_live = 1;
-				(*process)->position += 8;
+				pl = (*player);
+				while (pl)
+				{
+					if (pl->number != val)
+						pl->last_live = 0;
+					pl = pl->next;
+				}
 			}
-			else
-				pl->last_live = 0;
+			pl = pl->next;
 		}
 		(*process)->flag = 0;
 	}
 	else
-		(*process)->delay = 10;
+		(*process)->delay = 10;	
 }
