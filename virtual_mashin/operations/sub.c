@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-void    sub(t_data **data)
+void    sub(t_data **data, t_process **process)
 {
 	char            param[3];
 	unsigned int    val[3];
