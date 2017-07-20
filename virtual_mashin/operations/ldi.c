@@ -24,6 +24,7 @@ unsigned int    get_direct(t_program *program, unsigned int position)
     {
         val[i] = (unsigned int)program->map[pos];
         pos++;
+        pos = pos % MEM_SIZE;
         i++;
     }
     return (val[0] << 24) + (val[1] << 16) + (val[2] << 8) + val[3];
