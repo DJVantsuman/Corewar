@@ -23,35 +23,29 @@ unsigned int   bit_rev(unsigned int octet)
     return (x[0] + x[1] + x[2] + x[3]);
 }
 
-unsigned int get_player_number(t_player **player)
+void set_players_number(t_player **player)
 {
-    unsigned int         i;
-    int         f;
-    t_player    *var;
+	char			c;
+    unsigned int	i;
+    t_player		*var;
 
-    i = 1;
-    while (1)
-    {
-        f = 0;
-        var = *player;
-        while(var)
-        {
-            if (var->number == i)
-                f++;
-            var = var->next;
-        }
-        if (f == 0)
-            return (i);
-        else
-            i++;
-    }
+	i = 0;
+	c = 0;
+	var = *player;
+	while(var)
+	{
+		var->id = c;
+		var->number = --i;
+		var = var->next;
+		c += 1;
+	}
 }
 
 /*
 ** Function "reed_player" reed one player from the file and store
 ** it to the struct 'player'.
 */
-void    reed_player(char *file, t_player **player, unsigned int player_number)
+void    reed_player(char *file, t_player **player, int player_number)
 {
     int         fd;
     char        *line;
@@ -62,7 +56,7 @@ void    reed_player(char *file, t_player **player, unsigned int player_number)
     tmp = (t_player *)malloc(sizeof(t_player));
     if (fd > 0)
     {
-        tmp->number = player_number;
+        tmp->number = (unsigned int)player_number;
         tmp->file = file;
         read(fd, line, sizeof(header_t));
         tmp->header = (header_t *)line;
@@ -85,7 +79,7 @@ void    reed_player(char *file, t_player **player, unsigned int player_number)
 ** After that this function start reading player and give all players to
 ** function "controller".
 */
-void    reed_arg(t_player **player, t_arg *arg, char **av)
+void    reed_arg(t_data **data, char **av)
 {
     int i;
 
@@ -95,21 +89,20 @@ void    reed_arg(t_player **player, t_arg *arg, char **av)
         if (ft_strcmp(av[i], "-dump") == 0)
         {
             if (is_nbr(av[++i]))
-                arg->dump = ft_atoi(av[i]);
+			(*data)->dump = ft_atoi(av[i]);
         }
         else if (ft_strcmp(av[i], "-n") == 0)
         {
-            arg->nbr = ft_atoi(av[++i]);
+			(*data)->nbr = ft_atoi(av[++i]);
             if (av[++i] && ft_strcmp(av[i], "-dump") != 0 &&
                 ft_strcmp(av[i], "-n") != 0)
-                reed_player(av[i], player, arg->nbr);
+                reed_player(av[i], &(*data)->player, (*data)->nbr);
         }
         else if (ft_strcmp(av[i], "-v") == 0)
-            arg->v = 1;
+			(*data)->v = 1;
         else
-            reed_player(av[i], player, get_player_number(player));
+            reed_player(av[i], &(*data)->player, 0);
     }
-        controller(player);
 }
 
 
@@ -120,22 +113,19 @@ void    reed_arg(t_player **player, t_arg *arg, char **av)
 */
 int main(int ac, char **av)
 {
-    t_player    *player;
-    t_arg       arg;
-    int         amount_players;
+    t_data      *data;
 
     if (ac > 1)
     {
-        player = NULL;
-        amount_players = check_arg(av, 0, 0, 0);
-        arg.amount_players = amount_players;
-        reed_arg(&player, &arg, av);
-        model(&player, amount_players, &arg);
+		data = (t_data *)malloc(sizeof(t_data));
+        data->player = NULL;
+        data->amount_players = check_arg(av, 0, 0, 0);
+        reed_arg(&data, av);
+		set_players_number(&data->player);
+		controller(&data->player);
+		model(&data);
     }
     else
         error_manager(NULL, 0);
-//    while (1);
-    	endwin();
-
     return (0);
 }

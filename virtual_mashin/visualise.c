@@ -12,30 +12,27 @@
 
 #include "vm.h"
 
-void	wprint_status(t_player **player, t_program **program, WINDOW
-**status, int cycles)
+void	wprint_status(t_data **data, WINDOW **status, int *cycles)
 {
 	int i;
 	i = 0;
 	t_player *tmp;
 
-	tmp = *player;
+	tmp = (*data)->player;
 	wattron(*status, A_BOLD);
 	while (tmp)
 	{
-		wprintw (*status, "\tname %s\n\tlive %d\n\tlast live %d\n\n",
-				 tmp->header->prog_name,
-				 tmp->live,
-				 tmp->last_live);
+		wprintw(*status, "NAME\t");
+		wattron(*status, COLOR_PAIR(tmp->id));
+		wprintw(*status, "%s\n", tmp->header->prog_name);
+		wattroff(*status, COLOR_PAIR(tmp->id));
+		wprintw(*status, "LIVE\t%d\n", tmp->live);
+		wprintw(*status, "LAST LIVE\t%d\n", tmp->last_live);
 		tmp = tmp->next;
 	}
-	while (i < REG_NUMBER)
-	{
-		wprintw (*status, "\tr%d\t%u\n", i, (*program)->registers[i]);
-		i++;
-	}
-	wprintw (*status, "\n\tcycle %d\n", cycles);
-	wprintw (*status, "\tcarry\t%d\n", (*program)->carry);
+
+	wprintw (*status, "\n\tCYCLES %d\n", cycles[3]);
+	wprintw (*status, "\tcarry\t%d\n", (*data)->program->carry);
 	wattroff(*status, A_BOLD);
 	wrefresh (*status);
 }
@@ -54,23 +51,26 @@ int 	is_process(t_process **process, unsigned int i)
 	return (0);
 }
 
-void    wprint_map(t_program **program, t_process **process, WINDOW **map)
+void    wprint_map(t_data **data, WINDOW **map)
 {
 	unsigned int i;
 
 	i = 0;
 	while (i < MEM_SIZE)
 	{
-
-		if (is_process(&(*process), i))
+		if (is_process(&(*data)->process, i))
 		{
 			wattron((*map), COLOR_PAIR(10));
-			wprintw((*map), "%.2x", (unsigned char)(*program)->map[i]);
+			wprintw((*map), "%.2x", (unsigned char)(*data)->program->map[i]);
 			wattroff((*map), COLOR_PAIR(10));
 			wprintw((*map), " ");
 		}
 		else
-			wprintw((*map), "%.2x ", (unsigned char)(*program)->map[i]);
+		{
+			wattron((*map), COLOR_PAIR((*data)->program->map_v[i]));
+			wprintw((*map), "%.2x ", (unsigned char)(*data)->program->map[i]);
+			wattroff((*map), COLOR_PAIR((*data)->program->map_v[i]));
+		}
 		i++;
 		if ((i % 64) == 0)
 			printw("\n");
@@ -81,6 +81,7 @@ void    wprint_map(t_program **program, t_process **process, WINDOW **map)
 
 void colors_init()
 {
+	init_pair(0, COLOR_WHITE, COLOR_BLACK);
 	init_pair(1, COLOR_RED, COLOR_BLACK);
 	init_pair(2, COLOR_GREEN, COLOR_BLACK);
 	init_pair(3, COLOR_BLUE, COLOR_BLACK);
@@ -93,7 +94,7 @@ void colors_init()
 	init_pair(10, COLOR_BLACK, COLOR_WHITE);
 }
 
-void visualise(t_player **player, t_program **program, t_process **process, int cycles)
+void visualise(t_data **data, int *cycles)
 {
 	initscr();
 	noecho();
@@ -107,11 +108,11 @@ void visualise(t_player **player, t_program **program, t_process **process, int 
 	start_color();
 	colors_init();
 
-	wprint_map(&(*program), &(*process), &map);
-	wprint_status (&(*player), &(*program), &status, cycles);
+	wprint_map(&(*data), &map);
+	wprint_status (&(*data), &status, cycles);
 
 	refresh();
 	wrefresh(status);
 	wrefresh(map);
-//	usleep (10000);
+	usleep (10000);
 }

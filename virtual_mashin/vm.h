@@ -21,7 +21,8 @@
 
 typedef struct      s_player
 {
-    unsigned int             number;
+	char 			id;
+    unsigned int	number;
     char            *file;
     header_t        *header;
     char            *prog_cod;
@@ -32,20 +33,19 @@ typedef struct      s_player
 
 typedef struct       s_process
 {
-    int              nbr;
-    unsigned int              position;
+	char 			 p_id;
+	unsigned int 	 p_num;
+    unsigned int     position;
     int              live;
     int              delay;
-//	int              flag;
-    char             *comand;
-    struct s_process *next;
+	unsigned int     registers[REG_NUMBER];
+	struct s_process *next;
 }                    t_process;
 
 typedef struct      s_program
 {
     char             map[MEM_SIZE];
 	char             map_v[MEM_SIZE];
-	unsigned int     registers[REG_NUMBER];
     int              carry;
 }                   t_program;
 
@@ -57,38 +57,49 @@ typedef struct      s_arg
     int             amount_players;
 }                   t_arg;
 
+typedef struct 			s_data
+{
+	struct s_player		*player;
+	struct s_process	*process;
+	struct s_program	*program;
+	int             	dump;
+	int             	nbr;
+	int             	v;
+	int             	amount_players;
+}						t_data;
+
 void    error_manager(char *file, int  index);
 void    controller(t_player **player);
-void    model(t_player **player, int amount_player, t_arg *arg);
-void    start_process(t_player **player, t_program **program, t_process **process, t_arg *arg);
-void    run_process(t_player **player, t_program **program, t_process **process);
-void    reset_live(t_player **player, t_process **process);
+void    model(t_data **data);
+void    start_process(t_data **data);
+void    run_process(t_data **data);
+void    reset_live(t_data **data);
 void    free_player(t_player **player);
 void    free_program(t_program **program);
 void    free_process(t_process **process);
 
-void    live(t_player **player, t_program **program, t_process **process);
-void    ld(t_program **program, t_process **process);
-void    st(t_program **program, t_process **process);
-void    add(t_program **program, t_process **process);
-void    sub(t_program **program, t_process **process);
-void    and(t_program **program, t_process **process);
-void    or(t_program **program, t_process **process);
-void    xor(t_program **program, t_process **process);
-void    zjmp(t_program **program, t_process **process);
-void    ldi(t_program **program, t_process **process);
-void    sti(t_program **program, t_process **process);
-void    ft_fork(t_program **program, t_process **process);
-void    lld(t_program **program, t_process **process);
-void    lldi(t_player **player, t_program *program, t_process *process);
-void    lfork(t_program **program, t_process **process);
-void    aff(t_program **program, t_process **process);
+void    live(t_data **data, t_process **process);
+void    ld(t_data **data, t_process **process);
+void    st(t_data **data, t_process **process);
+void    add(t_data **data, t_process **process);
+void    sub(t_data **data, t_process **process);
+void    and(t_data **data, t_process **process);
+void    or(t_data **data, t_process **process);
+void    xor(t_data **data, t_process **process);
+void    zjmp(t_data **data, t_process **process);
+void    ldi(t_data **data, t_process **process);
+void    sti(t_data **data, t_process **process);
+void    ft_fork(t_data **data, t_process **process);
+void    lld(t_data **data, t_process **process);
+void    lldi(t_data **data, t_process **process);
+void    lfork(t_data **data, t_process **process);
+void    aff(t_data **data, t_process **process);
 
 unsigned int   bit_rev(unsigned int octet);
 
 int     is_nbr(char *s);
 int     check_arg(char **av, int i, int dump, int players);
-int     check_live(t_process **process, t_player **player, int index);
+int     check_live(t_data **data, int index);
 
 void    add_process(t_process **process, int index);
 unsigned int    get_dir_value(t_program *program, t_process *process, int
@@ -97,13 +108,12 @@ unsigned int    get_ind_value(t_program *program, t_process *process, int *shift
 unsigned int    get_reg_value(t_program *program, t_process *process, int *shift);
 unsigned int    get_reg_numb(t_program *program, t_process *process, int *shift);
 
-void	visualise(t_player **player, t_program **program, t_process **process,
-				  int cycles);
-void    wprint_map(t_program **program, t_process **process, WINDOW **map);
-void	wprint_status(t_player **player, t_program **program, WINDOW
-**status, int cycles);
-unsigned int    get_dir_value2(t_program *program, t_process *process, int
-*shift);
+void	visualise(t_data **data, int *cycles);
+//void    wprint_map(t_program **program, t_process **process, WINDOW **map);
+//void	wprint_status(t_player **player, t_program **program, WINDOW
+//**status, int cycles);
+//unsigned int    get_dir_value2(t_program *program, t_process *process, int
+//*shift);
 
 
 

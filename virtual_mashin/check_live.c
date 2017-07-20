@@ -60,13 +60,13 @@ int     check_process_live(t_process **process)
 ** Function "reset_live" sets the value for the variable live for all processes
 ** and players to 0.
 */
-void    reset_live(t_player **player, t_process **process)
+void    reset_live(t_data **data)
 {
     t_player *play;
     t_process *proc;
 
-    play = *player;
-    proc = *process;
+    proc = (*data)->process;
+    play = (*data)->player;
     while (play)
     {
         play->live = 0;
@@ -89,26 +89,26 @@ void    reset_live(t_player **player, t_process **process)
 ** if any player said 'live' => then NBR_LIVE times function return 1,
 ** otherwise return 0;
 */
-int    check_live(t_process **process, t_player **player, int index)
+int    check_live(t_data **data, int index)
 {
     t_process *proc;
     t_player *play;
 
-    proc = *process;
-    play = *player;
+    proc = (*data)->process;
+    play = (*data)->player;
     while (proc)
     {
         if (proc->live == 0)
             proc->live = -1;
         proc = proc->next;
     }
-    if (check_process_live(process) || index <= CYCLE_DELTA)
-        print_champ(player);
+    if (check_process_live(&(*data)->process) || index <= CYCLE_DELTA)
+        print_champ(&(*data)->player);
     while (play)
     {
         if (play->live >= NBR_LIVE)
         {
-            reset_live(&(*player), &(*process));
+            reset_live(&(*data));
             return (1);
         }
         play = play->next;

@@ -16,40 +16,18 @@
 ** Function 'print_map' print map to the standart output wen user established
 ** flag -dump.
 */
-void    print_map(t_program *program)
+void    print_map(char *map)
 {
     int i;
 
     i = 0;
-//    printf("PRINT MAP\n");
     while (i < MEM_SIZE)
     {
-        printf("%.2x", (unsigned char)program->map[i]);/////////////////////////////////////
+        printf("%.2x", (unsigned char)map[i]);/////////////////////////////////////
         i++;
     }
     exit(1);
 }
-
-
-/*
-** Function "decrease_delay" decrease process delay by one.
-*/
-//void    decrease_delay(t_process **process)
-//{
-//    t_process *var;
-//
-//    var = *process;
-//    while (var)
-//    {
-//        if (var->delay > 0)
-//            var->delay--;
-//        else
-//            var->flag = 1;
-//        var = var->next;
-//    }
-//}
-
-
 
 /*
 ** Function 'start_process' start CYCLE_TO_DIE and after each CYCLE_TO_DIE
@@ -58,32 +36,32 @@ void    print_map(t_program *program)
 ** index[1] - it is a variable for check MAX_CHECKS.
 ** index[2] - it is a variable which is equal to variable CYCLE_TO_DIE.
 */
-void    start_process(t_player **player, t_program **program, t_process **process, t_arg *arg)
+void    start_process(t_data **data)
 {
-    int index[3];
+    int index[4];
 
     index[1] = 0;
     index[2] = CYCLE_TO_DIE;
+    index[3] = 0;
 
     while (1)
     {
-        index[0] = 1;
-        while (index[0] <= index[2])
+        index[0] = 0;
+        while (index[0] < index[2])
         {
-
-            run_process(&(*player), &(*program), &(*process));
-			if(arg->v == 1)
-				visualise (&(*player), &(*program), &(*process), index[0]);
-//			decrease_delay(process);
-			if (arg->dump > 0 && arg->dump == index[0])
-                print_map(*program);
+            run_process(&(*data));
+			if((*data)->v == 1)
+				visualise (&(*data), (int *)index);
+			if ((*data)->dump > 0 && (*data)->dump == index[0])
+                print_map((*data)->program->map);
             index[0]++;
         }
-        check_live(&(*process), &(*player), index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;
+        check_live(&(*data), index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;
         if (index[1] == MAX_CHECKS)
         {
-            reset_live(&(*player), &(*process));
+            reset_live(&(*data));
             index[2] -= CYCLE_DELTA;
         }
+        index[3]++;
     }
 }
