@@ -2283,6 +2283,33 @@ virtual_mashin/operations/or.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.s
 .PHONY : virtual_mashin/operations/or.c.s
 
+virtual_mashin/operations/st.o: virtual_mashin/operations/st.c.o
+
+.PHONY : virtual_mashin/operations/st.o
+
+# target to build an object file
+virtual_mashin/operations/st.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o
+.PHONY : virtual_mashin/operations/st.c.o
+
+virtual_mashin/operations/st.i: virtual_mashin/operations/st.c.i
+
+.PHONY : virtual_mashin/operations/st.i
+
+# target to preprocess a source file
+virtual_mashin/operations/st.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.i
+.PHONY : virtual_mashin/operations/st.c.i
+
+virtual_mashin/operations/st.s: virtual_mashin/operations/st.c.s
+
+.PHONY : virtual_mashin/operations/st.s
+
+# target to generate assembly for a file
+virtual_mashin/operations/st.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.s
+.PHONY : virtual_mashin/operations/st.c.s
+
 virtual_mashin/operations/sti.o: virtual_mashin/operations/sti.c.o
 
 .PHONY : virtual_mashin/operations/sti.o
@@ -2721,6 +2748,9 @@ help:
 	@echo "... virtual_mashin/operations/or.o"
 	@echo "... virtual_mashin/operations/or.i"
 	@echo "... virtual_mashin/operations/or.s"
+	@echo "... virtual_mashin/operations/st.o"
+	@echo "... virtual_mashin/operations/st.i"
+	@echo "... virtual_mashin/operations/st.s"
 	@echo "... virtual_mashin/operations/sti.o"
 	@echo "... virtual_mashin/operations/sti.i"
 	@echo "... virtual_mashin/operations/sti.s"

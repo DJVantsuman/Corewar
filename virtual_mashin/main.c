@@ -30,7 +30,7 @@ void set_players_number(t_player **player)
     t_player		*var;
 
 	i = 0;
-	c = 0;
+	c = 1;
 	var = *player;
 	while(var)
 	{

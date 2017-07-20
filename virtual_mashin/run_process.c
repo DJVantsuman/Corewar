@@ -42,10 +42,10 @@ void    perform_function_continue(t_data **data, t_process **process, int byte)
 ** Function "perform_function" read byte
 ** and choose assembler function for execution.
 */
-void    perform_function(t_data **data, t_process **process, int byte)
+void    perform_function(t_data **data, t_process **process, int byte, int cycle)
 {
     if ((unsigned char)byte == 0x01)
-        live(&(*data), &(*process));
+        live(&(*data), &(*process), cycle);
     else if ((unsigned char)byte == 0x02)
         ld(&(*data), &(*process));
     else if ((unsigned char)byte == 0x03)
@@ -85,6 +85,8 @@ void	set_delay(t_process **process, int byte)
 		(*process)->delay = 999;
 	else if (byte == 0x10)
 		(*process)->delay = 1;
+	else
+		(*process)->delay = 0;
 }
 
 /*
@@ -92,7 +94,7 @@ void	set_delay(t_process **process, int byte)
 ** index that is equal to the position of the process and pass this byte
 ** to the function "perform_function".
 */
-void    run_process(t_data **data)
+void    run_process(t_data **data, int cycle)
 {
     t_process   *proc;
     int        byte;
@@ -100,12 +102,12 @@ void    run_process(t_data **data)
     proc = (*data)->process;
     while (proc)
     {
-		byte = (int)(*data)->program->map[proc->position];
+		proc->delay--;
+		byte = (int)(*data)->map[proc->position];
 		if (proc->live >= 0 && proc->delay < 0)
 			set_delay(&proc, byte);
         if (proc->live >= 0 && proc->delay == 0)
-	        perform_function(&(*data), &proc, byte);
-        proc->delay--;
+	        perform_function(&(*data), &proc, byte, cycle);
         proc = proc->next;
     }
 }

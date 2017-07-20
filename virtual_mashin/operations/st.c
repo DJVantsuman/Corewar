@@ -12,27 +12,36 @@
 
 #include "../vm.h"
 
-void    st(t_program *program, t_process *process)
+unsigned int	get_ind_address(t_data **data, t_process *process, int *shift)
+{
+	unsigned int val[2];
+	val[0] = (unsigned char)((*data)->map[(process->position + *shift) %
+										  MEM_SIZE]);
+	val[1] = (unsigned char)((*data)->map[(process->position + *shift + 1) %
+										  MEM_SIZE]);
+	*shift += 2;
+	return ((val[0] << 8) + val[1]);
+}
+
+void    st(t_data **data, t_process **process)
 {
     char            param[2];
     unsigned int    val[2];
     int             shift;
 
     shift = 2;
-    param[0] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
-    param[1] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
+    param[0] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
+    param[1] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
  	if (param[0] == REG_CODE)
-		val[0] = get_reg_value((*program), (*process), &shift);
+		val[0] = get_reg_value(&(*data), (*process), &shift);
 	else
 		return ;
 	if (param[1] == REG_CODE)
-		val[1] = get_reg_value((*program), (*process), &shift);
+		val[1] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[1] == IND_CODE)
-		val[1] = get_ind_value((*program), (*process), &shift);
+		val[1] = get_ind_address (&(*data), (*process), &shift);
 	else
 		return ;
-	if (param[1] == REG_CODE)
-	load_value(&(*program), ((*process)->position + (val[1]) % IDX_MOD) %
-							MEM_SIZE, val[0]);
+	load_value(&(*data), &(*process), ((*process)->position + (val[1]) % IDX_MOD) % MEM_SIZE, val[0]);
 	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }

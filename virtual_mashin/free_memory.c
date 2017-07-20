@@ -28,11 +28,11 @@ void    free_player(t_player **player)
     }
 }
 
-void    free_program(t_program **program)
-{
-    if (*program)
-        free(*program);
-}
+//void    free_program(t_program **program)
+//{
+//    if (*program)
+//        free(*program);
+//}
 
 void    free_process(t_process **process)
 {

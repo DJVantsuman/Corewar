@@ -37,48 +37,35 @@ typedef struct       s_process
 	unsigned int 	 p_num;
     unsigned int     position;
     int              live;
-    int              delay;
+	int              carry;
+	int              delay;
 	unsigned int     registers[REG_NUMBER];
 	struct s_process *next;
 }                    t_process;
-
-typedef struct      s_program
-{
-    char             map[MEM_SIZE];
-	char             map_v[MEM_SIZE];
-    int              carry;
-}                   t_program;
-
-typedef struct      s_arg
-{
-    int             dump;
-    int             v;
-    int             nbr;
-    int             amount_players;
-}                   t_arg;
 
 typedef struct 			s_data
 {
 	struct s_player		*player;
 	struct s_process	*process;
-	struct s_program	*program;
+	char             	map[MEM_SIZE];
+	char             	map_v[MEM_SIZE];
 	int             	dump;
 	int             	nbr;
 	int             	v;
-	int             	amount_players;
+	unsigned int             	amount_players;
 }						t_data;
 
 void    error_manager(char *file, int  index);
 void    controller(t_player **player);
 void    model(t_data **data);
 void    start_process(t_data **data);
-void    run_process(t_data **data);
+void    run_process(t_data **data, int cycle);
 void    reset_live(t_data **data);
 void    free_player(t_player **player);
-void    free_program(t_program **program);
+//void    free_program(t_program **program);
 void    free_process(t_process **process);
 
-void    live(t_data **data, t_process **process);
+void    live(t_data **data, t_process **process, int cycle);
 void    ld(t_data **data, t_process **process);
 void    st(t_data **data, t_process **process);
 void    add(t_data **data, t_process **process);
@@ -101,14 +88,14 @@ int     is_nbr(char *s);
 int     check_arg(char **av, int i, int dump, int players);
 int     check_live(t_data **data, int index);
 
-void    add_process(t_process **process, int index);
-unsigned int    get_dir_value(t_program *program, t_process *process, int
-*shift, int dsize);
-unsigned int    get_ind_value(t_program *program, t_process *process, int *shift);
-unsigned int    get_reg_value(t_program *program, t_process *process, int *shift);
-unsigned int    get_reg_numb(t_program *program, t_process *process, int *shift);
-
-void	visualise(t_data **data, int *cycles);
+void    add_process(t_data **data, t_process **process, unsigned int index);
+unsigned int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize);
+unsigned int    get_ind_value(t_data **data, t_process *process, int *shift);
+unsigned int    get_reg_value(t_data **data, t_process *process, int *shift);
+unsigned int    get_reg_numb(t_data **data, t_process *process, int *shift);
+unsigned int    get_direct(t_data **data, unsigned int position);
+void 	load_value(t_data **data, t_process **process, unsigned int pos, unsigned int val);
+void	visualise(t_data **data, int cycles);
 //void    wprint_map(t_program **program, t_process **process, WINDOW **map);
 //void	wprint_status(t_player **player, t_program **program, WINDOW
 //**status, int cycles);

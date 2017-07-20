@@ -28,6 +28,7 @@ void    create_process(t_data **data, unsigned int index, unsigned int p_num,
 	var->p_id = p_id;
     var->position = index;
     var->live = 0;
+	var->carry = 0;
     var->delay = -1;
 	var->registers[0] = p_num;
     while(last && last->next)
@@ -67,8 +68,8 @@ void    create_map(t_data **data)
         create_process(&(*data), n, var->number, var->id);
         while (j < var->header->prog_size)
         {
-	        (*data)->program->map[n] = var->prog_cod[j];
-			(*data)->program->map_v[n] = var->id;
+	        (*data)->map[n] = var->prog_cod[j];
+			(*data)->map_v[n] = var->id;
 			n++;
             j++;
         }
@@ -82,12 +83,12 @@ void    create_map(t_data **data)
 */
 void    model(t_data **data)
 {
-	(*data)->program = (t_program *)malloc(sizeof(t_program));
+//	(*data)->program = (t_program *)malloc(sizeof(t_program));
 	(*data)->process = (t_process *)malloc(sizeof(t_process));
 	(*data)->process = NULL;
     create_map(&(*data));
     start_process(&(*data));
     free_player(&(*data)->player);
-    free_program(&(*data)->program);
+//    free_program(&(*data)->program);
     free_process(&(*data)->process);
 }

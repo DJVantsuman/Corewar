@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-unsigned int    get_dir_value(t_program *program, t_process *process, int
+unsigned int    get_dir_value(t_data **data, t_process *process, int
 *shift, int dsize)
 {
 	int             i;
@@ -21,7 +21,8 @@ unsigned int    get_dir_value(t_program *program, t_process *process, int
 	i = 0;
 	while (i < dsize)
 	{
-		val[i] = (unsigned int)program->map[(process->position + (*shift)) % MEM_SIZE];
+		val[i] = (unsigned char)((*data)->map[(process->position +
+				(*shift)) % MEM_SIZE]);
 		(*shift)++;
 		i++;
 	}
@@ -31,37 +32,39 @@ unsigned int    get_dir_value(t_program *program, t_process *process, int
 		return ((val[0] << 8) + val[1]);
 }
 
-unsigned int    get_ind_value(t_program *program, t_process *process, int *shift)
+unsigned int    get_ind_value(t_data **data, t_process *process, int *shift)
 {
 	unsigned int    val[4];
 
-	val[0] += program->map[(process->position + (*shift)) % MEM_SIZE];
-	val[1] += program->map[(process->position + (*shift) + 1) % MEM_SIZE];
-	val[2] += program->map[(process->position + ((val[0] << 8) + val[1])) % MEM_SIZE];
-	val[3] += program->map[(process->position + ((val[0] << 8) + val[1]) + 1) % MEM_SIZE];
+	val[0] = (unsigned char)((*data)->map[(process->position + (*shift)) %
+									  MEM_SIZE]);
+	val[1] = (unsigned char)((*data)->map[(process->position + (*shift) + 1)
+										  % MEM_SIZE]);
+	val[2] += (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1])) % MEM_SIZE];
+	val[3] += (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1]) + 1) % MEM_SIZE];
 	(*shift) += 2;
 	return ((val[2] << 8) + val[3]);
 }
 
-unsigned int    get_reg_value(t_program *program, t_process *process, int *shift)
+unsigned int    get_reg_value(t_data **data, t_process *process, int *shift)
 {
 	unsigned int res;
 
-	res = program->registers[program->map[(process->position + (*shift)) % MEM_SIZE] - 1];
+	res = process->registers[(*data)->map[(process->position + (*shift)) % MEM_SIZE] - 1];
 	(*shift)++;
 	return res;
 }
 
-unsigned int    get_reg_numb(t_program *program, t_process *process, int *shift)
+unsigned int    get_reg_numb(t_data **data, t_process *process, int *shift)
 {
 	unsigned int res;
 
-	res = (unsigned int)program->map[(process->position + (*shift)) % MEM_SIZE];
+	res = (unsigned int)(*data)->map[(process->position + (*shift)) % MEM_SIZE];
 	(*shift)++;
 	return res;
 }
 
-void    and(t_program **program, t_process **process)
+void    and(t_data **data, t_process **process)
 {
 	char            param[3];
 	unsigned int    val[3];
@@ -70,24 +73,24 @@ void    and(t_program **program, t_process **process)
 
 	shift = 2;
 	i = 0;
-	param[0] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
-	param[1] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
-	param[2] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
+	param[0] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
+	param[1] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
+	param[2] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
 	while (i < 2)
 	{
 		if (param[i] == REG_CODE)
-			val[i] = get_reg_value((*program), (*process), &shift);
+			val[i] = get_reg_value(&(*data), (*process), &shift);
 		else if (param[i] == DIR_CODE)
-			val[i] = get_dir_value((*program), (*process), &shift, 4);
+			val[i] = get_dir_value(&(*data), (*process), &shift, 4);
 		else if (param[i] == IND_CODE)
-			val[i] = get_ind_value((*program), (*process), &shift);
+			val[i] = get_ind_value(&(*data), (*process), &shift);
 		else
 			break;
 		i++;
 	}
-	val[2] = get_reg_numb((*program), (*process), &shift);
+	val[2] = get_reg_numb(&(*data), (*process), &shift);
 	if (val[2] <= REG_NUMBER && val[2] > 0 && i == 2)
-		(*program)->registers[val[2] - 1] = val[0] & val[1];
-	(*program)->carry = (*program)->carry == 0 ? 1 : 0;
+		(*process)->registers[val[2] - 1] = val[0] & val[1];
+	(*process)->carry = (*process)->carry == 0 ? 1 : 0;
 	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }

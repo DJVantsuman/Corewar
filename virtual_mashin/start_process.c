@@ -49,19 +49,19 @@ void    start_process(t_data **data)
         index[0] = 0;
         while (index[0] < index[2])
         {
-            run_process(&(*data));
+            run_process(&(*data), index[3]);
 			if((*data)->v == 1)
-				visualise (&(*data), (int *)index);
+				visualise (&(*data), index[3]);
 			if ((*data)->dump > 0 && (*data)->dump == index[0])
-                print_map((*data)->program->map);
+                print_map((*data)->map);
             index[0]++;
-        }
+			index[3]++;
+		}
         check_live(&(*data), index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;
         if (index[1] == MAX_CHECKS)
         {
             reset_live(&(*data));
             index[2] -= CYCLE_DELTA;
         }
-        index[3]++;
     }
 }

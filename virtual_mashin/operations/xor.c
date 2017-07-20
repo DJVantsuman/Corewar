@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-void    xor(t_program **program, t_process **process)
+void    xor(t_data **data, t_process **process)
 {
 	char            param[3];
 	unsigned int    val[3];
@@ -21,24 +21,24 @@ void    xor(t_program **program, t_process **process)
 
 	shift = 2;
 	i = 0;
-	param[0] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
-	param[1] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
-	param[2] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
+	param[0] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
+	param[1] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
+	param[2] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
 	while (i < 2)
 	{
 		if (param[i] == REG_CODE)
-			val[i] = get_reg_value((*program), (*process), &shift);
+			val[i] = get_reg_value(&(*data), (*process), &shift);
 		else if (param[i] == DIR_CODE)
-			val[i] = get_dir_value((*program), (*process), &shift, 4);
+			val[i] = get_dir_value(&(*data), (*process), &shift, 4);
 		else if (param[i] == IND_CODE)
-			val[i] = get_ind_value((*program), (*process), &shift);
+			val[i] = get_ind_value(&(*data), (*process), &shift);
 		else
 			break;
 		i++;
 	}
-	val[2] = get_reg_numb((*program), (*process), &shift);
+	val[2] = get_reg_numb(&(*data), (*process), &shift);
 	if (val[2] <= REG_NUMBER && val[2] > 0 && i == 2)
-		(*program)->registers[val[2] - 1] = val[0] ^ val[1];
-	(*program)->carry = (*program)->carry == 0 ? 1 : 0;
+		(*process)->registers[val[2] - 1] = val[0] ^ val[1];
+	(*process)->carry = (*process)->carry == 0 ? 1 : 0;
 	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }

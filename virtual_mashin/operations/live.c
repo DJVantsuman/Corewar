@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-void		live(t_player **player, t_program **program, t_process **process)
+void		live(t_data **data, t_process **process, int cycle)
 {
 	t_player		*pl;
 	unsigned int    val;
@@ -21,24 +21,17 @@ void		live(t_player **player, t_program **program, t_process **process)
 	shift = 1;
 	val = 0;
 	(*process)->live++;
-	pl = (*player);
-	val = get_dir_value((*program), (*process), &shift, 4);
+	pl = (*data)->player;
+	val = get_dir_value(&(*data), (*process), &shift, 4);
 	while (pl)
 	{
 		if (pl->number == val)
 		{
 			pl->live++;
-			pl->last_live = 1;
-			pl = (*player);
-			while (pl)
-			{
-				if (pl->number != val)
-					pl->last_live = 0;
-				pl = pl->next;
-			}
+			pl->last_live = cycle;
+
 		}
-		if (pl != NULL)
-			pl = pl->next;
+		pl = pl->next;
 	}
 	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }

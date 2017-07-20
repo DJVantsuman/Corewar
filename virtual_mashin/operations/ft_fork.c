@@ -12,23 +12,26 @@
 
 #include "../vm.h"
 
-void    add_process(t_process **process, int index)
+void    add_process(t_data **data, t_process **process, unsigned int index)
 {
 	t_process *var;
 	t_process *last;
 
 	var = (t_process *)malloc(sizeof(t_process));
-	last = (*process);
+	last = (*data)->process;
 	var->position = index;
 	var->live = 0;
 	var->delay = -1;
+	var->carry = (*process)->carry;
+	var->p_id = (*process)->p_id;
+	var->p_num = (*process)->p_num;
 
 	while(last && last->next)
 		last = last->next;
 	if (last == NULL)
 	{
-		var->next = (*process);
-		(*process) = var;
+		var->next = (*data)->process;
+		(*data)->process = var;
 	}
 	else
 	{
@@ -36,14 +39,15 @@ void    add_process(t_process **process, int index)
 		last->next = var;
 	}
 }
-void    ft_fork(t_program **program, t_process **process)
+void    ft_fork(t_data **data, t_process **process)
 {
 	char    byte[2];
-	int     res;
+	unsigned int     res;
 
-	byte[0] = (*program)->map[((*process)->position + 1) % MEM_SIZE];
-	byte[1] = (*program)->map[((*process)->position + 2) % MEM_SIZE];
-	res = (byte[0] << 8) + byte[1];
-	add_process(&(*process), (*process)->position + (res % IDX_MOD));
-	(*process)->position = ((*process)->position + 2) % MEM_SIZE;
+	byte[0] = (*data)->map[((*process)->position + 1) % MEM_SIZE];
+	byte[1] = (*data)->map[((*process)->position + 2) % MEM_SIZE];
+	res = (unsigned int)((byte[0] << 8) + byte[1]);
+	add_process(&(*data), &(*process), (unsigned char)(((*process)->position +
+	(res % IDX_MOD)) % MEM_SIZE));
+	(*process)->position = ((*process)->position + 3) % MEM_SIZE;
 }

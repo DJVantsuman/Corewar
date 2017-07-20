@@ -1833,9 +1833,33 @@ CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.provides: CMakeFiles/cor
 CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o
 
 
+CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o: ../virtual_mashin/operations/st.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/st.c
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/st.c > CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.i
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/st.c -o CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.s
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.requires:
+
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.requires
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.provides: CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.requires
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.provides.build
+.PHONY : CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.provides
+
+CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.provides.build: CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o
+
+
 CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o: ../virtual_mashin/operations/sti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c
 
 CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.i: cmake_force
@@ -1859,7 +1883,7 @@ CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.provides.build: CMakeFi
 
 CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o: ../virtual_mashin/operations/sub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c
 
 CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.i: cmake_force
@@ -1883,7 +1907,7 @@ CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.provides.build: CMakeFi
 
 CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o: ../virtual_mashin/operations/xor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c
 
 CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.i: cmake_force
@@ -1907,7 +1931,7 @@ CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.provides.build: CMakeFi
 
 CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o: ../virtual_mashin/operations/zjmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/zjmp.c
 
 CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.i: cmake_force
@@ -1931,7 +1955,7 @@ CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o.provides.build: CMakeF
 
 CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o: ../virtual_mashin/check_live.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/check_live.c
 
 CMakeFiles/corewar.dir/virtual_mashin/check_live.c.i: cmake_force
@@ -1955,7 +1979,7 @@ CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/corewar.dir/virtual_mashin/controller.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/controller.c.o: ../virtual_mashin/controller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/corewar.dir/virtual_mashin/controller.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/corewar.dir/virtual_mashin/controller.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/controller.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/controller.c
 
 CMakeFiles/corewar.dir/virtual_mashin/controller.c.i: cmake_force
@@ -1979,7 +2003,7 @@ CMakeFiles/corewar.dir/virtual_mashin/controller.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o: ../virtual_mashin/error_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/error_manager.c
 
 CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.i: cmake_force
@@ -2003,7 +2027,7 @@ CMakeFiles/corewar.dir/virtual_mashin/error_manager.c.o.provides.build: CMakeFil
 
 CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o: ../virtual_mashin/free_memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/free_memory.c
 
 CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.i: cmake_force
@@ -2027,7 +2051,7 @@ CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o.provides.build: CMakeFiles
 
 CMakeFiles/corewar.dir/virtual_mashin/main.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/main.c.o: ../virtual_mashin/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/corewar.dir/virtual_mashin/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/corewar.dir/virtual_mashin/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/main.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/main.c
 
 CMakeFiles/corewar.dir/virtual_mashin/main.c.i: cmake_force
@@ -2051,7 +2075,7 @@ CMakeFiles/corewar.dir/virtual_mashin/main.c.o.provides.build: CMakeFiles/corewa
 
 CMakeFiles/corewar.dir/virtual_mashin/model.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/model.c.o: ../virtual_mashin/model.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/corewar.dir/virtual_mashin/model.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/corewar.dir/virtual_mashin/model.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/model.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/model.c
 
 CMakeFiles/corewar.dir/virtual_mashin/model.c.i: cmake_force
@@ -2075,7 +2099,7 @@ CMakeFiles/corewar.dir/virtual_mashin/model.c.o.provides.build: CMakeFiles/corew
 
 CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o: ../virtual_mashin/run_process.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/run_process.c
 
 CMakeFiles/corewar.dir/virtual_mashin/run_process.c.i: cmake_force
@@ -2099,7 +2123,7 @@ CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o.provides.build: CMakeFiles
 
 CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o: ../virtual_mashin/start_process.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/start_process.c
 
 CMakeFiles/corewar.dir/virtual_mashin/start_process.c.i: cmake_force
@@ -2123,7 +2147,7 @@ CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o.provides.build: CMakeFil
 
 CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o: ../virtual_mashin/visualise.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o   -c /nfs/2016/a/arodiono/corewar/virtual_mashin/visualise.c
 
 CMakeFiles/corewar.dir/virtual_mashin/visualise.c.i: cmake_force
@@ -2221,6 +2245,7 @@ corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o" \
+"CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o" \
 "CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o" \
@@ -2312,6 +2337,7 @@ corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o
+corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o
 corewar: CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o
@@ -2329,7 +2355,7 @@ corewar: CMakeFiles/corewar.dir/build.make
 corewar: /usr/lib/libcurses.dylib
 corewar: /usr/lib/libform.dylib
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2411,6 +2437,7 @@ CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operation
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o.requires
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o.requires
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o.requires
+CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o.requires
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o.requires
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o.requires
 CMakeFiles/corewar.dir/requires: CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o.requires

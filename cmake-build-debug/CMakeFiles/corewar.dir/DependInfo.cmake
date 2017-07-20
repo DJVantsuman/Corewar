@@ -84,6 +84,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lld.c" "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o"
   "/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lldi.c" "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o"
   "/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/or.c" "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o"
+  "/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/st.c" "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/st.c.o"
   "/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c" "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o"
   "/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c" "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o"
   "/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c" "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o"

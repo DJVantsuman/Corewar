@@ -28,8 +28,8 @@ operations/ldi.c \
 operations/sti.c \
 operations/add.c \
 operations/sub.c \
-#operations/st.c \
-#operations/lldi.c \
+operations/st.c \
+operations/lldi.c \
 
 
 OSRC =	$(SRC:.c=.o)

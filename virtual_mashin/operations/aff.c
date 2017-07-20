@@ -12,16 +12,16 @@
 
 #include "../vm.h"
 
-void    aff(t_program **program, t_process **process)
+void    aff(t_data **data, t_process **process)
 {
 	char    byte[2];
 
-	byte[0] = (*program)->map[(*process)->position + 1];
-	byte[1] = (*program)->map[(*process)->position + 2];
+	byte[0] = (*data)->map[(*process)->position + 1];
+	byte[1] = (*data)->map[(*process)->position + 2];
 	if (byte[0] == 64)
 	{
 		if (byte[1] <= REG_NUMBER && byte[1] > 0)
-			printf("%c", (*program)->registers[byte[1] - 1] % 256);
+			printf("%c", (*process)->registers[byte[1] - 1] % 256);
 	}
-	(*process)->position = ((*process)->position + 1) % MEM_SIZE;
+	(*process)->position = ((*process)->position + 3) % MEM_SIZE;
 }

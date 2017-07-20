@@ -82,7 +82,7 @@ set(SOURCE_FILES
         virtual_mashin/operations/lld.c
         virtual_mashin/operations/lldi.c
         virtual_mashin/operations/or.c
-#        virtual_mashin/operations/st.c
+        virtual_mashin/operations/st.c
         virtual_mashin/operations/sti.c
         virtual_mashin/operations/sub.c
         virtual_mashin/operations/xor.c

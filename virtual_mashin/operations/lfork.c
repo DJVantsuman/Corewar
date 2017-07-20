@@ -12,39 +12,15 @@
 
 #include "../vm.h"
 
-//void    add_process(t_process **process, int index)
-//{
-//	t_process *var;
-//	t_process *last;
-//
-//	var = (t_process *)malloc(sizeof(t_process));
-//	last = *process;
-//	var->position = index;
-//	var->live = 0;
-//	var->delay = 0;
-//	var->flag = 0;
-//
-//	while(last && last->next)
-//		last = last->next;
-//	if (last == NULL)
-//	{
-//		var->next = *process;
-//		*process = var;
-//	}
-//	else
-//	{
-//		var->next = NULL;
-//		last->next = var;
-//	}
-//}
-void    lfork(t_program **program, t_process **process)
+void    lfork(t_data **data, t_process **process)
 {
 	char    byte[2];
-	int     res;
+	unsigned int     res;
 
-	byte[0] = (*program)->map[((*process)->position + 1) % MEM_SIZE];
-	byte[1] = (*program)->map[((*process)->position + 2) % MEM_SIZE];
-	res = (byte[0] << 8) + byte[1];
-	add_process(&(*process), (*process)->position + res);
-	(*process)->position = ((*process)->position + 2) % MEM_SIZE;
+	byte[0] = (*data)->map[((*process)->position + 1) % MEM_SIZE];
+	byte[1] = (*data)->map[((*process)->position + 2) % MEM_SIZE];
+	res = (unsigned int)((byte[0] << 8) + byte[1]);
+	add_process(&(*data), &(*process), (*process)->position + (res % IDX_MOD)
+															  % MEM_SIZE);
+	(*process)->position = ((*process)->position + 3) % MEM_SIZE;
 }
