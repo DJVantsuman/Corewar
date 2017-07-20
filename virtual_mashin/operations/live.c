@@ -40,5 +40,5 @@ void		live(t_player **player, t_program **program, t_process **process)
 		if (pl != NULL)
 			pl = pl->next;
 	}
-	(*process)->position = ((*process)->position + 5) % MEM_SIZE;
+	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }

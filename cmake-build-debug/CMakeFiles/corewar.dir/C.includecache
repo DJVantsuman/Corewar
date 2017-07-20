@@ -258,6 +258,10 @@ vm.h
 vm.h
 /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
 
+/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/add.c
+../vm.h
+/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+
 /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/aff.c
 ../vm.h
 /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
@@ -299,6 +303,10 @@ vm.h
 /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
 
 /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c
+../vm.h
+/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+
+/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c
 ../vm.h
 /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
 

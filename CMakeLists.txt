@@ -71,7 +71,7 @@ set(SOURCE_FILES
         virtual_mashin/libft/ft_tolower.c
         virtual_mashin/libft/ft_toupper.c
         virtual_mashin/libft/libft.h
-#        virtual_mashin/operations/add.c
+        virtual_mashin/operations/add.c
         virtual_mashin/operations/aff.c
         virtual_mashin/operations/and.c
         virtual_mashin/operations/ft_fork.c
@@ -84,7 +84,7 @@ set(SOURCE_FILES
         virtual_mashin/operations/or.c
 #        virtual_mashin/operations/st.c
         virtual_mashin/operations/sti.c
-#        virtual_mashin/operations/sub.c
+        virtual_mashin/operations/sub.c
         virtual_mashin/operations/xor.c
         virtual_mashin/operations/zjmp.c
         virtual_mashin/check_live.c

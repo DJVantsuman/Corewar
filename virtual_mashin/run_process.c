@@ -55,11 +55,9 @@ void    perform_function(t_player **player, t_program **program,
 	{}
 //        st(&(*program), &(*process));
     else if ((unsigned char)byte == 0x04)
-	{}
-//        add(&(*program), &(*process));
+        add(&(*program), &(*process));
     else if ((unsigned char)byte == 0x05)
-	{}
-//        sub(player, program, process);
+        sub(&(*program), &(*process));
     else if ((unsigned char)byte == 0x06)
         and(&(*program), &(*process));
     else if ((unsigned char)byte == 0x07)

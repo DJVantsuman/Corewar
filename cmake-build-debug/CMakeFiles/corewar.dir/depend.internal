@@ -190,6 +190,11 @@ CMakeFiles/corewar.dir/virtual_mashin/model.c.o
  /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
  /nfs/2016/a/arodiono/corewar/virtual_mashin/model.c
  /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+CMakeFiles/corewar.dir/virtual_mashin/operations/add.c.o
+ /nfs/2016/a/arodiono/corewar/op.h
+ /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+ /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/add.c
+ /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
 CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o
  /nfs/2016/a/arodiono/corewar/op.h
  /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
@@ -244,6 +249,11 @@ CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o
  /nfs/2016/a/arodiono/corewar/op.h
  /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
  /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c
+ /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+CMakeFiles/corewar.dir/virtual_mashin/operations/sub.c.o
+ /nfs/2016/a/arodiono/corewar/op.h
+ /nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+ /nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c
  /nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
 CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o
  /nfs/2016/a/arodiono/corewar/op.h

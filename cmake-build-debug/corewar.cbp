@@ -295,6 +295,9 @@
 		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/model.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/add.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/aff.c">
 			<Option target="corewar"/>
 		</Unit>
@@ -326,6 +329,9 @@
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c">
