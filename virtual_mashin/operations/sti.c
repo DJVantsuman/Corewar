@@ -31,12 +31,9 @@ void    sti(t_program **program, t_process **process)
     param[1] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
     param[2] = (char)((*program)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
 	if (param[0] == REG_CODE)
-	{
-//		val[0] = get_reg_numb((*program), (*process), &shift);
-//		if (val[0] > REG_NUMBER)
-//			return ;
 		val[0] = get_reg_value((*program), (*process), &shift);
-	}
+	else
+		return ;
 	if (param[1] == REG_CODE)
 		val[1] = get_reg_value((*program), (*process), &shift);
 	else if (param[1] == DIR_CODE)
@@ -51,7 +48,7 @@ void    sti(t_program **program, t_process **process)
 		val[2] = get_dir_value((*program), (*process), &shift, 2);
 	else
 		return ;
-	load_value(&(*program), ((*process)->position +(val[1] + val[2])) %
+	load_value(&(*program), ((*process)->position + (val[1] + val[2])) %
 							MEM_SIZE, val[0]);
 	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }
