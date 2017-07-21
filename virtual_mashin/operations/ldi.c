@@ -32,14 +32,14 @@ unsigned int    get_direct(t_data **data, unsigned int position)
 
 void    ldi(t_data **data, t_process **process)
 {
-    char            param[3];
+    unsigned char            param[3];
     unsigned int    val[3];
     int             shift;
 
     shift = 2;
-    param[0] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
-    param[1] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
-    param[2] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
+    param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
+    param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
+    param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
 	if (param[0] == REG_CODE)
 		val[0] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[0] == DIR_CODE)

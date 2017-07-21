@@ -30,11 +30,11 @@ void   ld(t_data **data, t_process **process)
 	else
 		return ;
 	if (par[1] == REG_CODE)
-		val[1] = get_reg_value(&(*data), (*process), &shift);
+		val[1] = get_reg_numb(&(*data), (*process), &shift);
 	else
 		return ;
 	if (val[1] <= REG_NUMBER && val[1] > 0)
-		(*process)->registers[val[1] - 1] = val[0] % IDX_MOD;
+		(*process)->registers[val[1] - 1] = (val[0] % IDX_MOD);
 	(*process)->carry = (*process)->carry == 0 ? 1 : 0;
 	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
 }
