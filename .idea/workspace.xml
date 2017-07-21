@@ -12,68 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="840e889d-5488-49f0-9c3e-2012fcc5fae1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/check_live.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/controller.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/controller.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/free_memory.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/main.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/main.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/model.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/model.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/aff.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/and.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/ft_fork.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/ld.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/ldi.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lfork.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/live.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lld.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/lldi.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/or.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/sti.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/xor.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/operations/zjmp.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/run_process.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/start_process.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/virtual_mashin/visualise.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/corewar" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/corewar" afterPath="$PROJECT_DIR$/virtual_mashin/corewar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/libft/libft.a" afterPath="$PROJECT_DIR$/virtual_mashin/libft/libft.a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/C.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/corewar.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/Makefile" afterPath="$PROJECT_DIR$/virtual_mashin/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/free_memory.c" afterPath="$PROJECT_DIR$/virtual_mashin/free_memory.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/main.c" afterPath="$PROJECT_DIR$/virtual_mashin/main.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/model.c" afterPath="$PROJECT_DIR$/virtual_mashin/model.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/add.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/add.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/aff.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/aff.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/and.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/and.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/ft_fork.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/ft_fork.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/ld.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/ld.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/ldi.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/ldi.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/lfork.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/lfork.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/live.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/live.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/lld.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/lld.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/lldi.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/lldi.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/or.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/or.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/st.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/st.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/sti.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/sti.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/sub.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/sub.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/xor.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/xor.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/operations/zjmp.c" afterPath="$PROJECT_DIR$/virtual_mashin/operations/zjmp.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/run_process.c" afterPath="$PROJECT_DIR$/virtual_mashin/run_process.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/start_process.c" afterPath="$PROJECT_DIR$/virtual_mashin/start_process.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/visualise.c" afterPath="$PROJECT_DIR$/virtual_mashin/visualise.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/virtual_mashin/vm.h" afterPath="$PROJECT_DIR$/virtual_mashin/vm.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,61 +38,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.44846678">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="visualise.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="visualise.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/visualise.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="723">
-                  <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+                <state relative-caret-position="190">
+                  <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="st.s" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test_map/st.s">
+          <file leaf-file-name="ld.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/ld.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+                <state relative-caret-position="684">
+                  <caret line="36" column="61" lean-forward="false" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="st.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/st.c">
+          <file leaf-file-name="sub.c" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/sub.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="aff.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/aff.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="25" column="52" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sti.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/sti.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sti.s" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test_map/sti.s">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+                <state relative-caret-position="760">
+                  <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -160,28 +71,8 @@
           <file leaf-file-name="run_process.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/run_process.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="761">
-                  <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="live.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/live.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="684">
-                  <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ft_fork.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/ft_fork.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="931">
-                  <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+                <state relative-caret-position="2147">
+                  <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -190,7 +81,7 @@
           <file leaf-file-name="start_process.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/start_process.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
+                <state relative-caret-position="969">
                   <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
                   <folding />
                 </state>
@@ -204,7 +95,7 @@
           <file leaf-file-name="op.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/op.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
+                <state relative-caret-position="589">
                   <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
                   <folding />
                 </state>
@@ -214,7 +105,7 @@
           <file leaf-file-name="vm.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/vm.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38">
+                <state relative-caret-position="817">
                   <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
                   <folding>
                     <element signature="e#924#948#0" expanded="true" />
@@ -236,7 +127,7 @@
           <file leaf-file-name="model.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/model.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="123">
+                <state relative-caret-position="570">
                   <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
                   <folding />
                 </state>
@@ -246,7 +137,7 @@
           <file leaf-file-name="controller.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/controller.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1124">
+                <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
@@ -256,7 +147,7 @@
           <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="816">
+                <state relative-caret-position="1311">
                   <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
                   <folding />
                 </state>
@@ -266,8 +157,8 @@
           <file leaf-file-name="and.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/and.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="34" column="75" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="75" />
+                <state relative-caret-position="570">
+                  <caret line="57" column="61" lean-forward="false" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
                   <folding />
                 </state>
               </provider>
@@ -300,6 +191,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Andrii Rodionov &lt;arodiono@student.unit.ua&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -319,10 +215,8 @@
         <option value="$PROJECT_DIR$/virtual_mashin/main.c" />
         <option value="$PROJECT_DIR$/virtual_mashin/operations/sti.c" />
         <option value="$PROJECT_DIR$/virtual_mashin/operations/lfork.c" />
-        <option value="$PROJECT_DIR$/virtual_mashin/operations/ld.c" />
         <option value="$PROJECT_DIR$/virtual_mashin/operations/zjmp.c" />
         <option value="$PROJECT_DIR$/virtual_mashin/operations/add.c" />
-        <option value="$PROJECT_DIR$/virtual_mashin/operations/sub.c" />
         <option value="$PROJECT_DIR$/virtual_mashin/operations/ft_fork.c" />
         <option value="$PROJECT_DIR$/virtual_mashin/vm.h" />
         <option value="$PROJECT_DIR$/test_map/add.s" />
@@ -348,6 +242,8 @@
         <option value="$PROJECT_DIR$/virtual_mashin/operations/st.c" />
         <option value="$PROJECT_DIR$/test_map/sti.s" />
         <option value="$PROJECT_DIR$/virtual_mashin/visualise.c" />
+        <option value="$PROJECT_DIR$/virtual_mashin/operations/ld.c" />
+        <option value="$PROJECT_DIR$/virtual_mashin/operations/sub.c" />
       </list>
     </option>
   </component>
@@ -418,38 +314,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="virtual_mashin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corewar" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corewar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="virtual_mashin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corewar" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corewar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -709,12 +573,21 @@
       <workItem from="1500467885617" duration="12904000" />
       <workItem from="1500488121373" duration="128000" />
       <workItem from="1500553896741" duration="211000" />
-      <workItem from="1500554523167" duration="21580000" />
+      <workItem from="1500554523167" duration="21660000" />
+      <workItem from="1500632405674" duration="463000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed last merge">
+      <created>1500632865096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1500632865096</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53977000" />
+    <option name="totallyTimeSpent" value="54520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,21 +600,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970226" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3539124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3539124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -791,6 +663,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed last merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed last merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -863,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
           <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
           <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,13 +783,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/controller.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1124">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -925,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/model.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="570">
           <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding />
         </state>
@@ -935,13 +806,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
+        <state relative-caret-position="1311">
           <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
           <folding />
         </state>
@@ -951,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="817">
           <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,22 +842,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/op.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="589">
           <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/ld.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1007,15 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/sub.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,7 +970,7 @@
     <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/live.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1143,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,7 +992,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/start_process.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="969">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
@@ -1165,8 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/run_process.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state relative-caret-position="2147">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1181,7 +1016,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/vm.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="817">
           <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding>
             <element signature="e#924#948#0" expanded="true" />
@@ -1189,17 +1024,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/and.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="34" column="75" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/st.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
+        <state relative-caret-position="532">
           <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
@@ -1223,8 +1050,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virtual_mashin/visualise.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+        <state relative-caret-position="190">
+          <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/and.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="57" column="61" lean-forward="false" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/ld.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="61" lean-forward="false" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtual_mashin/operations/sub.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
