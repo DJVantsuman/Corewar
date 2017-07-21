@@ -21,7 +21,6 @@ void    sub(t_data **data, t_process **process)
 
 	shift = 2;
 	pos = 2;
-<<<<<<< HEAD
 	param[0] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
 	param[1] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
 	param[2] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
@@ -34,20 +33,6 @@ void    sub(t_data **data, t_process **process)
 		{
 			val[0] = get_reg_value(&(*data), (*process), &pos);
 			val[1] = get_reg_value(&(*data), (*process), &pos);
-=======
-	param[0] = (char)((*data)->program->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
-	param[1] = (char)((*data)->program->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
-	param[2] = (char)((*data)->program->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
-	if (param[0] == REG_CODE && param[1] == REG_CODE && param[2] == REG_CODE)
-	{
-		val[0] = get_reg_numb((*data), (*process), &shift);
-		val[1] = get_reg_numb((*data), (*process), &shift);
-		val[2] = get_reg_numb((*data), (*process), &shift);
-		if (val[0] <= 16 && val[0] > 0 && val[1] <= 16 && val[1] > 0 && val[2] <= 16 && val[2] > 0)
-		{
-			val[0] = get_reg_value((*data), (*process), &pos);
-			val[1] = get_reg_value((*data), (*process), &pos);
->>>>>>> origin/master
 			(*process)->registers[val[2] - 1] = val[0] - val[1];
 		}
 		(*process)->carry = (*process)->carry == 0 ? 1 : 0;
