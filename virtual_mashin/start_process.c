@@ -42,7 +42,7 @@ void    start_process(t_data **data)
 
     index[1] = 0;
     index[2] = CYCLE_TO_DIE;
-    index[3] = 0;
+    index[3] = 1;
 
     while (1)
     {

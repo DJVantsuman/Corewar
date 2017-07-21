@@ -1,4 +1,4 @@
 .name "ldi"
 .comment "qazqwe"
 
-ldi  -564,r2,r8
+ldi  0,%0,r1

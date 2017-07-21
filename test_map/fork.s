@@ -1,4 +1,4 @@
 .name "fork"
 .comment "qazqwe"
 
-fork %-1654
+fork %65
