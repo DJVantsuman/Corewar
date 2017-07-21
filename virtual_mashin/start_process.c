@@ -16,7 +16,7 @@
 ** Function 'print_map' print map to the standart output wen user established
 ** flag -dump.
 */
-void    print_map(char *map)
+void    print_map(unsigned char *map)
 {
     int i;
 

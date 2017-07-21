@@ -86,6 +86,7 @@ void    model(t_data **data)
 //	(*data)->program = (t_program *)malloc(sizeof(t_program));
 	(*data)->process = (t_process *)malloc(sizeof(t_process));
 	(*data)->process = NULL;
+	(*data)->speed = 20000;
     create_map(&(*data));
     start_process(&(*data));
     free_player(&(*data)->player);

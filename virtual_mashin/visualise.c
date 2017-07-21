@@ -12,10 +12,13 @@
 
 #include "vm.h"
 
+
 void	wprint_status(t_data **data, WINDOW **status, int cycles)
 {
 	t_player *tmp;
+	float sp;
 
+	sp = 1 / ((float)(*data)->speed / (float)1000000);
 	tmp = (*data)->player;
 	wattron(*status, A_BOLD);
 	while (tmp)
@@ -28,11 +31,12 @@ void	wprint_status(t_data **data, WINDOW **status, int cycles)
 		wprintw(*status, "LAST LIVE\t%d\n\n", tmp->last_live);
 		tmp = tmp->next;
 	}
+	wprintw (*status, "\n\tCYCLES PER SECOND %.1f\n", sp);
 	wprintw (*status, "\n\tCYCLES %d\n", cycles);
 	wattroff(*status, A_BOLD);
 }
 
-int 	is_process(t_process **process, unsigned int i)
+char 	is_process(t_process **process, unsigned int i)
 {
 	t_process *tmp;
 
@@ -40,7 +44,7 @@ int 	is_process(t_process **process, unsigned int i)
 	while (tmp)
 	{
 		if (tmp->position == i)
-			return (1);
+			return (tmp->p_id);
 		tmp = tmp->next;
 	}
 	return (0);
@@ -50,16 +54,17 @@ void    wprint_map(t_data **data, WINDOW **map)
 {
 	unsigned int i;
 	int color;
+	char p_id;
 
 	i = 0;
 	while (i < MEM_SIZE)
 	{
 		color = (*data)->map_v[i] == 0 ? 10 : (*data)->map_v[i];
-		if (is_process(&(*data)->process, i))
+		if ((p_id = is_process(&(*data)->process, i)))
 		{
-			wattron((*map), COLOR_PAIR(color + 4));
+			wattron((*map), COLOR_PAIR(p_id + 4));
 			wprintw((*map), "%.2x", (unsigned char)(*data)->map[i]);
-			wattroff((*map), COLOR_PAIR(color + 4));
+			wattroff((*map), COLOR_PAIR(p_id + 4));
 			wprintw((*map), " ");
 		}
 		else
@@ -97,8 +102,11 @@ void colors_init()
 
 void visualise(t_data **data, int cycles)
 {
+	int key;
+
 	initscr();
 	noecho();
+	nodelay(stdscr, TRUE);
 
 	WINDOW *map;
 	WINDOW *status;
@@ -115,5 +123,30 @@ void visualise(t_data **data, int cycles)
 	refresh();
 	wrefresh(status);
 	wrefresh(map);
-	usleep (10000);
+	key = getch();
+	if (key == 27)
+	{
+		endwin();
+		exit(1);
+	}
+	else if (key == 32)
+	{
+		while(1)
+		{
+			key = getch();
+			if(key == 32)
+				break;
+		}
+	}
+	else if (key == 'e')
+	{
+		if ((*data)->speed > 0)
+			(*data)->speed -= 10000;
+	}
+	else if (key == 'w')
+	{
+		if ((*data)->speed < 4294967295)
+			(*data)->speed += 10000;
+	}
+	usleep ((*data)->speed);
 }

@@ -14,15 +14,15 @@
 
 void    lld(t_data **data, t_process **process)
 {
-	char            par[2];
+	unsigned char  	par[2];
 	unsigned int    val[2];
 	int             shift;
 
 	shift = 2;
-    par[0] = (char)((*data)->map[(((*process)->position + 1)) % MEM_SIZE] & 192)
-			>> 6;
-    par[1] = (char)((*data)->map[(((*process)->position + 1)) % MEM_SIZE] & 48)
-			>> 4;
+    par[0] = (unsigned char)((*data)->map[(((*process)->position + 1)) %
+										  MEM_SIZE] & 192) >> 6;
+    par[1] = (unsigned char)((*data)->map[(((*process)->position + 1)) %
+										  MEM_SIZE] & 48) >> 4;
 	if (par[0] == DIR_CODE)
 		val[0] = get_dir_value(&(*data), (*process), &shift, 4);
 	else if (par[0] == IND_CODE)
@@ -30,7 +30,7 @@ void    lld(t_data **data, t_process **process)
 	else
 		return ;
 	if (par[1] == REG_CODE)
-		val[1] = get_reg_value(&(*data), (*process), &shift);
+		val[1] = get_reg_numb(&(*data), (*process), &shift);
 	else
 		return ;
 	if (val[1] <= REG_NUMBER && val[1] > 0)

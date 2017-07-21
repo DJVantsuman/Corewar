@@ -16,7 +16,9 @@ void    add_process(t_data **data, t_process **process, unsigned int index)
 {
 	t_process *var;
 	t_process *last;
+	int i;
 
+	i = 0;
 	var = (t_process *)malloc(sizeof(t_process));
 	last = (*data)->process;
 	var->position = index;
@@ -25,7 +27,11 @@ void    add_process(t_data **data, t_process **process, unsigned int index)
 	var->carry = (*process)->carry;
 	var->p_id = (*process)->p_id;
 	var->p_num = (*process)->p_num;
-
+	while (i < REG_NUMBER)
+	{
+		var->registers[i] = (*process)->registers[i];
+		i++;
+	}
 	while(last && last->next)
 		last = last->next;
 	if (last == NULL)
@@ -48,7 +54,7 @@ void    ft_fork(t_data **data, t_process **process)
 										  MEM_SIZE];
 	byte[1] = (unsigned char)(*data)->map[((*process)->position + 2) % MEM_SIZE];
 	res = (unsigned int)((byte[0] << 8) + byte[1]);
-	add_process(&(*data), &(*process), (unsigned char)(((*process)->position +
+	add_process(&(*data), &(*process), (unsigned int)(((*process)->position +
 	(res % IDX_MOD)) % MEM_SIZE));
 	(*process)->position = ((*process)->position + 3) % MEM_SIZE;
 }

@@ -40,8 +40,8 @@ unsigned int    get_ind_value(t_data **data, t_process *process, int *shift)
 									  MEM_SIZE]);
 	val[1] = (unsigned char)((*data)->map[(process->position + (*shift) + 1)
 										  % MEM_SIZE]);
-	val[2] += (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1])) % MEM_SIZE];
-	val[3] += (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1]) + 1) % MEM_SIZE];
+	val[2] = (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1])) % MEM_SIZE];
+	val[3] = (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1]) + 1) % MEM_SIZE];
 	(*shift) += 2;
 	return ((val[2] << 8) + val[3]);
 }

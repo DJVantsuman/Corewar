@@ -14,16 +14,16 @@
 
 void    xor(t_data **data, t_process **process)
 {
-	char            param[3];
+	unsigned char   param[3];
 	unsigned int    val[3];
 	int             shift;
 	int             i;
 
 	shift = 2;
 	i = 0;
-	param[0] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
-	param[1] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
-	param[2] = (char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
+	param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
+	param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
+	param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
 	while (i < 2)
 	{
 		if (param[i] == REG_CODE)

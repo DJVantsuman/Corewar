@@ -47,12 +47,13 @@ typedef struct 			s_data
 {
 	struct s_player		*player;
 	struct s_process	*process;
-	char             	map[MEM_SIZE];
+	unsigned char       map[MEM_SIZE];
 	char             	map_v[MEM_SIZE];
 	int             	dump;
 	int             	nbr;
 	int             	v;
 	unsigned int             	amount_players;
+	unsigned int		speed;
 }						t_data;
 
 void    error_manager(char *file, int  index);
@@ -94,7 +95,8 @@ unsigned int    get_ind_value(t_data **data, t_process *process, int *shift);
 unsigned int    get_reg_value(t_data **data, t_process *process, int *shift);
 unsigned int    get_reg_numb(t_data **data, t_process *process, int *shift);
 unsigned int    get_direct(t_data **data, unsigned int position);
-void 	load_value(t_data **data, t_process **process, unsigned int pos, unsigned int val);
+void 	load_value(t_data **data, t_process **process, int pos,
+				   unsigned int val);
 void	visualise(t_data **data, int cycles);
 //void    wprint_map(t_program **program, t_process **process, WINDOW **map);
 //void	wprint_status(t_player **player, t_program **program, WINDOW
