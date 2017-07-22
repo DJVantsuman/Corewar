@@ -19,9 +19,11 @@
 void    create_process(t_data **data, int index, int p_num,
 					   unsigned char p_id)
 {
+	int i;
     t_process *var;
     t_process *last;
 
+	i = 1;
     var = (t_process *)malloc(sizeof(t_process));
     last = (*data)->process;
 	var->p_num = p_num;
@@ -31,6 +33,8 @@ void    create_process(t_data **data, int index, int p_num,
 	var->carry = 0;
     var->delay = -1;
 	var->registers[0] = p_num;
+	while (i < REG_NUMBER)
+		var->registers[i++] = 0;
     while(last && last->next)
         last = last->next;
     if (last == NULL)

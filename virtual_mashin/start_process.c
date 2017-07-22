@@ -57,7 +57,8 @@ void    start_process(t_data **data)
             index[0]++;
 			index[3]++;
 		}
-        check_live(&(*data), index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;
+        check_live(&(*data), &index[1], index[2]) ? index[2] -= CYCLE_DELTA :
+        index[1]++;
         if (index[1] == MAX_CHECKS)
         {
             reset_live(&(*data));

@@ -35,7 +35,8 @@ void    add(t_data **data, t_process **process)
 			val[1] = get_reg_value(&(*data), (*process), &pos);
 			(*process)->registers[val[2] - 1] = val[0] + val[1];
 		}
-		(*process)->carry = (*process)->carry == 0 ? 1 : 0;
 	}
-	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
+	(*process)->carry = val[0] + val[1] == 0 ? 1 : 0;
+	(*process)->position += count_shift (3, (*data)->map[((*process)
+																  ->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
 }

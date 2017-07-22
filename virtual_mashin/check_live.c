@@ -89,7 +89,7 @@ void    reset_live(t_data **data)
 ** if any player said 'live' => then NBR_LIVE times function return 1,
 ** otherwise return 0;
 */
-int    check_live(t_data **data, int index)
+int    check_live(t_data **data, int *index1, int index2)
 {
     t_process *proc;
     t_player *play;
@@ -102,13 +102,14 @@ int    check_live(t_data **data, int index)
             proc->live = -1;
         proc = proc->next;
     }
-    if (check_process_live(&(*data)->process) || index <= CYCLE_DELTA)
+    if (check_process_live(&(*data)->process) || index2 <= CYCLE_DELTA)
         print_champ(&(*data)->player);
     while (play)
     {
         if (play->live >= NBR_LIVE)
         {
             reset_live(&(*data));
+			*index1 = 0;
             return (1);
         }
         play = play->next;
