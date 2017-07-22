@@ -87,7 +87,7 @@ unsigned int   bit_rev(unsigned int octet);
 
 int     is_nbr(char *s);
 int     check_arg(char **av, int i, int dump, int players);
-int     check_live(t_data **data, int index);
+int     check_live(t_data **data, int *index1, int index2);
 
 void    add_process(t_data **data, t_process **process, int index);
 int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize);
@@ -98,6 +98,7 @@ int    get_direct(t_data **data, int position);
 void 	load_value(t_data **data, t_process **process, int pos, int val);
 int	get_ind_address(t_data **data, t_process *process, int *shift);
 int     get_index_position(int pc, unsigned int val);
+int     count_shift(int numb, unsigned char byte, int dir);
 void	visualise(t_data **data, int *cycles);
 //void	wprint_champ(t_player **player);
 //void    wprint_map(t_program **program, t_process **process, WINDOW **map);

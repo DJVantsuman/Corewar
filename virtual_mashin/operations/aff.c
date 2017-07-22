@@ -23,5 +23,5 @@ void    aff(t_data **data, t_process **process)
 		if (byte[1] <= REG_NUMBER && byte[1] > 0)
 			printf("%c", (*process)->registers[byte[1] - 1] % 256);
 	}
-	(*process)->position = ((*process)->position + 3) % MEM_SIZE;
+	(*process)->position += count_shift (2, (*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
 }

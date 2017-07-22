@@ -12,26 +12,35 @@
 
 #include "../vm.h"
 
-//int     get_index_position(int pc, unsigned int val)
-//{
-//	int     p;
-//
-//	p = val;
-//	if (p < 0)
-//	{
-//		while (p < 0)
-//			p += IDX_MOD;
-//		p -= IDX_MOD;
-//	}
-//	else
-//		p %= IDX_MOD;
-//	p += pc;
-//	if (p < 0)
-//		p += MEM_SIZE;
-//	else
-//		p %= MEM_SIZE;
-//	return (p);
-//}
+int     count_shift(int numb, unsigned char byte, int dir)
+{
+	unsigned char cbyte[3];
+	int     shift;
+	int     i;
+
+	i = 0;
+	shift = 2;
+
+	cbyte[0] = (unsigned char)(byte & 192) >> 6;
+	cbyte[1] = (unsigned char)(byte & 48) >> 4;
+	cbyte[2] = (unsigned char)(byte & 12) >> 2;
+	while (i < numb)
+	{
+		if (cbyte[i] == REG_CODE)
+			shift += 1;
+		else if (cbyte[i] == IND_CODE)
+			shift += 2;
+		else if (cbyte[i] == DIR_CODE)
+		{
+			if (dir == 2)
+				shift += 2;
+			else
+				shift += 4;
+		}
+		i++;
+	}
+	return (shift);
+}
 
 int	get_ind_address(t_data **data, t_process *process, int *shift)
 {
@@ -53,17 +62,16 @@ void    st(t_data **data, t_process **process)
     param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
  	if (param[0] == REG_CODE)
 		val[0] = get_reg_value(&(*data), (*process), &shift);
-	else
-		return ;
 	if (param[1] == REG_CODE)
-		val[1] = get_reg_value(&(*data), (*process), &shift);
+		val[1] = get_reg_numb(&(*data), (*process), &shift);
 	else if (param[1] == IND_CODE)
 		val[1] = (short)get_ind_address(&(*data), (*process), &shift);
-	else
-		return ;
 	val[2] = (*process)->position + (val[1] % IDX_MOD);
 	if (val[2] < 0)
 		val[2] += MEM_SIZE;
-	load_value(&(*data), &(*process), val[2], val[0]);
-	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
+	(*process)->position += count_shift (2, (*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
+	if (param[0] == REG_CODE && param[1] == IND_CODE)
+		load_value(&(*data), &(*process), val[2], val[0]);
+	if (param[0] == REG_CODE && param[1] == REG_CODE)
+		(*process)->registers[val[1] - 1] = val[0];
 }

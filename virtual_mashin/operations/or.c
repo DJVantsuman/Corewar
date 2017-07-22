@@ -32,13 +32,14 @@ void    or(t_data **data, t_process **process)
 			val[i] = get_dir_value(&(*data), (*process), &shift, 4);
 		else if (param[i] == IND_CODE)
 			val[i] = get_ind_value(&(*data), (*process), &shift);
-		else
-			break;
 		i++;
 	}
 	val[2] = get_reg_numb(&(*data), (*process), &shift);
-	if (val[2] <= REG_NUMBER && val[2] > 0 && i == 2)
+	if (val[2] <= REG_NUMBER && val[2] > 0 && param[0] > 0 && param[1] > 0 && param[2] == 1)
+	{
 		(*process)->registers[val[2] - 1] = val[0] | val[1];
-	(*process)->carry = (*process)->carry == 0 ? 1 : 0;
-	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
+	}
+	(*process)->carry = (val[0] | val[1]) == 0 ? 1 : 0;
+	(*process)->position += count_shift (3, (*data)->map[((*process)
+																  ->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
 }
