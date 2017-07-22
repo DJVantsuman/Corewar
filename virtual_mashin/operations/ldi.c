@@ -12,11 +12,11 @@
 
 #include "../vm.h"
 
-unsigned int    get_direct(t_data **data, unsigned int position)
+int    get_direct(t_data **data, int position)
 {
     int             i;
-    unsigned int    val[4];
-    unsigned int    pos;
+    int    val[4];
+    int    pos;
 
     i = 0;
     pos = position;
@@ -33,7 +33,7 @@ unsigned int    get_direct(t_data **data, unsigned int position)
 void    ldi(t_data **data, t_process **process)
 {
     unsigned char            param[3];
-    unsigned int    val[3];
+    int    val[3];
     int             shift;
 
     shift = 2;

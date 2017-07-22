@@ -15,7 +15,7 @@
 void    add(t_data **data, t_process **process)
 {
 	unsigned char   param[3];
-	unsigned int    val[3];
+	int    val[3];
 	int             shift;
 	int 			pos;
 

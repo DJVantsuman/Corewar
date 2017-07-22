@@ -23,7 +23,7 @@ void    print_map(unsigned char *map)
     i = 0;
     while (i < MEM_SIZE)
     {
-        printf("%.2x", (unsigned char)map[i]);/////////////////////////////////////
+        printf("%.2x", map[i]);/////////////////////////////////////
         i++;
     }
     exit(1);
@@ -51,7 +51,7 @@ void    start_process(t_data **data)
         {
             run_process(&(*data), index[3]);
 			if((*data)->v == 1)
-				visualise (&(*data), index[3]);
+				visualise (&(*data), index);
 			if ((*data)->dump > 0 && (*data)->dump == index[0])
                 print_map((*data)->map);
             index[0]++;

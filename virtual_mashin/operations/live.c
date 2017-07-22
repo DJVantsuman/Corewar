@@ -15,7 +15,7 @@
 void		live(t_data **data, t_process **process, int cycle)
 {
 	t_player		*pl;
-	unsigned int    val;
+	int    val;
 	int 			shift;
 
 	shift = 1;

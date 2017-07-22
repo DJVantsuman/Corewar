@@ -15,7 +15,7 @@
 void   ld(t_data **data, t_process **process)
 {
 	unsigned char   par[2];
-	unsigned int    val[2];
+	int    val[2];
 	int             shift;
 
 	shift = 2;

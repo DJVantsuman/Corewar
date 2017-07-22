@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-void    add_process(t_data **data, t_process **process, unsigned int index)
+void    add_process(t_data **data, t_process **process, int index)
 {
 	t_process *var;
 	t_process *last;
@@ -48,13 +48,11 @@ void    add_process(t_data **data, t_process **process, unsigned int index)
 void    ft_fork(t_data **data, t_process **process)
 {
 	unsigned char    byte[2];
-	unsigned int     res;
+	int     res;
 
-	byte[0] = (unsigned char)(*data)->map[((*process)->position + 1) %
-										  MEM_SIZE];
-	byte[1] = (unsigned char)(*data)->map[((*process)->position + 2) % MEM_SIZE];
-	res = (unsigned int)((byte[0] << 8) + byte[1]);
-	add_process(&(*data), &(*process), (unsigned int)(((*process)->position +
-	(res % IDX_MOD)) % MEM_SIZE));
+	byte[0] = (*data)->map[((*process)->position + 1) % MEM_SIZE];
+	byte[1] = (*data)->map[((*process)->position + 2) % MEM_SIZE];
+	res = (short)((byte[0] << 8) + byte[1]);
+	add_process(&(*data), &(*process), (((*process)->position + (res % IDX_MOD)) % MEM_SIZE));
 	(*process)->position = ((*process)->position + 3) % MEM_SIZE;
 }

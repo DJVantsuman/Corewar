@@ -16,8 +16,8 @@
 ** Function "create_process" create one process and add it to the end of
 ** list 'process'.
 */
-void    create_process(t_data **data, unsigned int index, unsigned int p_num,
-					   char p_id)
+void    create_process(t_data **data, int index, int p_num,
+					   unsigned char p_id)
 {
     t_process *var;
     t_process *last;
@@ -51,8 +51,8 @@ void    create_process(t_data **data, unsigned int index, unsigned int p_num,
 */
 void    create_map(t_data **data)
 {
-    unsigned int	i;
-    unsigned int	n;
+    int	i;
+    int	n;
     unsigned int	j;
     t_player		*var;
 

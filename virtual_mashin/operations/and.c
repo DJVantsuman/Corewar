@@ -12,17 +12,15 @@
 
 #include "../vm.h"
 
-unsigned int    get_dir_value(t_data **data, t_process *process, int
-*shift, int dsize)
+int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize)
 {
-	int             i;
-	unsigned int    val[4];
+	int    i;
+	int    val[4];
 
 	i = 0;
 	while (i < dsize)
 	{
-		val[i] = (unsigned char)((*data)->map[(process->position +
-				(*shift)) % MEM_SIZE]);
+		val[i] = ((*data)->map[(process->position + (*shift)) % MEM_SIZE]);
 		(*shift)++;
 		i++;
 	}
@@ -32,34 +30,32 @@ unsigned int    get_dir_value(t_data **data, t_process *process, int
 		return ((val[0] << 8) + val[1]);
 }
 
-unsigned int    get_ind_value(t_data **data, t_process *process, int *shift)
+int    get_ind_value(t_data **data, t_process *process, int *shift)
 {
-	unsigned int    val[4];
+	int    val[4];
 
-	val[0] = (unsigned char)((*data)->map[(process->position + (*shift)) %
-									  MEM_SIZE]);
-	val[1] = (unsigned char)((*data)->map[(process->position + (*shift) + 1)
-										  % MEM_SIZE]);
-	val[2] = (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1])) % MEM_SIZE];
-	val[3] = (unsigned char)(*data)->map[(process->position + ((val[0] << 8) + val[1]) + 1) % MEM_SIZE];
+	val[0] = ((*data)->map[(process->position + (*shift)) % MEM_SIZE]);
+	val[1] = ((*data)->map[(process->position + (*shift) + 1) % MEM_SIZE]);
+	val[2] = (*data)->map[(process->position + ((val[0] << 8) + val[1])) % MEM_SIZE];
+	val[3] = (*data)->map[(process->position + ((val[0] << 8) + val[1]) + 1) % MEM_SIZE];
 	(*shift) += 2;
 	return ((val[2] << 8) + val[3]);
 }
 
-unsigned int    get_reg_value(t_data **data, t_process *process, int *shift)
+int    get_reg_value(t_data **data, t_process *process, int *shift)
 {
-	unsigned int res;
+	int res;
 
 	res = process->registers[(*data)->map[(process->position + (*shift)) % MEM_SIZE] - 1];
 	(*shift)++;
 	return res;
 }
 
-unsigned int    get_reg_numb(t_data **data, t_process *process, int *shift)
+int    get_reg_numb(t_data **data, t_process *process, int *shift)
 {
-	unsigned int res;
+	int res;
 
-	res = (unsigned int)(*data)->map[(process->position + (*shift)) % MEM_SIZE];
+	res = (*data)->map[(process->position + (*shift)) % MEM_SIZE];
 	(*shift)++;
 	return res;
 }
@@ -67,7 +63,7 @@ unsigned int    get_reg_numb(t_data **data, t_process *process, int *shift)
 void    and(t_data **data, t_process **process)
 {
 	unsigned char   param[3];
-	unsigned int    val[3];
+	int    val[3];
 	int             shift;
 	int             i;
 

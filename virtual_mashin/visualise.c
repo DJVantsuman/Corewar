@@ -12,8 +12,47 @@
 
 #include "vm.h"
 
+//void	wprint_champ(t_player **player)
+//{
+//	t_player    *play;
+//
+//	play = *player;
+//	while (play)
+//	{
+//		if (play->last_live == 1)
+//		{
+//			refresh ();
+//			wprintw(stdscr, "\nPlayer %d (%s) won.\n", play->number, play->header->prog_name);
+//			refresh ();
+//		}
+//		play = play->next;
+//	}
+//	refresh ();
+//	wprintw(stdscr, "\nPlayer %d (%s) won.\n", (*player)->number, (*player)->header->prog_name);
+//	refresh ();
+//
+////	endwin();
+////	exit(1);
+//
+//}
 
-void	wprint_status(t_data **data, WINDOW **status, int cycles)
+int		process_count(t_process *process)
+{
+	int i;
+	t_process *tmp;
+
+	i = 0;
+	tmp = process;
+	while (tmp)
+	{
+		if (tmp->live >= 0)
+			i++;
+		tmp = tmp->next;
+	}
+	return (i);
+}
+
+void	wprint_status(t_data **data, WINDOW **status, int *cycles)
 {
 	t_player *tmp;
 	float sp;
@@ -21,29 +60,34 @@ void	wprint_status(t_data **data, WINDOW **status, int cycles)
 	sp = 1 / ((float)(*data)->speed / (float)1000000);
 	tmp = (*data)->player;
 	wattron(*status, A_BOLD);
+	wprintw (*status, "CYCLES/SECOND\t%.1f\n", sp);
+	wprintw (*status, "CYCLE\t\t%d\n\n", cycles[3]);
+	wprintw (*status, "CYCLE_TO_DIE\t%d\n", cycles[2]);
+	wprintw (*status, "CYCLE_DELTA\t%d\n", cycles[3]);
+	wprintw (*status, "NBR_LIVE\t%d\n", cycles[3]);
+	wprintw (*status, "MAX_CHECKS\t%d\n", cycles[3]);
+	wprintw (*status, "\nPROCESSES\t%d\n", process_count((*data)->process));
 	while (tmp)
 	{
-		wprintw(*status, "PLAYER %i\t", tmp->number);
+		wprintw(*status, "\nPLAYER %i\t", tmp->number);
 		wattron(*status, COLOR_PAIR(tmp->id));
 		wprintw(*status, "%s\n", tmp->header->prog_name);
 		wattroff(*status, COLOR_PAIR(tmp->id));
-		wprintw(*status, "LIVE\t%d\n", tmp->live);
-		wprintw(*status, "LAST LIVE\t%d\n\n", tmp->last_live);
+		wprintw(*status, "  LIVE\t\t%d\n", tmp->live);
+		wprintw(*status, "  LAST LIVE\t%d\n", tmp->last_live);
 		tmp = tmp->next;
 	}
-	wprintw (*status, "\n\tCYCLES PER SECOND %.1f\n", sp);
-	wprintw (*status, "\n\tCYCLES %d\n", cycles);
 	wattroff(*status, A_BOLD);
 }
 
-char 	is_process(t_process **process, unsigned int i)
+char 	is_process(t_process **process, int i)
 {
 	t_process *tmp;
 
 	tmp = *process;
 	while (tmp)
 	{
-		if (tmp->position == i)
+		if (tmp->position == i && tmp->live >= 0)
 			return (tmp->p_id);
 		tmp = tmp->next;
 	}
@@ -52,7 +96,7 @@ char 	is_process(t_process **process, unsigned int i)
 
 void    wprint_map(t_data **data, WINDOW **map)
 {
-	unsigned int i;
+	int i;
 	int color;
 	char p_id;
 
@@ -100,7 +144,7 @@ void colors_init()
 //	init_pair(10, COLOR_BLACK, COLOR_WHITE);
 }
 
-void visualise(t_data **data, int cycles)
+void visualise(t_data **data, int *cycles)
 {
 	int key;
 
@@ -141,12 +185,12 @@ void visualise(t_data **data, int cycles)
 	else if (key == 'e')
 	{
 		if ((*data)->speed > 0)
-			(*data)->speed -= 10000;
+			(*data)->speed -= 1000;
 	}
 	else if (key == 'w')
 	{
 		if ((*data)->speed < 4294967295)
-			(*data)->speed += 10000;
+			(*data)->speed += 1000;
 	}
 	usleep ((*data)->speed);
 }

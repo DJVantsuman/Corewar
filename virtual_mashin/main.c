@@ -50,8 +50,9 @@ void    reed_player(char *file, t_player **player, int player_number)
     int         fd;
     char        *line;
     t_player    *tmp;
+	t_player    *last;
 
-    fd = open(file,O_RDONLY);
+	fd = open(file,O_RDONLY);
     line = malloc(sizeof(header_t));
     tmp = (t_player *)malloc(sizeof(t_player));
     if (fd > 0)
@@ -66,8 +67,17 @@ void    reed_player(char *file, t_player **player, int player_number)
         tmp->live = 0;
         tmp->last_live = 0;
         close(fd);
-        tmp->next = *player;
-        *player = tmp;
+
+		tmp->next = NULL;
+		if (*player == NULL)
+			*player = tmp;
+		else
+		{
+			last = *player;
+			while (last->next)
+				last = last->next;
+			last->next = tmp;
+		}
     }
     else
         error_manager(file, 1);
