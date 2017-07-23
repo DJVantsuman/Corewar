@@ -43,7 +43,7 @@ void    sti(t_data **data, t_process **process)
 	else if (param[1] == DIR_CODE)
 		val[1] = get_dir_value(&(*data), (*process), &shift, 2);
 	else if (param[1] == IND_CODE)
-		val[1] = get_ind_value(&(*data), (*process), &shift);
+		val[1] = get_ind_value(&(*data), (*process), &shift, 2);
 	if (param[2] == REG_CODE)
 		val[2] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[2] == DIR_CODE)

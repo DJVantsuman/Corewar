@@ -27,7 +27,7 @@ void    lldi(t_data **data, t_process **process)
 	else if (param[0] == DIR_CODE)
 		val[0] = get_dir_value(&(*data), (*process), &shift, 2);
 	else if (param[0] == IND_CODE)
-		val[0] = get_ind_value(&(*data), (*process), &shift);
+		val[0] = get_ind_value(&(*data), (*process), &shift, 2);
 	if (param[1] == REG_CODE)
 		val[1] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[1] == DIR_CODE)

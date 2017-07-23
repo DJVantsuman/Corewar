@@ -31,7 +31,7 @@ void    xor(t_data **data, t_process **process)
 		else if (param[i] == DIR_CODE)
 			val[i] = get_dir_value(&(*data), (*process), &shift, 4);
 		else if (param[i] == IND_CODE)
-			val[i] = get_ind_value(&(*data), (*process), &shift);
+			val[i] = get_ind_value(&(*data), (*process), &shift, 4);
 		i++;
 	}
 	val[2] = get_reg_numb(&(*data), (*process), &shift);
