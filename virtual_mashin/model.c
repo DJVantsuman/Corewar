@@ -92,6 +92,8 @@ void    model(t_data **data)
 	(*data)->process = NULL;
 	(*data)->speed = 20000;
     create_map(&(*data));
+//	if((*data)->v == 1)
+//		system("afplay sound.wav");
     start_process(&(*data));
     free_player(&(*data)->player);
 //    free_program(&(*data)->program);

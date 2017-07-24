@@ -6,243 +6,243 @@
 
 #IncludeRegexTransform: 
 
-/nfs/2016/a/arodiono/corewar/op.h
+/Users/user/CLionProjects/Corewar/op.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/check_live.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/check_live.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/controller.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/controller.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/error_manager.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/error_manager.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/free_memory.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/free_memory.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_alldown.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_alldown.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_allup.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_allup.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_atoi.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_atoi.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_bzero.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_bzero.c
 strings.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalnum.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isalnum.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalpha.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isalpha.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isascii.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isascii.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isblank.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isblank.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isdigit.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isdigit.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isprint.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isprint.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_itoa.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_itoa.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstadd.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstadd.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdel.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstdel.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdelone.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstdelone.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstiter.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstiter.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstmap.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstmap.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstnew.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstnew.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memalloc.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memalloc.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memccpy.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memccpy.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memchr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memchr.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcmp.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memcmp.c
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcpy.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memcpy.c
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memdel.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memdel.c
 stdlib.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memmove.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memmove.c
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memset.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memset.c
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putchar.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar_fd.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putchar_fd.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putendl.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl_fd.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putendl_fd.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putnbr.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr_fd.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putnbr_fd.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putstr.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr_fd.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putstr_fd.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcat.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strcat.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strchr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strchr.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strclr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strclr.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcmp.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strcmp.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcpy.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strcpy.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdel.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strdel.c
 stdlib.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdup.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strdup.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strequ.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strequ.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striter.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_striter.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striteri.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_striteri.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strjoin.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strjoin.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlcat.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strlcat.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlen.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strlen.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmap.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strmap.c
 stdlib.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmapi.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strmapi.c
 stdlib.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncat.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strncat.c
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncmp.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strncmp.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncpy.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strncpy.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnequ.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strnequ.c
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnew.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strnew.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnstr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strnstr.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrchr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strrchr.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrev.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strrev.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsplit.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strsplit.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strstr.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strstr.c
 string.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsub.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strsub.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strtrim.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strtrim.c
 libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strworldup.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strworldup.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_tolower.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_tolower.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_toupper.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_toupper.c
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 string.h
 -
 unistd.h
@@ -250,95 +250,95 @@ unistd.h
 stdlib.h
 -
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/main.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/main.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/model.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/model.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/add.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/add.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/aff.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/aff.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/and.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/and.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ft_fork.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/ft_fork.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ld.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/ld.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ldi.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/ldi.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lfork.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/lfork.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/live.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/live.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lld.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/lld.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lldi.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/lldi.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/or.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/or.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/st.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/st.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/sti.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/sub.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/xor.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/zjmp.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/operations/zjmp.c
 ../vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/run_process.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/run_process.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/start_process.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/start_process.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/visualise.c
+/Users/user/CLionProjects/Corewar/virtual_mashin/visualise.c
 vm.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 
-/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h
 libft/libft.h
-/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h
+/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h
 ../op.h
-/nfs/2016/a/arodiono/corewar/op.h
+/Users/user/CLionProjects/Corewar/op.h
 stdio.h
 -
 fcntl.h

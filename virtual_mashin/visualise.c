@@ -63,9 +63,9 @@ void	wprint_status(t_data **data, WINDOW **status, int *cycles)
 	wprintw (*status, "CYCLES/SECOND\t%.1f\n", sp);
 	wprintw (*status, "CYCLE\t\t%d\n\n", cycles[3]);
 	wprintw (*status, "CYCLE_TO_DIE\t%d\n", cycles[2]);
-	wprintw (*status, "CYCLE_DELTA\t%d\n", cycles[3]);
-	wprintw (*status, "NBR_LIVE\t%d\n", cycles[3]);
-	wprintw (*status, "MAX_CHECKS\t%d\n", cycles[3]);
+	wprintw (*status, "CYCLE_DELTA\t%d\n", CYCLE_DELTA);
+	wprintw (*status, "NBR_LIVE\t%d\n", NBR_LIVE);
+	wprintw (*status, "MAX_CHECKS\t%d\n", cycles[1]);
 	wprintw (*status, "\nPROCESSES\t%d\n", process_count((*data)->process));
 	while (tmp)
 	{
@@ -103,23 +103,25 @@ void    wprint_map(t_data **data, WINDOW **map)
 	i = 0;
 	while (i < MEM_SIZE)
 	{
+		if ((i % 64) == 0)
+			wprintw((*map), "0x%.4x : ", i);
 		color = (*data)->map_v[i] == 0 ? 10 : (*data)->map_v[i];
 		if ((p_id = is_process(&(*data)->process, i)))
 		{
 			wattron((*map), COLOR_PAIR(p_id + 4));
-			wprintw((*map), "%.2x", (unsigned char)(*data)->map[i]);
+			wprintw((*map), "%.2x", (*data)->map[i]);
 			wattroff((*map), COLOR_PAIR(p_id + 4));
 			wprintw((*map), " ");
 		}
 		else
 		{
 			wattron((*map), COLOR_PAIR(color));
-			wprintw((*map), "%.2x ", (unsigned char)(*data)->map[i]);
+			wprintw((*map), "%.2x ", (*data)->map[i]);
 			wattroff((*map), COLOR_PAIR(color));
 		}
 		i++;
-		if ((i % 64) == 0)
-			printw("\n");
+//		if ((i % 64) == 0)
+//			printw("\n");
 	}
 	wrefresh(*map);
 
@@ -127,20 +129,22 @@ void    wprint_map(t_data **data, WINDOW **map)
 
 void colors_init()
 {
+	init_color(COLOR_WHITE, 700, 700, 700);
+
 	init_pair(14, COLOR_BLACK, COLOR_WHITE);
 	init_pair(10, COLOR_WHITE, COLOR_BLACK);
 
-	init_pair(1, COLOR_RED, COLOR_BLACK);
-	init_pair(2, COLOR_GREEN, COLOR_BLACK);
-	init_pair(3, COLOR_BLUE, COLOR_BLACK);
-	init_pair(4, COLOR_MAGENTA, COLOR_BLACK);
+	init_pair(1, COLOR_GREEN, COLOR_BLACK);
+	init_pair(2, COLOR_BLUE, COLOR_BLACK);
+	init_pair(3, COLOR_RED, COLOR_BLACK);
+	init_pair(4, COLOR_CYAN, COLOR_BLACK);
 
-	init_pair(5, COLOR_BLACK, COLOR_RED);
-	init_pair(6, COLOR_BLACK, COLOR_GREEN);
-	init_pair(7, COLOR_BLACK, COLOR_BLUE);
-	init_pair(8, COLOR_BLACK, COLOR_MAGENTA);
+	init_pair(5, COLOR_BLACK, COLOR_GREEN);
+	init_pair(6, COLOR_BLACK, COLOR_BLUE);
+	init_pair(7, COLOR_BLACK, COLOR_RED);
+	init_pair(8, COLOR_BLACK, COLOR_CYAN);
 
-//	init_pair(9, COLOR_WHITE, COLOR_BLACK);
+	init_pair(0, COLOR_WHITE, COLOR_BLACK);
 //	init_pair(10, COLOR_BLACK, COLOR_WHITE);
 }
 
@@ -155,8 +159,8 @@ void visualise(t_data **data, int *cycles)
 	WINDOW *map;
 	WINDOW *status;
 
-	map = newwin(64, 192, 1, 2);
-	status = newwin(64, 48, 1, 200);
+	map = newwin(64, 201, 1, 2);
+	status = newwin(64, 48, 1, 205);
 
 	start_color();
 	colors_init();

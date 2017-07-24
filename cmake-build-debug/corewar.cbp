@@ -8,354 +8,354 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/nfs/2016/a/arodiono/corewar/cmake-build-debug"/>
+				<Option working_dir="/Users/user/CLionProjects/Corewar/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/nfs/2016/a/arodiono/corewar/cmake-build-debug"/>
+				<Option working_dir="/Users/user/CLionProjects/Corewar/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/nfs/2016/a/arodiono/corewar/cmake-build-debug"/>
+				<Option working_dir="/Users/user/CLionProjects/Corewar/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="corewar">
-				<Option output="/nfs/2016/a/arodiono/corewar/cmake-build-debug/corewar" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/nfs/2016/a/arodiono/corewar/cmake-build-debug"/>
+				<Option output="/Users/user/CLionProjects/Corewar/cmake-build-debug/corewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/user/CLionProjects/Corewar/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="corewar/fast">
-				<Option output="/nfs/2016/a/arodiono/corewar/cmake-build-debug/corewar" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/nfs/2016/a/arodiono/corewar/cmake-build-debug"/>
+				<Option output="/Users/user/CLionProjects/Corewar/cmake-build-debug/corewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/user/CLionProjects/Corewar/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/a/arodiono/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/user/CLionProjects/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/op.h">
+		<Unit filename="/Users/user/CLionProjects/Corewar/op.h">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/check_live.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/check_live.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/controller.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/controller.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/error_manager.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/error_manager.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/free_memory.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/free_memory.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_alldown.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_alldown.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_allup.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_allup.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_atoi.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_atoi.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_bzero.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_bzero.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalnum.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isalnum.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isalpha.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isalpha.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isascii.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isascii.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isblank.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isblank.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isdigit.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isdigit.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_isprint.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_isprint.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_itoa.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_itoa.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstadd.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstadd.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdel.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstdel.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstdelone.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstdelone.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstiter.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstiter.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstmap.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstmap.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_lstnew.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_lstnew.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memalloc.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memalloc.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memccpy.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memccpy.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memchr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memchr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcmp.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memcmp.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memcpy.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memcpy.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memdel.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memdel.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memmove.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memmove.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_memset.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_memset.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putchar.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putchar_fd.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putendl.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putendl_fd.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putnbr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putnbr_fd.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putstr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_putstr_fd.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcat.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strcat.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strchr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strchr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strclr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strclr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcmp.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strcmp.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strcpy.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strcpy.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdel.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strdel.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strdup.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strdup.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strequ.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strequ.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striter.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_striter.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_striteri.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_striteri.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strjoin.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strjoin.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlcat.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strlcat.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strlen.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strlen.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmap.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strmap.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strmapi.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strmapi.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncat.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strncat.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncmp.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strncmp.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strncpy.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strncpy.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnequ.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strnequ.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnew.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strnew.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strnstr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strnstr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrchr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strrchr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strrev.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strrev.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsplit.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strsplit.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strstr.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strstr.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strsub.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strsub.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strtrim.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strtrim.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_strworldup.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_strworldup.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_tolower.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_tolower.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/ft_toupper.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/ft_toupper.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/libft/libft.h">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/libft/libft.h">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/main.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/main.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/model.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/model.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/add.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/add.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/aff.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/aff.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/and.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/and.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ft_fork.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/ft_fork.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ld.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/ld.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/ldi.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/ldi.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lfork.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/lfork.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/live.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/live.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lld.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/lld.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/lldi.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/lldi.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/or.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/or.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/st.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/st.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sti.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/sti.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/sub.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/sub.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/xor.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/xor.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/operations/zjmp.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/operations/zjmp.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/run_process.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/run_process.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/start_process.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/start_process.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/visualise.c">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/visualise.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/virtual_mashin/vm.h">
+		<Unit filename="/Users/user/CLionProjects/Corewar/virtual_mashin/vm.h">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/arodiono/corewar/CMakeLists.txt">
+		<Unit filename="/Users/user/CLionProjects/Corewar/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

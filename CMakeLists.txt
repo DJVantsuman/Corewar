@@ -95,9 +95,10 @@ set(SOURCE_FILES
         virtual_mashin/model.c
         virtual_mashin/run_process.c
         virtual_mashin/start_process.c
-        virtual_mashin/vm.h
         virtual_mashin/visualise.c
+        virtual_mashin/vm.h
         op.h)
 
 add_executable(corewar ${SOURCE_FILES})
+
 target_link_libraries(corewar ${CURSES_LIBRARIES})

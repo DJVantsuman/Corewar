@@ -15,12 +15,12 @@
 void    add_process(t_data **data, t_process **process, int index)
 {
 	t_process *var;
-	t_process *last;
+//	t_process *last;
 	int i;
 
 	i = 0;
 	var = (t_process *)malloc(sizeof(t_process));
-	last = (*data)->process;
+//	last = (*data)->process;
 	var->position = index;
 	var->live = 0;
 	var->delay = -1;
@@ -33,18 +33,21 @@ void    add_process(t_data **data, t_process **process, int index)
 		var->registers[i] = (*process)->registers[i];
 		i++;
 	}
-	while(last && last->next)
-		last = last->next;
-	if (last == NULL)
-	{
-		var->next = (*data)->process;
-		(*data)->process = var;
-	}
-	else
-	{
-		var->next = NULL;
-		last->next = var;
-	}
+	var->next = (*data)->process;
+	(*data)->process = var;
+
+//	while(last && last->next)
+//		last = last->next;
+//	if (last == NULL)
+//	{
+//		var->next = (*data)->process;
+//		(*data)->process = var;
+//	}
+//	else
+//	{
+//		var->next = NULL;
+//		last->next = var;
+//	}
 }
 void    ft_fork(t_data **data, t_process **process)
 {
