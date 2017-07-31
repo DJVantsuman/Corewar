@@ -14,20 +14,20 @@
 
 unsigned int   bit_rev(unsigned int octet)
 {
-    unsigned int x[4];
+	unsigned int x[4];
 
-    x[0] = (unsigned int) ((octet & 4278190080) >> 24);
-    x[1] = ((octet & 16711680) >> 8);
-    x[2] = ((octet & 65280) << 8);
-    x[3] = ((octet & 255) << 24);
-    return (x[0] + x[1] + x[2] + x[3]);
+	x[0] = (unsigned int) ((octet & 4278190080) >> 24);
+	x[1] = ((octet & 16711680) >> 8);
+	x[2] = ((octet & 65280) << 8);
+	x[3] = ((octet & 255) << 24);
+	return (x[0] + x[1] + x[2] + x[3]);
 }
 
 void set_players_number(t_player **player)
 {
 	char			c;
-    unsigned int	i;
-    t_player		*var;
+	unsigned int	i;
+	t_player		*var;
 
 	i = 0;
 	c = 1;
@@ -47,26 +47,26 @@ void set_players_number(t_player **player)
 */
 void    reed_player(char *file, t_player **player, int player_number)
 {
-    int         fd;
-    char        *line;
-    t_player    *tmp;
+	int         fd;
+	char        *line;
+	t_player    *tmp;
 	t_player    *last;
 
 	fd = open(file,O_RDONLY);
-    line = malloc(sizeof(header_t));
-    tmp = (t_player *)malloc(sizeof(t_player));
-    if (fd > 0)
-    {
-        tmp->number = (unsigned int)player_number;
-        tmp->file = file;
-        read(fd, line, sizeof(header_t));
-        tmp->header = (header_t *)line;
-        tmp->header->prog_size = bit_rev(tmp->header->prog_size);
-        tmp->prog_cod = malloc(sizeof(char) * tmp->header->prog_size);
-        read(fd, tmp->prog_cod, tmp->header->prog_size);
-        tmp->live = 0;
-        tmp->last_live = 0;
-        close(fd);
+	line = malloc(sizeof(header_t));
+	tmp = (t_player *)malloc(sizeof(t_player));
+	if (fd > 0)
+	{
+		tmp->number = (unsigned int)player_number;
+		tmp->file = file;
+		read(fd, line, sizeof(header_t));
+		tmp->header = (header_t *)line;
+		tmp->header->prog_size = bit_rev(tmp->header->prog_size);
+		tmp->prog_cod = malloc(sizeof(char) * tmp->header->prog_size);
+		read(fd, tmp->prog_cod, tmp->header->prog_size);
+		tmp->live = 0;
+		tmp->last_live = 0;
+		close(fd);
 
 		tmp->next = NULL;
 		if (*player == NULL)
@@ -78,9 +78,9 @@ void    reed_player(char *file, t_player **player, int player_number)
 				last = last->next;
 			last->next = tmp;
 		}
-    }
-    else
-        error_manager(file, 1);
+	}
+	else
+		error_manager(file, 1);
 }
 
 /*
@@ -91,28 +91,28 @@ void    reed_player(char *file, t_player **player, int player_number)
 */
 void    reed_arg(t_data **data, char **av)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (av[++i])
-    {
-        if (ft_strcmp(av[i], "-dump") == 0)
-        {
-            if (is_nbr(av[++i]))
+	i = 0;
+	while (av[++i])
+	{
+		if (ft_strcmp(av[i], "-dump") == 0)
+		{
+			if (is_nbr(av[++i]))
 			(*data)->dump = ft_atoi(av[i]);
-        }
-        else if (ft_strcmp(av[i], "-n") == 0)
-        {
+		}
+		else if (ft_strcmp(av[i], "-n") == 0)
+		{
 			(*data)->nbr = ft_atoi(av[++i]);
-            if (av[++i] && ft_strcmp(av[i], "-dump") != 0 &&
-                ft_strcmp(av[i], "-n") != 0)
-                reed_player(av[i], &(*data)->player, (*data)->nbr);
-        }
-        else if (ft_strcmp(av[i], "-v") == 0)
+			if (av[++i] && ft_strcmp(av[i], "-dump") != 0 &&
+				ft_strcmp(av[i], "-n") != 0)
+				reed_player(av[i], &(*data)->player, (*data)->nbr);
+		}
+		else if (ft_strcmp(av[i], "-v") == 0)
 			(*data)->v = 1;
-        else
-            reed_player(av[i], &(*data)->player, 0);
-    }
+		else
+			reed_player(av[i], &(*data)->player, 0);
+	}
 }
 
 
@@ -123,19 +123,19 @@ void    reed_arg(t_data **data, char **av)
 */
 int main(int ac, char **av)
 {
-    t_data      *data;
+	t_data      *data;
 
-    if (ac > 1)
-    {
+	if (ac > 1)
+	{
 		data = (t_data *)malloc(sizeof(t_data));
-        data->player = NULL;
-        data->amount_players = check_arg(av, 0, 0, 0);
-        reed_arg(&data, av);
+		data->player = NULL;
+		data->amount_players = check_arg(av, 0, 0, 0);
+		reed_arg(&data, av);
 		set_players_number(&data->player);
 		controller(&data->player);
 		model(&data);
-    }
-    else
-        error_manager(NULL, 0);
-    return (0);
+	}
+	else
+		error_manager(NULL, 0);
+	return (0);
 }

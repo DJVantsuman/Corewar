@@ -65,7 +65,7 @@ void	wprint_status(t_data **data, WINDOW **status, int *cycles)
 	wprintw (*status, "CYCLE_TO_DIE\t%d\n", cycles[2]);
 	wprintw (*status, "CYCLE_DELTA\t%d\n", CYCLE_DELTA);
 	wprintw (*status, "NBR_LIVE\t%d\n", NBR_LIVE);
-	wprintw (*status, "MAX_CHECKS\t%d\n", cycles[1]);
+	wprintw (*status, "MAX_CHECKS\t%d\n", MAX_CHECKS);
 	wprintw (*status, "\nPROCESSES\t%d\n", process_count((*data)->process));
 	while (tmp)
 	{
@@ -189,7 +189,7 @@ void visualise(t_data **data, int *cycles)
 	else if (key == 'e')
 	{
 		if ((*data)->speed > 0)
-			(*data)->speed -= 1000;
+			(*data)->speed -= 10000;
 	}
 	else if (key == 'w')
 	{

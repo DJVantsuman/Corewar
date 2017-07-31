@@ -16,37 +16,38 @@
 ** Function "create_process" create one process and add it to the end of
 ** list 'process'.
 */
-void    create_process(t_data **data, int index, int p_num,
-					   unsigned char p_id)
+void    create_process(t_data **data, int index, int p_num, unsigned char p_id)
 {
-	int i;
-    t_process *var;
-    t_process *last;
+	int			i;
+	t_process	*var;
+	t_process	*last;
 
 	i = 1;
-    var = (t_process *)malloc(sizeof(t_process));
-    last = (*data)->process;
+	var = (t_process *)malloc(sizeof(t_process));
+	last = (*data)->process;
 	var->p_num = p_num;
 	var->p_id = p_id;
-    var->position = index;
-    var->live = 0;
+	var->position = index;
+	var->live = 0;
 	var->carry = 0;
-    var->delay = -1;
+	var->delay = -1;
 	var->registers[0] = p_num;
 	while (i < REG_NUMBER)
 		var->registers[i++] = 0;
-    while(last && last->next)
-        last = last->next;
-    if (last == NULL)
-    {
-        var->next = (*data)->process;
-		(*data)->process = var;
-    }
-    else
-    {
-        var->next = NULL;
-        last->next = var;
-    }
+	var->next = (*data)->process;
+	(*data)->process = var;
+	// while(last && last->next)
+	// 	last = last->next;
+	// if (last == NULL)
+	// {
+	// 	var->next = (*data)->process;
+	// 	(*data)->process = var;
+	// }
+	// else
+	// {
+	// 	var->next = NULL;
+	// 	last->next = var;
+	// }
 }
 
 /*
@@ -55,31 +56,31 @@ void    create_process(t_data **data, int index, int p_num,
 */
 void    create_map(t_data **data)
 {
-    int	i;
-    int	n;
-    unsigned int	j;
-    t_player		*var;
+	int				i;
+	int				n;
+	unsigned int	j;
+	t_player		*var;
 
-    var = (*data)->player;
-    i = 0;
-    while (i < (*data)->amount_players)
-    {
-        if (i == 0)
-            n = 0;
-        else
-            n = (MEM_SIZE / (*data)->amount_players) * i;
-        j = 0;
-        create_process(&(*data), n, var->number, var->id);
-        while (j < var->header->prog_size)
-        {
-	        (*data)->map[n] = var->prog_cod[j];
+	var = (*data)->player;
+	i = 0;
+	while (i < (*data)->amount_players)
+	{
+		if (i == 0)
+			n = 0;
+		else
+			n = (MEM_SIZE / (*data)->amount_players) * i;
+		j = 0;
+		create_process(&(*data), n, var->number, var->id);
+		while (j < var->header->prog_size)
+		{
+			(*data)->map[n] = var->prog_cod[j];
 			(*data)->map_v[n] = var->id;
 			n++;
-            j++;
-        }
-        var = var->next;
-        i++;
-    }
+			j++;
+		}
+		var = var->next;
+		i++;
+	}
 }
 
 /*
@@ -87,15 +88,11 @@ void    create_map(t_data **data)
 */
 void    model(t_data **data)
 {
-//	(*data)->program = (t_program *)malloc(sizeof(t_program));
 	(*data)->process = (t_process *)malloc(sizeof(t_process));
 	(*data)->process = NULL;
 	(*data)->speed = 20000;
-    create_map(&(*data));
-//	if((*data)->v == 1)
-//		system("afplay sound.wav");
-    start_process(&(*data));
-    free_player(&(*data)->player);
-//    free_program(&(*data)->program);
-    free_process(&(*data)->process);
+	create_map(&(*data));
+	start_process(&(*data));
+	free_player(&(*data)->player);
+	free_process(&(*data)->process);
 }

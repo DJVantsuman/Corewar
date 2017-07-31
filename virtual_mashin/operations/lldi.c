@@ -14,14 +14,14 @@
 
 void    lldi(t_data **data, t_process **process)
 {
-	unsigned char   param[3];
-    int    val[4];
-    int             shift;
+	unsigned char	param[3];
+	int				val[4];
+	int				shift;
 
-    shift = 2;
-    param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
-    param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
-    param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
+	shift = 2;
+	param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
+	param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
+	param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
 	if (param[0] == REG_CODE)
 		val[0] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[0] == DIR_CODE)

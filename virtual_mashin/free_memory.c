@@ -14,18 +14,18 @@
 
 void    free_player(t_player **player)
 {
-    t_player *tmp;
+	t_player *tmp;
 
-    tmp = (*player);
-    while (tmp->next)
-    {
-        tmp = (*player);
-        if ((*player)->prog_cod)
-            free((*player)->prog_cod);
-        free((*player)->header);
-        (*player) = (*player)->next;
-        free(tmp);
-    }
+	tmp = (*player);
+	while (tmp->next)
+	{
+		tmp = (*player);
+		if ((*player)->prog_cod)
+			free((*player)->prog_cod);
+		free((*player)->header);
+		(*player) = (*player)->next;
+		free(tmp);
+	}
 }
 
 //void    free_program(t_program **program)
@@ -36,17 +36,16 @@ void    free_player(t_player **player)
 
 void    free_process(t_process **process)
 {
-    t_process  *var;
+	t_process  *var;
 
-        if (process)
-        {
-            while (*process)
-            {
-                var = *process;
-                *process = (*process)->next;
-                free(var);
-            }
-            free(process);
-        }
+		if (process)
+		{
+			while (*process)
+			{
+				var = *process;
+				*process = (*process)->next;
+				free(var);
+			}
+			free(process);
+		}
 }
-

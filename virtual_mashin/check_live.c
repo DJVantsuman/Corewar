@@ -17,20 +17,20 @@
 */
 void    print_champ(t_player **player)
 {
-    t_player    *play;
+	t_player    *play;
 
-    play = *player;
-    while (play)
-    {
-        if (play->last_live == 1)
-        {
-            printf("\nPlayer %d (%s) won.\n", play->number, play->header->prog_name);
-            exit(1);
-        }
-        play = play->next;
-    }
-    printf("\nPlayer %d (%s) won.\n", (*player)->number, (*player)->header->prog_name);
-    exit(1);
+	play = *player;
+	while (play)
+	{
+		if (play->last_live == 1)
+		{
+			printf("\nPlayer %d (%s) won.\n", play->number, play->header->prog_name);
+			exit(1);
+		}
+		play = play->next;
+	}
+	printf("\nPlayer %d (%s) won.\n", (*player)->number, (*player)->header->prog_name);
+	exit(1);
 }
 
 /*
@@ -39,21 +39,21 @@ void    print_champ(t_player **player)
 */
 int     check_process_live(t_process **process)
 {
-    t_process *proc;
-    int       f;
+	t_process *proc;
+	int       f;
 
-    proc = *process;
-    f = 0;
-    while (proc)
-    {
-        if (proc->live > 0)
-            f++;
-        proc = proc->next;
-    }
-    if (f == 0)
-        return (1);
-    else
-        return (0);
+	proc = *process;
+	f = 0;
+	while (proc)
+	{
+		if (proc->live > 0)
+			f++;
+		proc = proc->next;
+	}
+	if (f == 0)
+		return (1);
+	else
+		return (0);
 }
 
 /*
@@ -62,22 +62,22 @@ int     check_process_live(t_process **process)
 */
 void    reset_live(t_data **data)
 {
-    t_player *play;
-    t_process *proc;
+	t_player *play;
+	t_process *proc;
 
-    proc = (*data)->process;
-    play = (*data)->player;
-    while (play)
-    {
-        play->live = 0;
-        play = play->next;
-    }
-    while (proc)
-    {
-        if (proc->live > 0)
-            proc->live = 0;
-        proc = proc->next;
-    }
+	proc = (*data)->process;
+	play = (*data)->player;
+	while (play)
+	{
+		play->live = 0;
+		play = play->next;
+	}
+	while (proc)
+	{
+		if (proc->live > 0)
+			proc->live = 0;
+		proc = proc->next;
+	}
 }
 
 /*
@@ -91,28 +91,28 @@ void    reset_live(t_data **data)
 */
 int    check_live(t_data **data, int *index1, int index2)
 {
-    t_process *proc;
-    t_player *play;
+	t_process *proc;
+	t_player *play;
 
-    proc = (*data)->process;
-    play = (*data)->player;
-    while (proc)
-    {
-        if (proc->live == 0)
-            proc->live = -1;
-        proc = proc->next;
-    }
-    if (check_process_live(&(*data)->process) || index2 <= CYCLE_DELTA)
-        print_champ(&(*data)->player);
-    while (play)
-    {
-        if (play->live >= NBR_LIVE)
-        {
-            reset_live(&(*data));
+	proc = (*data)->process;
+	play = (*data)->player;
+	while (proc)
+	{
+		if (proc->live == 0)
+			proc->live = -1;
+		proc = proc->next;
+	}
+	if (check_process_live(&(*data)->process) || index2 <= CYCLE_DELTA)
+		print_champ(&(*data)->player);
+	while (play)
+	{
+		if (play->live >= NBR_LIVE)
+		{
+			reset_live(&(*data));
 			*index1 = 0;
-            return (1);
-        }
-        play = play->next;
-    }
-    return (0);
+			return (1);
+		}
+		play = play->next;
+	}
+	return (0);
 }

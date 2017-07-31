@@ -22,21 +22,21 @@
 typedef struct      s_player
 {
 	unsigned char 	id;
-    int				number;
-    char            *file;
-    header_t        *header;
-    unsigned char   *prog_cod;
-    int             live;
-    int             last_live;
-    struct s_player *next;
+	int				number;
+	char            *file;
+	header_t        *header;
+	unsigned char   *prog_cod;
+	int             live;
+	int             last_live;
+	struct s_player *next;
 }                   t_player;
 
 typedef struct       s_process
 {
 	unsigned char 			 p_id;
 	int 	 		p_num;
-    int     		position;
-    int              live;
+	int				position;
+	int              live;
 	int              carry;
 	int              delay;
 	int     		registers[REG_NUMBER];

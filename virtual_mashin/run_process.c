@@ -18,24 +18,24 @@
 */
 void    perform_function_continue(t_data **data, t_process **process, int byte)
 {
-    if ((unsigned char)byte == 0x09)
-        zjmp(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x0a)
-        ldi(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x0b)
-        sti(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x0c)
-        ft_fork(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x0d)
-        lld(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x0e)
-        lldi(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x0f)
-        lfork(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x10)
+	if ((unsigned char)byte == 0x09)
+		zjmp(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x0a)
+		ldi(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x0b)
+		sti(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x0c)
+		ft_fork(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x0d)
+		lld(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x0e)
+		lldi(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x0f)
+		lfork(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x10)
 		aff(&(*data), &(*process));
-    else
-        (*process)->position = ((*process)->position + 1) % MEM_SIZE;
+	else
+		(*process)->position = ((*process)->position + 1) % MEM_SIZE;
 }
 
 /*
@@ -44,31 +44,36 @@ void    perform_function_continue(t_data **data, t_process **process, int byte)
 */
 void    perform_function(t_data **data, t_process **process, int byte, int cycle)
 {
-    if ((unsigned char)byte == 0x01)
-        live(&(*data), &(*process), cycle);
-    else if ((unsigned char)byte == 0x02)
-        ld(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x03)
-        st(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x04)
-        add(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x05)
-        sub(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x06)
-        and(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x07)
-        or(&(*data), &(*process));
-    else if ((unsigned char)byte == 0x08)
-        xor(&(*data), &(*process));
-    else
-        perform_function_continue(&(*data), &(*process), byte);
+	if ((unsigned char)byte == 0x01)
+		live(&(*data), &(*process), cycle);
+	else if ((unsigned char)byte == 0x02)
+		ld(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x03)
+		st(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x04)
+		add(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x05)
+		sub(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x06)
+		and(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x07)
+		or(&(*data), &(*process));
+	else if ((unsigned char)byte == 0x08)
+		xor(&(*data), &(*process));
+	else
+		perform_function_continue(&(*data), &(*process), byte);
 }
 
 
 void	set_delay(t_process **process, int byte)
 {
-	if (byte == 0x01 || byte == 0x04 || byte == 0x05 || byte ==0x0d)
+	if (byte == 0x04 || byte == 0x05 || byte == 0x0d)
 		(*process)->delay = 9;
+	else if (byte == 0x01)
+	{
+		(*process)->live++;
+		(*process)->delay = 9;
+	}
 	else if (byte == 0x02 || byte == 0x03)
 		(*process)->delay = 4;
 	else if (byte == 0x06 || byte == 0x07 || byte == 0x08)
@@ -86,7 +91,7 @@ void	set_delay(t_process **process, int byte)
 	else if (byte == 0x10)
 		(*process)->delay = 1;
 	else
-		(*process)->delay = 0;
+		(*process)->position = ((*process)->position + 1) % MEM_SIZE;
 }
 
 /*
@@ -96,18 +101,18 @@ void	set_delay(t_process **process, int byte)
 */
 void    run_process(t_data **data, int cycle)
 {
-    t_process   *proc;
-    int        byte;
+	t_process	*proc;
+	int			byte;
 
-    proc = (*data)->process;
-    while (proc)
-    {
+	proc = (*data)->process;
+	while (proc)
+	{
 		proc->delay--;
 		byte = (int)(*data)->map[proc->position];
 		if (proc->live >= 0 && proc->delay < 0)
 			set_delay(&proc, byte);
-        if (proc->live >= 0 && proc->delay == 0)
-	        perform_function(&(*data), &proc, byte, cycle);
-        proc = proc->next;
-    }
+		if (proc->live >= 0 && proc->delay == 0)
+			perform_function(&(*data), &proc, byte, cycle);
+		proc = proc->next;
+	}
 }

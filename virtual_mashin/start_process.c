@@ -18,19 +18,19 @@
 */
 void    print_map(unsigned char *map)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (i < MEM_SIZE)
-    {
+	i = 0;
+	while (i < MEM_SIZE)
+	{
 		if ((i % 64) == 0)
-			printf("0x%.4x :", i);
-        printf(" %.2x", map[i]);/////////////////////////////////////
-        i++;
-        if ((i % 64) == 0)
-            printf("\n");
-    }
-    exit(1);
+			printf("0x%.4x : ", i);
+		printf("%.2x ", map[i]);/////////////////////////////////////
+		i++;
+		if ((i % 64) == 0)
+			printf("\n");
+	}
+	exit(1);
 }
 
 /*
@@ -42,31 +42,31 @@ void    print_map(unsigned char *map)
 */
 void    start_process(t_data **data)
 {
-    int index[4];
+	int index[4];
 
-    index[1] = 0;
-    index[2] = CYCLE_TO_DIE;
-    index[3] = 1;
+	index[1] = 0;
+	index[2] = CYCLE_TO_DIE;
+	index[3] = 1;
 
-    while (1)
-    {
-        index[0] = 0;
-        while (index[0] < index[2])
-        {
-            run_process(&(*data), index[3]);
+	while (1)
+	{
+		index[0] = 0;
+		while (index[0] < index[2])
+		{
+			run_process(&(*data), index[3]);
 			if((*data)->v == 1)
 				visualise (&(*data), index);
 			if ((*data)->dump > 0 && (*data)->dump == index[3])
-                print_map((*data)->map);
-            index[0]++;
+				print_map((*data)->map);
+			index[0]++;
 			index[3]++;
 		}
-        check_live(&(*data), &index[1], index[2]) ? index[2] -= CYCLE_DELTA :
-        index[1]++;
-        if (index[1] == MAX_CHECKS)
-        {
-            reset_live(&(*data));
-            index[2] -= CYCLE_DELTA;
-        }
-    }
+		check_live(&(*data), &index[1], index[2]) ? index[2] -= CYCLE_DELTA :
+		index[1]++;
+		if (index[1] == MAX_CHECKS)
+		{
+			reset_live(&(*data));
+			index[2] -= CYCLE_DELTA;
+		}
+	}
 }
