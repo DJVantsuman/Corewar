@@ -32,32 +32,28 @@ int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize)
 
 int    get_ind_value(t_data **data, t_process *process, int *shift, int size)
 {
-	int    val[6];
-	int i;
+	int	val[7];
+	int	i;
+	int	adr;
 
 	i = 0;
-	val[0] = ((*data)->map[(process->position + (*shift)) % MEM_SIZE]);
-	val[1] = ((*data)->map[(process->position + (*shift) + 1) % MEM_SIZE]);
-
+	val[0] = ((*data)->map[(process->position + *shift) % MEM_SIZE]);
+	val[1] = ((*data)->map[(process->position + *shift + 1) % MEM_SIZE]);
+	adr = (val[0] << 8) + val[1];
+	if (adr < 0)
+		adr += MEM_SIZE;
+	// if (size == 4)
+	// 	adr %= IDX_MOD;
 	while (i < size)
 	{
-		val[i + 2] = (*data)->map[(process->position + ((val[0] << 8) +
-				val[1]) + i) % MEM_SIZE];
+		val[i + 2] = (*data)->map[(process->position + adr + i) % MEM_SIZE];
 		i++;
 	}
-//	val[2] = (*data)->map[(process->position + ((val[0] << 8) + val[1])) %
-//						  MEM_SIZE];
-//	val[3] = (*data)->map[(process->position + ((val[0] << 8) + val[1]) + 1)
-//						  % MEM_SIZE];
-//	val[4] = (*data)->map[(process->position + ((val[0] << 8) + val[1]) + 2)
-//						  % MEM_SIZE];
-//	val[5] = (*data)->map[(process->position + ((val[0] << 8) + val[1]) + 3)
-//						  % MEM_SIZE];
 	(*shift) += 2;
-	if (size == 4)
+	// if (size == 4)
 		return ((val[2] << 24) + (val[3] << 16) + (val[4] << 8) + val[5]);
-	else
-		return  ((val[2] << 8) + val[3]);
+	// else
+	// 	return ((val[2] << 8) + val[3]);
 }
 
 int    get_reg_value(t_data **data, t_process *process, int *shift)

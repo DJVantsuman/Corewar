@@ -42,12 +42,12 @@ void    sti(t_data **data, t_process **process)
 	else if (param[1] == DIR_CODE)
 		val[1] = get_dir_value(&(*data), (*process), &shift, 2);
 	else if (param[1] == IND_CODE)
-		val[1] = get_ind_value(&(*data), (*process), &shift, 2);
+		val[1] = get_ind_value(&(*data), (*process), &shift, 4);
 	if (param[2] == REG_CODE)
 		val[2] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[2] == DIR_CODE)
 		val[2] = get_dir_value(&(*data), (*process), &shift, 2);
-	val[3] = ((*process)->position + ((val[1] + val[2]) % IDX_MOD)) % MEM_SIZE;
+	val[3] = ((*process)->position + ((val[1] + val[2]))) % MEM_SIZE;
 	(*process)->position += count_shift(3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 2) % MEM_SIZE;
 	if (param[0] == 1 && param[1] > 0 && (param[2] == 1 || param[2] == 2))
 		load_value(&(*data), &(*process), val[3], val[0]);

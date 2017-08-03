@@ -94,7 +94,7 @@ int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize);
 int    get_ind_value(t_data **data, t_process *process, int *shift, int size);
 int    get_reg_value(t_data **data, t_process *process, int *shift);
 int    get_reg_numb(t_data **data, t_process *process, int *shift);
-int    get_direct(t_data **data, int position);
+int    get_direct(t_data **data, t_process *process, int position);
 void 	load_value(t_data **data, t_process **process, int pos, int val);
 int	get_ind_address(t_data **data, t_process *process, int *shift);
 int     get_index_position(int pc, unsigned int val);

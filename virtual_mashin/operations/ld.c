@@ -27,6 +27,7 @@ void   ld(t_data **data, t_process **process)
 		val[0] = get_ind_value(&(*data), (*process), &shift, 4);
 	if (par[1] == REG_CODE)
 		val[1] = get_reg_numb(&(*data), (*process), &shift);
+	// printf("%x %x\n", val[0], val[1]);
 	if ((val[1] <= REG_NUMBER && val[1] > 0) && (par[0] == 2 || par[0] == 3) && par[1] == 1)
 		(*process)->registers[val[1] - 1] = val[0];
 	(*process)->carry = val[0] == 0 ? 1 : 0;

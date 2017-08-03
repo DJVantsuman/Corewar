@@ -111,7 +111,7 @@ void    run_process(t_data **data, int cycle)
 		byte = (int)(*data)->map[proc->position];
 		if (proc->live >= 0 && proc->delay < 0)
 			set_delay(&proc, byte);
-		if (proc->live >= 0 && proc->delay == 0)
+		else if (proc->live >= 0 && proc->delay == 0)
 			perform_function(&(*data), &proc, byte, cycle);
 		proc = proc->next;
 	}

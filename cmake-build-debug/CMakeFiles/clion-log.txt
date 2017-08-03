@@ -1,4 +1,16 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/user/CLionProjects/Corewar
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/user/CLionProjects/Corewar/cmake-build-debug
+/nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /nfs/2016/a/arodiono/corewar
+CMake Error at /nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/Compiler/._ADSP-DetermineCompiler.cmake:1:
+  Parse error.  Expected a command name, got unquoted argument with text "".
+Call Stack (most recent call first):
+  /nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeCompilerIdDetection.cmake:6 (include)
+  /nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeCompilerIdDetection.cmake:32 (_readFile)
+  /nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeDetermineCompilerId.cmake:116 (compiler_id_detection)
+  /nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeDetermineCompilerId.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_WRITE)
+  /nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeDetermineCompilerId.cmake:30 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  /nfs/2016/a/arodiono/Desktop/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/CMakeDetermineCCompiler.cmake:112 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:2 (project)
+
+
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "/nfs/2016/a/arodiono/corewar/cmake-build-debug/CMakeFiles/CMakeOutput.log".
