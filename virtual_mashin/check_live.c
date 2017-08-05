@@ -103,14 +103,15 @@ int    check_live(t_data **data, int *index1, int index2)
 		proc = proc->next;
 	}
 
-	if (check_process_live(&(*data)->process) || index2 <= CYCLE_DELTA)
+	if (check_process_live(&(*data)->process) || index2 <= 0)
 		print_champ(&(*data)->player);
-	proc = (*data)->process;
-	while (proc)
-	{
-		proc->live = 0;
-		proc = proc->next;
-	}
+//	proc = (*data)->process;
+//	while (proc)
+//	{
+//		if (proc->live > 0)
+//			proc->live = 0;
+//		proc = proc->next;
+//	}
 	while (play)
 	{
 		if (play->live >= NBR_LIVE)
@@ -119,9 +120,8 @@ int    check_live(t_data **data, int *index1, int index2)
 			*index1 = 0;
 			return (1);
 		}
-		else if (play->live > 0)
-			reset_live(&(*data));
 		play = play->next;
 	}
+	reset_live(&(*data));
 	return (0);
 }

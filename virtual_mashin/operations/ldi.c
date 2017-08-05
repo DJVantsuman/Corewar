@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+	/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ldi.c                                              :+:      :+:    :+:   */
@@ -37,7 +37,6 @@ void    ldi(t_data **data, t_process **process)
 	param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
 	param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
 	param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
-	// printf("\nprm\t%d %d %d\n", param[0], param[1], param[2]);
 	if (param[0] == REG_CODE)
 		val[0] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[0] == DIR_CODE)
@@ -52,10 +51,7 @@ void    ldi(t_data **data, t_process **process)
 	val[3] = get_direct(&(*data), (*process), (((val[0] + val[1]))) % MEM_SIZE);
 	if (val[3] == 0)
 		val[3] = get_direct(&(*data), (*process), get_direct(&(*data), (*process), (val[0] + val[1])));
-	// printf("val\t%x %x %x\n", val[0], val[1], val[2]);
 	if ((val[2] <= REG_NUMBER && val[2] > 0) && param[0] > 0 && (param[1] == 1 || param[1] == 2))
 		(*process)->registers[val[2] - 1] = val[3];
-	// printf("res\t%x\n", get_direct(&(*data), (*process), (((val[0] + val[1]) % IDX_MOD) % MEM_SIZE)));
-	(*process)->carry = get_direct(&(*data), *process, ((val[0] + val[1]))) == 0 ? 1 : 0;
 	(*process)->position += count_shift (3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 2) % MEM_SIZE;
 }

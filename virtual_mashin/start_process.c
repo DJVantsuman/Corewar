@@ -53,6 +53,7 @@ void    start_process(t_data **data)
 		index[0] = 0;
 		while (index[0] < index[2])
 		{
+//			printf ("It is now cycle %d\n", index[3]);
 			run_process(&(*data), index[3]);
 			if((*data)->v == 1)
 				visualise (&(*data), index);
@@ -61,11 +62,21 @@ void    start_process(t_data **data)
 			index[0]++;
 			index[3]++;
 		}
-		check_live(&(*data), &index[1], index[2]) ? index[2] -= CYCLE_DELTA : index[1]++;
+		if (check_live(&(*data), &index[1], index[2]))
+		{
+			index[2] -= CYCLE_DELTA;
+//			printf ("Cycle to die is now %d\n", index[2]);
+		}
+		else
+		{
+			index[1]++;
+		}
 		if (index[1] == MAX_CHECKS)
 		{
 			reset_live(&(*data));
 			index[2] -= CYCLE_DELTA;
+//			printf ("Cycle to die is now %d\n", index[2]);
+			index[1] = 0;
 		}
 	}
 }

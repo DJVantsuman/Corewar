@@ -68,28 +68,28 @@ void    perform_function(t_data **data, t_process **process, int byte, int cycle
 void	set_delay(t_process **process, int byte)
 {
 	if (byte == 0x04 || byte == 0x05 || byte == 0x0d)
-		(*process)->delay = 9;
+		(*process)->delay = 10;
 	else if (byte == 0x01)
 	{
 		(*process)->live++;
-		(*process)->delay = 9;
+		(*process)->delay = 10;
 	}
 	else if (byte == 0x02 || byte == 0x03)
-		(*process)->delay = 4;
-	else if (byte == 0x06 || byte == 0x07 || byte == 0x08)
 		(*process)->delay = 5;
+	else if (byte == 0x06 || byte == 0x07 || byte == 0x08)
+		(*process)->delay = 6;
 	else if (byte == 0x0a || byte == 0x0b)
-		(*process)->delay = 24;
+		(*process)->delay = 25;
 	else if (byte == 0x09)
-		(*process)->delay = 19;
+		(*process)->delay = 20;
 	else if (byte == 0x0c)
-		(*process)->delay = 799;
+		(*process)->delay = 800;
 	else if (byte == 0x0e)
-		(*process)->delay = 49;
+		(*process)->delay = 50;
 	else if (byte == 0x0f)
-		(*process)->delay = 999;
+		(*process)->delay = 1000;
 	else if (byte == 0x10)
-		(*process)->delay = 1;
+		(*process)->delay = 2;
 	else
 		(*process)->position = ((*process)->position + 1) % MEM_SIZE;
 }
@@ -107,12 +107,16 @@ void    run_process(t_data **data, int cycle)
 	proc = (*data)->process;
 	while (proc)
 	{
-		proc->delay--;
 		byte = (int)(*data)->map[proc->position];
 		if (proc->live >= 0 && proc->delay < 0)
 			set_delay(&proc, byte);
-		else if (proc->live >= 0 && proc->delay == 0)
-			perform_function(&(*data), &proc, byte, cycle);
+		proc->delay--;
+		if (proc->live >= 0 && proc->delay == 0) {
+//			printf ("P%5d | ", proc->numb);
+			perform_function (&(*data), &proc, byte, cycle);
+			proc->delay--;
+//			printf ("\n");
+		}
 		proc = proc->next;
 	}
 }

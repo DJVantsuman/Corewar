@@ -25,6 +25,7 @@ void    create_process(t_data **data, int index, int p_num, unsigned char p_id)
 	i = 1;
 	var = (t_process *)malloc(sizeof(t_process));
 	last = (*data)->process;
+	var->numb = (*data)->procnumb++;
 	var->p_num = p_num;
 	var->p_id = p_id;
 	var->position = index;
@@ -91,6 +92,7 @@ void    model(t_data **data)
 	(*data)->process = (t_process *)malloc(sizeof(t_process));
 	(*data)->process = NULL;
 	(*data)->speed = 20000;
+	(*data)->procnumb = 1;
 	create_map(&(*data));
 	start_process(&(*data));
 	free_player(&(*data)->player);

@@ -33,6 +33,7 @@ typedef struct      s_player
 
 typedef struct       s_process
 {
+	int 			numb;
 	unsigned char 			 p_id;
 	int 	 		p_num;
 	int				position;
@@ -54,6 +55,7 @@ typedef struct 			s_data
 	int             	v;
 	int 	       		amount_players;
 	unsigned int		speed;
+	int 				procnumb;
 }						t_data;
 
 void    error_manager(char *file, int  index);

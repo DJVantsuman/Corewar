@@ -21,6 +21,7 @@ void    add_process(t_data **data, t_process **process, int index)
 	i = 0;
 	var = (t_process *)malloc(sizeof(t_process));
 //	last = (*data)->process;
+	var->numb = (*data)->procnumb++;
 	var->position = index;
 	var->live = 0;
 	var->delay = -1;
@@ -58,6 +59,8 @@ void    ft_fork(t_data **data, t_process **process)
 	byte[0] = (*data)->map[((*process)->position + 1) % MEM_SIZE];
 	byte[1] = (*data)->map[((*process)->position + 2) % MEM_SIZE];
 	res = (short)((byte[0] << 8) + byte[1]);
+//	printf ("fork %d (%d)", res, (((*process)->position + (res % IDX_MOD)) %
+//							  MEM_SIZE));
 	add_process(&(*data), &(*process), (((*process)->position + (res % IDX_MOD)) % MEM_SIZE));
 	(*process)->position = ((*process)->position + 3) % MEM_SIZE;
 }

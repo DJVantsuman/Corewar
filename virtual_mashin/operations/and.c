@@ -24,10 +24,15 @@ int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize)
 		(*shift)++;
 		i++;
 	}
-	if (dsize == 4)
+	if (dsize == 4) {
+//		printf (" %d", (val[0] << 24) + (val[1] << 16) + (val[2] << 8) +
+//				val[3]);
 		return (val[0] << 24) + (val[1] << 16) + (val[2] << 8) + val[3];
-	else
+	}
+	else {
+//		printf (" %d", (val[0] << 8) + val[1]);
 		return ((val[0] << 8) + val[1]);
+	}
 }
 
 int    get_ind_value(t_data **data, t_process *process, int *shift, int size)
@@ -42,8 +47,9 @@ int    get_ind_value(t_data **data, t_process *process, int *shift, int size)
 	adr = (val[0] << 8) + val[1];
 	if (adr < 0)
 		adr += MEM_SIZE;
-	// if (size == 4)
-	// 	adr %= IDX_MOD;
+//	 if (size == 4)
+//	 	adr %= IDX_MOD;
+//	printf (" %d", adr);
 	while (i < size)
 	{
 		val[i + 2] = (*data)->map[(process->position + adr + i) % MEM_SIZE];
@@ -61,6 +67,7 @@ int    get_reg_value(t_data **data, t_process *process, int *shift)
 	int res;
 
 	res = process->registers[(*data)->map[(process->position + (*shift)) % MEM_SIZE] - 1];
+//	printf (" r%d", (*data)->map[(process->position + (*shift)) % MEM_SIZE]);
 	(*shift)++;
 	return res;
 }
@@ -70,6 +77,8 @@ int    get_reg_numb(t_data **data, t_process *process, int *shift)
 	int res;
 
 	res = (*data)->map[(process->position + (*shift)) % MEM_SIZE];
+//	if ( (*data)->map[(process->position) % MEM_SIZE] != 3)
+//		printf (" r%d", res);
 	(*shift)++;
 	return res;
 }
