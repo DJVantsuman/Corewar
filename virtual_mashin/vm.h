@@ -6,7 +6,7 @@
 /*   By: itsuman <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 17:02:57 by itsuman           #+#    #+#             */
-/*   Updated: 2017/06/02 17:03:03 by itsuman          ###   ########.fr       */
+/*   Updated: 2017/08/09 18:36:18 by itsuman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ void    reset_live(t_data **data);
 void    free_player(t_player **player);
 //void    free_program(t_program **program);
 void    free_process(t_process **process);
+void	use();
 
 void    live(t_data **data, t_process **process, int cycle);
 void    ld(t_data **data, t_process **process);

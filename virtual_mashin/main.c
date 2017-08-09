@@ -6,7 +6,7 @@
 /*   By: itsuman <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 17:02:42 by itsuman           #+#    #+#             */
-/*   Updated: 2017/06/02 17:02:48 by itsuman          ###   ########.fr       */
+/*   Updated: 2017/08/09 18:41:30 by itsuman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -136,6 +136,7 @@ int main(int ac, char **av)
 		model(&data);
 	}
 	else
-		error_manager(NULL, 0);
+		use();
+		//error_manager(NULL, 0);
 	return (0);
 }

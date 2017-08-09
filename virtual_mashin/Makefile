@@ -6,14 +6,14 @@
 #    By: itsuman <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/02/10 18:22:44 by itsuman           #+#    #+#              #
-#    Updated: 2017/05/12 21:46:23 by itsuman          ###   ########.fr        #
+#    Updated: 2017/08/09 18:36:47 by itsuman          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME =	corewar
 FLAGS = -Wall -Werror -Wextra
 SRC = main.c error_manager.c controller.c model.c free_memory.c start_process.c \
-check_live.c run_process.c visualise.c \
+check_live.c run_process.c visualise.c use.c\
 operations/live.c \
 operations/aff.c \
 operations/ft_fork.c \
