@@ -24,9 +24,8 @@ void    add_process(t_data **data, t_process **process, int index)
 	var->numb = (*data)->procnumb++;
 	var->position = index;
 	var->live = 0;
-	var->delay = -1;
+	var->delay = 0;
 	var->carry = (*process)->carry;
-	var->live = 0;
 //	var->carry = 0;
 	var->p_id = (*process)->p_id;
 	var->p_num = (*process)->p_num;

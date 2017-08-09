@@ -24,17 +24,20 @@ void		live(t_data **data, t_process **process, int cycle)
 //	printf ("live");
 	pl = (*data)->player;
 	val = get_dir_value(&(*data), (*process), &shift, 4);
+	(*process)->f = 0;
 	while (pl)
 	{
 		if (pl->number == val)
 		{
 			pl->live++;
 			pl->last_live = cycle;
-//			printf ("\nPlayer %d (%s) is said to be alive", pl->id,
-//					pl->header->prog_name);
+			(*data)->win = pl;
+//			(*process)->position = ((*process)->position + 5) % MEM_SIZE;
+//			return;
+			printf ("\nPlayer %d (%s) is said to be alive", pl->id,
+					pl->header->prog_name);
 		}
 		pl = pl->next;
 	}
-	(*process)->position = ((*process)->position + shift) % MEM_SIZE;
-
+	(*process)->position = ((*process)->position + 5) % MEM_SIZE;
 }

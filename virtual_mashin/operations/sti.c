@@ -55,7 +55,6 @@ void    sti(t_data **data, t_process **process)
 	(*process)->position += count_shift(3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 2) % MEM_SIZE;
 	if (param[0] == 1 && param[1] > 0 && (param[2] == 1 || param[2] == 2))
 		load_value(&(*data), &(*process), val[3], val[0]);
-//	printf ("\n       | -> store to %d + %d = %d (with pc and mod %d)", val[1],
-//			val[2], val[1] +
-//			val[2], val[3]);
+//	printf ("\n       | -> store to %hd + %hd = %hd (with pc and mod %hd)",
+//			(short)val[1], (short)val[2], (short)(val[1] + val[2]), (short)val[3]);
 }

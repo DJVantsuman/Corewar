@@ -37,21 +37,26 @@ void    ldi(t_data **data, t_process **process)
 	param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
 	param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
 	param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
+//	printf ("ldi");
 	if (param[0] == REG_CODE)
 		val[0] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[0] == DIR_CODE)
-		val[0] = get_dir_value(&(*data), (*process), &shift, 2);
+		val[0] = (short)get_dir_value(&(*data), (*process), &shift, 2);
 	else if (param[0] == IND_CODE)
-		val[0] = get_ind_value(&(*data), (*process), &shift, 2);
+		val[0] = (short)get_ind_value(&(*data), (*process), &shift, 2);
 	if (param[1] == REG_CODE)
 		val[1] = get_reg_value(&(*data), (*process), &shift);
 	else if (param[1] == DIR_CODE)
 		val[1] = get_dir_value(&(*data), (*process), &shift, 2);
 	val[2] = get_reg_numb(&(*data), (*process), &shift);
-	val[3] = get_direct(&(*data), (*process), (((val[0] + val[1]))) % MEM_SIZE);
-	if (val[3] == 0)
-		val[3] = get_direct(&(*data), (*process), get_direct(&(*data), (*process), (val[0] + val[1])));
+	val[3] = get_direct(&(*data), (*process), ((val[0] + val[1]) % IDX_MOD) % MEM_SIZE);
+//	if (val[3] == 0)
+//		val[3] = get_direct(&(*data), (*process), get_direct(&(*data), (*process), (val[0] + val[1])));
 	if ((val[2] <= REG_NUMBER && val[2] > 0) && param[0] > 0 && (param[1] == 1 || param[1] == 2))
 		(*process)->registers[val[2] - 1] = val[3];
+//	printf ("\n       | -> load from %hd + %hd = %hd (with pc and mod %hd)",
+//			(short)val[0], (short)val[1], (short)(val[0] + val[1]),
+//			(short)(((*process)->position + (val[0] + val[1])) % MEM_SIZE));
 	(*process)->position += count_shift (3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 2) % MEM_SIZE;
+
 }

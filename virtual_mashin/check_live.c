@@ -15,23 +15,23 @@
 /*
 ** Function "print_champ" print which player is won
 */
-void    print_champ(t_player **player)
-{
-	t_player    *play;
-
-	play = *player;
-	while (play)
-	{
-		if (play->last_live == 1)
-		{
-			printf("\nPlayer %d (%s) won.\n", play->number, play->header->prog_name);
-			exit(1);
-		}
-		play = play->next;
-	}
-	printf("\nPlayer %d (%s) won.\n", (*player)->number, (*player)->header->prog_name);
-	exit(1);
-}
+//void    print_champ(t_player **player)
+//{
+//	t_player    *play;
+//
+//	play = *player;
+//	while (play)
+//	{
+//		if (play->last_live == 1)
+//		{
+//			printf("Player %d (%s) won.\n", play->number, play->header->prog_name);
+//			exit(1);
+//		}
+//		play = play->next;
+//	}
+//	printf("Player %d (%s) won.\n", (*player)->number, (*player)->header->prog_name);
+//	exit(1);
+//}
 
 /*
 ** Function "check_process_live" checks for the existence of live processes
@@ -98,13 +98,18 @@ int    check_live(t_data **data, int *index1, int index2)
 	play = (*data)->player;
 	while (proc)
 	{
-		if (proc->live == 0)
+		if (proc->live <= 0)
 			proc->live = -1;
 		proc = proc->next;
 	}
 
-	if (check_process_live(&(*data)->process) || index2 <= 0)
-		print_champ(&(*data)->player);
+	if (check_process_live(&(*data)->process) || index2 <= 0) {
+		printf ("Player %d (%s) won.\n", (*data)->win->number, (*data)->win
+				->header->prog_name);
+		exit (0);
+	}
+
+//	print_champ(&(*data)->player);
 //	proc = (*data)->process;
 //	while (proc)
 //	{

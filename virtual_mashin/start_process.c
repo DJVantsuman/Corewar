@@ -65,12 +65,11 @@ void    start_process(t_data **data)
 		if (check_live(&(*data), &index[1], index[2]))
 		{
 			index[2] -= CYCLE_DELTA;
+			index[1] = 0;
 //			printf ("Cycle to die is now %d\n", index[2]);
 		}
 		else
-		{
 			index[1]++;
-		}
 		if (index[1] == MAX_CHECKS)
 		{
 			reset_live(&(*data));

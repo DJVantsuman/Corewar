@@ -44,6 +44,10 @@ void    perform_function_continue(t_data **data, t_process **process, int byte)
 */
 void    perform_function(t_data **data, t_process **process, int byte, int cycle)
 {
+	if ((*process)->delay > 0)
+		return;
+//	if (byte > 0 && byte < 17)
+//		printf ("P%5d | ", (*process)->numb);
 	if ((unsigned char)byte == 0x01)
 		live(&(*data), &(*process), cycle);
 	else if ((unsigned char)byte == 0x02)
@@ -67,12 +71,15 @@ void    perform_function(t_data **data, t_process **process, int byte, int cycle
 
 void	set_delay(t_process **process, int byte)
 {
+	if ((*process)->delay != 0)
+		return;
 	if (byte == 0x04 || byte == 0x05 || byte == 0x0d)
 		(*process)->delay = 10;
 	else if (byte == 0x01)
 	{
 		(*process)->live++;
 		(*process)->delay = 10;
+		(*process)->f = 1;
 	}
 	else if (byte == 0x02 || byte == 0x03)
 		(*process)->delay = 5;
@@ -90,8 +97,11 @@ void	set_delay(t_process **process, int byte)
 		(*process)->delay = 1000;
 	else if (byte == 0x10)
 		(*process)->delay = 2;
-	else
-		(*process)->position = ((*process)->position + 1) % MEM_SIZE;
+//	else
+//	{
+//		if ((*process)->delay < 0)
+//			(*process)->position = ((*process)->position + 1) % MEM_SIZE;
+//	}
 }
 
 /*
@@ -108,15 +118,25 @@ void    run_process(t_data **data, int cycle)
 	while (proc)
 	{
 		byte = (int)(*data)->map[proc->position];
-		if (proc->live >= 0 && proc->delay < 0)
-			set_delay(&proc, byte);
-		proc->delay--;
-		if (proc->live >= 0 && proc->delay == 0) {
-//			printf ("P%5d | ", proc->numb);
-			perform_function (&(*data), &proc, byte, cycle);
+//		if (proc->live >= 0 && proc->delay < 0)
+		set_delay(&proc, byte);
+		if (proc->delay > 0)
 			proc->delay--;
+		if (proc->delay == 0 && byte > 0 && byte < 17) {
+			perform_function (&(*data), &proc, byte, cycle);
+//			if (byte != 0)
+//				printf ("\n");
+		}
+		else if (proc->delay == 0 && proc->f == 1) {
+//			proc->position = (proc->position + 5) % MEM_SIZE;
+//			proc->f = 0;
+//			printf ("P%5d | ", proc->numb);
+			live(&(*data), &proc, cycle);
 //			printf ("\n");
 		}
+		else if (proc->delay == 0)
+			proc->position += 1;
+
 		proc = proc->next;
 	}
 }

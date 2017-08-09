@@ -30,7 +30,7 @@ int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize)
 		return (val[0] << 24) + (val[1] << 16) + (val[2] << 8) + val[3];
 	}
 	else {
-//		printf (" %d", (val[0] << 8) + val[1]);
+//		printf (" %hd", (short)((val[0] << 8) + val[1]));
 		return ((val[0] << 8) + val[1]);
 	}
 }
@@ -67,7 +67,16 @@ int    get_reg_value(t_data **data, t_process *process, int *shift)
 	int res;
 
 	res = process->registers[(*data)->map[(process->position + (*shift)) % MEM_SIZE] - 1];
-//	printf (" r%d", (*data)->map[(process->position + (*shift)) % MEM_SIZE]);
+//	if ((*data)->map[process->position] != 4 && (*data)
+//														->map[process->position] != 5) {
+//		if((*data)->map[process->position] == 10 || (*data)
+//															->map[process->position] ==
+//													11)
+//			printf (" %d", res);
+//		else
+//			printf (" r%d",
+//					(*data)->map[(process->position + (*shift)) % MEM_SIZE]);
+//	}
 	(*shift)++;
 	return res;
 }
@@ -77,8 +86,7 @@ int    get_reg_numb(t_data **data, t_process *process, int *shift)
 	int res;
 
 	res = (*data)->map[(process->position + (*shift)) % MEM_SIZE];
-//	if ( (*data)->map[(process->position) % MEM_SIZE] != 3)
-//		printf (" r%d", res);
+//	printf (" r%d", res);
 	(*shift)++;
 	return res;
 }

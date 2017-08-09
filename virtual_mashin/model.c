@@ -31,7 +31,7 @@ void    create_process(t_data **data, int index, int p_num, unsigned char p_id)
 	var->position = index;
 	var->live = 0;
 	var->carry = 0;
-	var->delay = -1;
+	var->delay = 0;
 	var->registers[0] = p_num;
 	while (i < REG_NUMBER)
 		var->registers[i++] = 0;
