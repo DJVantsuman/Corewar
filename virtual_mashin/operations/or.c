@@ -12,12 +12,12 @@
 
 #include "../vm.h"
 
-void    or(t_data **data, t_process **process)
+void	or(t_data **data, t_process **process)
 {
-	unsigned char   param[3];
-	int    val[3];
-	int             shift;
-	int             i;
+	unsigned char	param[3];
+	int				val[3];
+	int				shift;
+	int				i;
 
 	shift = 2;
 	i = 0;
@@ -40,6 +40,5 @@ void    or(t_data **data, t_process **process)
 		(*process)->registers[val[2] - 1] = val[0] | val[1];
 	}
 	(*process)->carry = (val[0] | val[1]) == 0 ? 1 : 0;
-	(*process)->position += count_shift (3, (*data)->map[((*process)
-																  ->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
+	(*process)->position += count_shift(3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
 }

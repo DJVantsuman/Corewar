@@ -12,19 +12,18 @@
 
 #include "../vm.h"
 
-void    sub(t_data **data, t_process **process)
+void	sub(t_data **data, t_process **process)
 {
-	unsigned char   param[3];
-	int    val[3];
-	int             shift;
-	int 			pos;
+	unsigned char	param[3];
+	int				val[3];
+	int				shift;
+	int				pos;
 
 	shift = 2;
 	pos = 2;
 	param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
 	param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
 	param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
-//	printf ("sub");
 	if (param[0] == REG_CODE && param[1] == REG_CODE && param[2] == REG_CODE)
 	{
 		val[0] = get_reg_numb(&(*data), (*process), &shift);
@@ -38,6 +37,5 @@ void    sub(t_data **data, t_process **process)
 		}
 	}
 	(*process)->carry = val[0] - val[1] == 0 ? 1 : 0;
-	(*process)->position += count_shift (3, (*data)->map[((*process)
-																  ->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
+	(*process)->position += count_shift(3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
 }

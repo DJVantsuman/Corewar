@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-void    lldi(t_data **data, t_process **process)
+void	lldi(t_data **data, t_process **process)
 {
 	unsigned char	param[3];
 	int				val[4];
@@ -39,5 +39,5 @@ void    lldi(t_data **data, t_process **process)
 		(*process)->registers[val[2] - 1] = val[3];
 	}
 	(*process)->carry = val[3] == 0 ? 1 : 0;
-	(*process)->position += count_shift (3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 2) % MEM_SIZE;
+	(*process)->position += count_shift(3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 2) % MEM_SIZE;
 }

@@ -12,7 +12,7 @@
 
 #include "../vm.h"
 
-void 	load_value(t_data **data, t_process **process, int pos, int val)
+void	load_value(t_data **data, t_process **process, int pos, int val)
 {
 	if (pos < 0)
 		pos += MEM_SIZE;
@@ -25,10 +25,9 @@ void 	load_value(t_data **data, t_process **process, int pos, int val)
 	(*data)->map_v[(pos + 1) % MEM_SIZE] = (*process)->p_id;
 	(*data)->map_v[(pos + 2) % MEM_SIZE] = (*process)->p_id;
 	(*data)->map_v[(pos + 3) % MEM_SIZE] = (*process)->p_id;
-
 }
 
-void    sti(t_data **data, t_process **process)
+void	sti(t_data **data, t_process **process)
 {
 	unsigned char	param[3];
 	int				val[4];
@@ -38,7 +37,6 @@ void    sti(t_data **data, t_process **process)
 	param[0] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 192) >> 6;
 	param[1] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 48) >> 4;
 	param[2] = (unsigned char)((*data)->map[((*process)->position + 1) % MEM_SIZE] & 12) >> 2;
-//	printf ("sti");
 	if (param[0] == REG_CODE)
 		val[0] = get_reg_value(&(*data), (*process), &shift);
 	if (param[1] == REG_CODE)
@@ -55,6 +53,4 @@ void    sti(t_data **data, t_process **process)
 	(*process)->position += count_shift(3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 2) % MEM_SIZE;
 	if (param[0] == 1 && param[1] > 0 && (param[2] == 1 || param[2] == 2))
 		load_value(&(*data), &(*process), val[3], val[0]);
-//	printf ("\n       | -> store to %hd + %hd = %hd (with pc and mod %hd)",
-//			(short)val[1], (short)val[2], (short)(val[1] + val[2]), (short)val[3]);
 }
