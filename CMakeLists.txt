@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.7)
 project(corewar)
 
 set(CMAKE_CXX_STANDARD 11)
-
+find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
 set(SOURCE_FILES
         virtual_mashin/libft/ft_alldown.c
         virtual_mashin/libft/ft_allup.c
@@ -97,3 +98,4 @@ set(SOURCE_FILES
         op.h)
 
 add_executable(corewar ${SOURCE_FILES})
+target_link_libraries(corewar ${CURSES_LIBRARIES})
