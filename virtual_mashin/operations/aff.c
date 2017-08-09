@@ -12,9 +12,9 @@
 
 #include "../vm.h"
 
-void    aff(t_data **data, t_process **process)
+void	aff(t_data **data, t_process **process)
 {
-	char    byte[2];
+	char	byte[2];
 
 	byte[0] = (*data)->map[(*process)->position + 1];
 	byte[1] = (*data)->map[(*process)->position + 2];
@@ -23,5 +23,6 @@ void    aff(t_data **data, t_process **process)
 		if (byte[1] <= REG_NUMBER && byte[1] > 0)
 			printf("%c", (*process)->registers[byte[1] - 1] % 256);
 	}
-	(*process)->position += count_shift (2, (*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
+	(*process)->position += count_shift(2,
+		(*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
 }

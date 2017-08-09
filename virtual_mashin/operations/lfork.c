@@ -12,10 +12,10 @@
 
 #include "../vm.h"
 
-void    lfork(t_data **data, t_process **process)
+void	lfork(t_data **data, t_process **process)
 {
-	unsigned char    byte[2];
-	int     res;
+	unsigned char	byte[2];
+	int				res;
 
 	byte[0] = (*data)->map[((*process)->position + 1) % MEM_SIZE];
 	byte[1] = (*data)->map[((*process)->position + 2) % MEM_SIZE];

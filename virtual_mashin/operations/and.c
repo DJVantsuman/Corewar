@@ -12,10 +12,10 @@
 
 #include "../vm.h"
 
-int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize)
+int		get_dir_value(t_data **data, t_process *process, int *shift, int dsize)
 {
-	int    i;
-	int    val[4];
+	int		i;
+	int		val[4];
 
 	i = 0;
 	while (i < dsize)
@@ -24,18 +24,13 @@ int    get_dir_value(t_data **data, t_process *process, int *shift, int dsize)
 		(*shift)++;
 		i++;
 	}
-	if (dsize == 4) {
-//		printf (" %d", (val[0] << 24) + (val[1] << 16) + (val[2] << 8) +
-//				val[3]);
+	if (dsize == 4)
 		return (val[0] << 24) + (val[1] << 16) + (val[2] << 8) + val[3];
-	}
-	else {
-//		printf (" %hd", (short)((val[0] << 8) + val[1]));
+	else
 		return ((val[0] << 8) + val[1]);
-	}
 }
 
-int    get_ind_value(t_data **data, t_process *process, int *shift, int size)
+int		get_ind_value(t_data **data, t_process *process, int *shift, int size)
 {
 	int	val[7];
 	int	i;
@@ -47,56 +42,40 @@ int    get_ind_value(t_data **data, t_process *process, int *shift, int size)
 	adr = (val[0] << 8) + val[1];
 	if (adr < 0)
 		adr += MEM_SIZE;
-//	 if (size == 4)
-//	 	adr %= IDX_MOD;
-//	printf (" %d", adr);
 	while (i < size)
 	{
 		val[i + 2] = (*data)->map[(process->position + adr + i) % MEM_SIZE];
 		i++;
 	}
 	(*shift) += 2;
-	// if (size == 4)
-		return ((val[2] << 24) + (val[3] << 16) + (val[4] << 8) + val[5]);
-	// else
-	// 	return ((val[2] << 8) + val[3]);
+	return ((val[2] << 24) + (val[3] << 16) + (val[4] << 8) + val[5]);
 }
 
-int    get_reg_value(t_data **data, t_process *process, int *shift)
+int		get_reg_value(t_data **data, t_process *process, int *shift)
 {
 	int res;
 
-	res = process->registers[(*data)->map[(process->position + (*shift)) % MEM_SIZE] - 1];
-//	if ((*data)->map[process->position] != 4 && (*data)
-//														->map[process->position] != 5) {
-//		if((*data)->map[process->position] == 10 || (*data)
-//															->map[process->position] ==
-//													11)
-//			printf (" %d", res);
-//		else
-//			printf (" r%d",
-//					(*data)->map[(process->position + (*shift)) % MEM_SIZE]);
-//	}
+	res = process->registers[(*data)->map[(process->position
+		+ (*shift)) % MEM_SIZE] - 1];
 	(*shift)++;
-	return res;
+	return (res);
 }
 
-int    get_reg_numb(t_data **data, t_process *process, int *shift)
+int		get_reg_numb(t_data **data, t_process *process, int *shift)
 {
 	int res;
 
 	res = (*data)->map[(process->position + (*shift)) % MEM_SIZE];
-//	printf (" r%d", res);
 	(*shift)++;
-	return res;
+	return (res);
 }
 
-void    and(t_data **data, t_process **process)
+void	and(t_data **data, t_process **process)
 {
-	unsigned char   param[3];
-	int    val[3];
-	int             shift;
-	int             i;
+	unsigned char	param[3];
+	int				val[3];
+	int				shift;
+	int				i;
 
 	shift = 2;
 	i = 0;
@@ -119,5 +98,5 @@ void    and(t_data **data, t_process **process)
 		(*process)->registers[val[2] - 1] = (val[0] & val[1]);
 	}
 	(*process)->carry = (val[0] & val[1]) == 0 ? 1 : 0;
-	(*process)->position += count_shift (3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
+	(*process)->position += count_shift(3, (*data)->map[((*process)->position + 1) % MEM_SIZE], 4) % MEM_SIZE;
 }
